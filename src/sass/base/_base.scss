@@ -13,3 +13,8 @@ html {
 body {
   box-sizing: border-box;
 }
+
+::selection {
+  background-color: $color-blue-light-1;
+  color: #fff;
+}

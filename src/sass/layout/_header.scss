@@ -1,0 +1,128 @@
+.header {
+  padding: 3rem $padding-side-desktop;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $color-blue-dark;
+  position: relative;
+  z-index: 999;
+
+  @include respond(tablet) {
+    padding: 3rem $padding-side-mobile;
+  }
+
+  &__logo {
+    width: 40vw;
+    max-width: 22rem;
+  }
+
+  &__nav-toggle {
+    display: none;
+  }
+
+  &__navigation {
+    display: flex;
+  }
+
+  &__nav-link {
+    color: inherit;
+    text-decoration: none;
+    font-family: "Spartan", sans-serif;
+    font-weight: 700;
+    color: $color-blue-dark;
+    display: block;
+    padding: 1.25rem 0;
+    position: relative;
+    transition: all 0.5s;
+
+    &:hover {
+      color: $color-blue-light-2;
+      transform: translateY(-0.75rem);
+    }
+
+    &:not(:last-child) {
+      margin-right: 6rem;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      height: 3px;
+      background-color: $color-blue-light-2;
+      opacity: 0;
+      transform: translateY(2rem);
+      transition: all 0.5s;
+    }
+
+    &:hover::after {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @include respond(mobile-land) {
+    &.active {
+      color: #fff;
+    }
+
+    &::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color-blue-dark, 0.95);
+      opacity: 0;
+      visibility: hidden;
+      transition: all .5s;
+      z-index: -1;
+    }
+
+    &.active::after {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &__nav-toggle {
+      display: block;
+      font-size: 1.8rem;
+    }
+
+    &__navigation {
+      position: absolute;
+      top: 50vh;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: all .5s;
+    }
+
+    &.active &__navigation {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &__nav-link {
+      padding: 0;
+      color: #fff;
+      transform: none !important;
+
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 3.5rem;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
