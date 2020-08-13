@@ -1,24 +1,27 @@
 import React, { useEffect, useState } from "react";
 import useDimensions from "react-use-dimensions";
+import Fade from "react-reveal/Fade";
 
-const FeaturedWork = () => {
+const FeaturedWork = props => {
     const [imageHeight, setImageHeight] = useState(null);
-    const [imageRef, imageSize] = useDimensions();
-
-    useEffect(() => {
-        const adjustImageHeight = () => setImageHeight(imageSize.width * 60 / 100);
-        adjustImageHeight();
-        window.addEventListener("resize", adjustImageHeight);
-    }, [imageSize.width])
+    const [imageRef, { width }] = useDimensions();
+    useEffect(() => setImageHeight(width * 60 / 100), [width]);
 
     return (
-        <div className="featured-work">
-            <div className="featured-work__img-container"
-                ref={imageRef}
-                style={{ height: imageHeight || null }}>
-                    
+        <Fade left mirror={props.mirror} duration={800}>
+            <div className="featured-work">
+                <a rel="noopener noreferrer" href={props.url} target="_blank">
+                    <div className="featured-work__top">
+                        <div className="featured-work__img"
+                            ref={imageRef}
+                            style={{ height: imageHeight || null }}>
+                            <img src={props.img} alt={props.title} />
+                        </div>
+                        <h3 className="featured-work__title"><span>{props.title}</span></h3>
+                    </div>
+                </a>
             </div>
-        </div>
+        </Fade>
     )
 }
 

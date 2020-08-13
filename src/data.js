@@ -1,11 +1,53 @@
 const works = [
     {
+        id: "github-timeline-app",
+        title: "Github Timeline App",
+        featured: true,
+        mainImg: "./images/github-timeline/desktop-with-timeline.png",
+        url: "https://github-timeline-iota.vercel.app/"
+    },
+    {
+        id: "where-in-the-world",
+        title: "Where in the World?",
+        featured: true,
+        mainImg: "./images/where-in-the-world/desktop-home.png",
+        url: "https://where-in-the-world-olive.vercel.app/"
+    },
+    {
+        id: "rock-paper-scissors-lizard-spock",
+        title: "Rock, Paper, Scissors, Lizard, Spock",
+        featured: true,
+        mainImg: "./images/rock-paper-scissors/desktop-initial.png",
+        url: "https://rock-paper-scissors-two.vercel.app/"
+    },
+    {
+        id: "myteam",
+        title: "Myteam Website",
+        featured: true,
+        mainImg: "./images/myteam/desktop-home.png",
+        url: "https://myteam-nu.vercel.app/"
+    },
+    {
+        id: "scoot",
+        title: "Scoot Website",
+        featured: true,
+        mainImg: "./images/scoot/desktop-home.png",
+        url: "https://scoot-lake.now.sh/"
+    },
+    {
+        id: "dine",
+        title: "Dine Website",
+        featured: true,
+        mainImg: "./images/dine/desktop-home.png",
+        url: "https://dine-henna.now.sh/"
+    },
+    {
         id: "url-shortening-landing-page",
         title: "URL Shortening Landing Page",
         description: "A landing page for a mock company called Shortly, which manages shortened links for business clients. This page also serves as a functional web app, allowing users to generate shortened URLs, copy them to their clipboard, and keep the list of their shortened URLs even after refreshing the browser.",
         details: ["", ""],
         mainImg: "",
-        gallery: [ 
+        gallery: [
             {
                 title: "Gallery",
                 images: [
@@ -53,7 +95,7 @@ const works = [
                     src: ""
                 }
             }
-        ] 
+        ]
     }
 ];
 

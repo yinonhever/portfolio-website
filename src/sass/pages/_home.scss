@@ -1,9 +1,11 @@
 /*** INTRO SECTION ***/
 .intro {
-  padding: 3rem $padding-side-desktop 8rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  &__container {
+    padding: 3rem $padding-side-desktop 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   &__content {
     width: 35vw;
@@ -23,7 +25,8 @@
 /*** FEATURED WORKS SECTION ***/
 .featured-works {
   padding: 8rem $padding-side-desktop;
-  background-color: #fffbfb;
+//   background-color: #f7f7f7;
+  background-color: rgba($color-azure-light, 0.2);
 
   &__heading {
     margin-bottom: 6rem;
