@@ -1,0 +1,38 @@
+/*** INTRO SECTION ***/
+.intro {
+  padding: 3rem $padding-side-desktop 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__content {
+    width: 35vw;
+  }
+
+  &__heading {
+    font-size: 6rem;
+    letter-spacing: -2px;
+    margin-bottom: 1.5rem;
+  }
+
+  &__img {
+    width: 37.5vw;
+  }
+}
+
+/*** FEATURED WORKS SECTION ***/
+.featured-works {
+  padding: 8rem $padding-side-desktop;
+  background-color: #fffbfb;
+
+  &__heading {
+    margin-bottom: 6rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 6rem;
+    align-items: stretch;
+  }
+}

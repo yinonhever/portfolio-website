@@ -1,11 +1,11 @@
 const works = [
     {
         id: "url-shortening-landing-page",
-        title: "URL Shortening landing page",
+        title: "URL Shortening Landing Page",
         description: "A landing page for a mock company called Shortly, which manages shortened links for business clients. This page also serves as a functional web app, allowing users to generate shortened URLs, copy them to their clipboard, and keep the list of their shortened URLs even after refreshing the browser.",
         details: ["", ""],
         mainImg: "",
-        gallery: [ // each item in the gallery array is an images section, with a title and a list of images
+        gallery: [ 
             {
                 title: "Gallery",
                 images: [
@@ -21,10 +21,9 @@ const works = [
             }
         ]
     },
-
     {
         id: "myteam-website",
-        title: "myteam Website",
+        title: "Myteam Website",
         description: "",
         details: ["", ""],
         mainImg: "",
@@ -41,7 +40,6 @@ const works = [
             }
         ]
     },
-
     {
         id: "chat-app-illustration",
         title: "Chat App Illustration",

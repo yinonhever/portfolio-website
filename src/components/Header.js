@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from "../images/logo.png";
-import logoWhite from "../images/logo-white.png";
+import logo from "../images/logos/logo.png";
+import logoWhite from "../images/logos/logo-white.png";
 import Navigation from "./Navigation";
 
 const Header = () => {
