@@ -32,11 +32,19 @@
       );
       font-size: 2.5rem;
       max-width: 90%;
+
+      @include respond(mobile) {
+        font-size: 1.8rem;
+      }
     }
   }
 
   &__content {
     padding: 0 3rem 5rem;
+
+    @include respond(mobile) {
+      padding: 0 3rem 3.5rem;
+    }
   }
 
   &__text {

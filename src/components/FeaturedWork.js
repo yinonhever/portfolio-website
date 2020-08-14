@@ -3,18 +3,23 @@ import useDimensions from "react-use-dimensions";
 import Fade from "react-reveal/Fade";
 
 const FeaturedWork = props => {
-    const [imageRef, { width }] = useDimensions();
+    const [imageRef, imageSize] = useDimensions();
     const [titleRef, titleSize] = useDimensions();
-    const imageHeight = window.innerWidth > 450 ? width * 60 / 100 : width * 70 / 100;
+    const imageHeight = () => {
+        let height;
+        if (window.innerWidth > 450) height = imageSize.width * 60 / 100; 
+        else height = imageSize.width * 70 / 100;
+        if (height <= imageSize.height) return height; 
+        else return imageSize.height;
+    }
 
     return (
         <Fade left mirror={props.mirror} duration={800}>
             <div className="featured-work">
                 <a rel="noopener noreferrer" href={props.url} target="_blank">
                     <div className="featured-work__img"
-                        ref={imageRef}
-                        style={{ height: imageHeight || null }}>
-                        <img src={props.img} alt={props.title} />
+                        style={{ height: imageHeight() || null }}>
+                        <img src={props.img} alt={props.title} ref={imageRef} />
                     </div>
                     <h3 className="featured-work__title"
                         ref={titleRef}
