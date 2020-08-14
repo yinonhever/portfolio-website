@@ -3,6 +3,7 @@ const works = [
         id: "github-timeline-app",
         title: "Github Timeline App",
         featured: true,
+        featuredText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation.",
         mainImg: "./images/github-timeline/desktop-with-timeline.png",
         url: "https://github-timeline-iota.vercel.app/"
     },
@@ -10,6 +11,7 @@ const works = [
         id: "where-in-the-world",
         title: "Where in the World?",
         featured: true,
+        featuredText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
         mainImg: "./images/where-in-the-world/desktop-home.png",
         url: "https://where-in-the-world-olive.vercel.app/"
     },
@@ -17,6 +19,7 @@ const works = [
         id: "rock-paper-scissors-lizard-spock",
         title: "Rock, Paper, Scissors, Lizard, Spock",
         featured: true,
+        featuredText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
         mainImg: "./images/rock-paper-scissors/desktop-initial.png",
         url: "https://rock-paper-scissors-two.vercel.app/"
     },
@@ -24,6 +27,7 @@ const works = [
         id: "myteam",
         title: "Myteam Website",
         featured: true,
+        featuredText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
         mainImg: "./images/myteam/desktop-home.png",
         url: "https://myteam-nu.vercel.app/"
     },
@@ -31,6 +35,7 @@ const works = [
         id: "scoot",
         title: "Scoot Website",
         featured: true,
+        featuredText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
         mainImg: "./images/scoot/desktop-home.png",
         url: "https://scoot-lake.now.sh/"
     },
@@ -38,6 +43,7 @@ const works = [
         id: "dine",
         title: "Dine Website",
         featured: true,
+        featuredText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
         mainImg: "./images/dine/desktop-home.png",
         url: "https://dine-henna.now.sh/"
     },
