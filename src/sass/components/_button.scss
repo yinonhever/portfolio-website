@@ -1,9 +1,9 @@
 .button {
   display: block;
+
   text-transform: uppercase;
   font-size: 1.6rem;
   padding: 1.2rem 4rem 1rem;
-  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   letter-spacing: 1.5px;
 }
@@ -17,8 +17,7 @@
   color: $color-azure !important;
   border: 1px solid $color-azure !important;
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: #fff !important;
     transition: all 0.5s cubic-bezier(0.02, 0.01, 0.47, 1);
     transform: scale(1.1) translateZ(0);
