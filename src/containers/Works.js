@@ -9,18 +9,17 @@ const Works = () => {
     const [gallery, setGallery] = useState([]);
     const [showGallery, setShowGallery] = useState(false);
 
-    const openGalleryHandler = selectedGallery => {
+    const openGalleryHandler = selection => {
         setShowGallery(true);
-        setGallery(selectedGallery);
-    }
-
-    const closeGalleryHandler = () => {
-        setShowGallery(false);
+        setGallery(selection);
     }
 
     return (
         <Aux>
-            <div></div>
+            {works.map((work, index) =>
+                <div>
+
+                </div>)}
         </Aux>
     )
 }
