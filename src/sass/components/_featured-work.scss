@@ -11,7 +11,9 @@
       transition: transform 0.6s;
 
       &:hover {
-        transform: scale(1.5);
+        @media (hover: hover) {
+          transform: scale(1.5);
+        }
       }
     }
   }
@@ -40,7 +42,7 @@
   }
 
   &__content {
-    padding: 0 3rem 5rem;
+    padding: 0 3rem 4rem;
 
     @include respond(mobile) {
       padding: 0 3rem 3.5rem;
@@ -48,5 +50,19 @@
   }
 
   &__text {
+    margin-bottom: 1.7rem;
+  }
+
+  .button {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    max-width: 22rem;
+    font-size: 1.4rem;
+    margin: auto;
+
+    &:not(:last-child) {
+      margin-bottom: 0.1rem;
+    }
   }
 }

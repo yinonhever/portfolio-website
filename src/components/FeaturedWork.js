@@ -1,15 +1,16 @@
 import React from "react";
 import useDimensions from "react-use-dimensions";
 import Fade from "react-reveal/Fade";
+import Button from "./Button";
 
 const FeaturedWork = props => {
     const [imageRef, imageSize] = useDimensions();
     const [titleRef, titleSize] = useDimensions();
     const imageHeight = () => {
         let height;
-        if (window.innerWidth > 450) height = imageSize.width * 60 / 100; 
+        if (window.innerWidth > 450) height = imageSize.width * 60 / 100;
         else height = imageSize.width * 70 / 100;
-        if (height <= imageSize.height) return height; 
+        if (height <= imageSize.height) return height;
         else return imageSize.height;
     }
 
@@ -31,6 +32,13 @@ const FeaturedWork = props => {
                     <p className="paragraph featured-work__text">
                         {props.text}
                     </p>
+                    <div className="featured-work__buttons">
+                        <a rel="noopener noreferrer" href={props.url} target="_blank"
+                            style={{ textDecoration: "none" }} className="button">
+                            <Button pill>Go to website</Button>
+                        </a>
+                        <Button fill>View Gallery</Button>
+                    </div>
                 </div>
             </div>
         </Fade>

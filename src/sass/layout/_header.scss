@@ -35,44 +35,28 @@
 
   &__navigation {
     display: flex;
+    margin-right: -4rem;
   }
 
   &__nav-link {
     color: inherit;
     text-decoration: none;
-    font-family: "Spartan", sans-serif;
-    font-weight: 700;
-    color: $color-blue-dark;
     display: block;
-    padding: 1.25rem 0;
-    position: relative;
-    transition: all 0.5s;
-
-    &:hover {
-      color: $color-blue-light-2;
-      transform: translateY(-0.75rem);
-    }
 
     &:not(:last-child) {
-      margin-right: 6rem;
+      margin-right: 1rem;
+
+      @include respond(tablet) {
+        margin-right: -2rem;
+      }
     }
 
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 100%;
-      width: 100%;
-      height: 3px;
-      background-color: $color-blue-light-2;
-      opacity: 0;
-      transform: translateY(2rem);
-      transition: all 0.5s;
-    }
-
-    &:hover::after {
-      opacity: 1;
-      transform: translateY(0);
+    .button {
+      font-family: inherit;
+      text-transform: initial;
+      font-family: "Spartan", sans-serif;
+      font-weight: 700;
+      color: $color-blue;
     }
   }
 
@@ -124,17 +108,13 @@
     }
 
     &__nav-link {
-      padding: 0;
-      color: #fff;
-      transform: none !important;
-
       &:not(:last-child) {
         margin-right: 0;
         margin-bottom: 3.5rem;
       }
 
-      &::after {
-        display: none;
+      .button {
+        color: #fff !important;
       }
     }
   }

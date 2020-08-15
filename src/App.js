@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import "./css/bttn.min.css";
 import "./sass/main.scss";
 import Layout from "./containers/Layout";
 import Home from "./containers/Home";

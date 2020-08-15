@@ -2,7 +2,7 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 import illustration from "../images/Illustrations/coding_2.svg";
 
-const Intro = () => (
+const Intro = () => 
     <section className="intro">
         <div className="intro__container">
             <Fade left cascade duration={400}>
@@ -20,6 +20,5 @@ const Intro = () => (
             </Fade>
         </div>
     </section>
-)
 
 export default Intro;

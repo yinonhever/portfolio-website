@@ -1,18 +1,18 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import NavigationItem from "./NavigationItem";
 
-const Navigation = props => (
+const navigationItems = [
+    { link: "/", text: "About" },
+    { link: "/works", text: "Works" },
+    { link: "/contact", text: "Contact" }
+]
+
+const Navigation = props =>
     <nav className="header__navigation">
-        <NavLink to="/" className="header__nav-link" onClick={props.itemClicked}>
-            About
-        </NavLink>
-        <NavLink to="/works" className="header__nav-link" onClick={props.itemClicked}>
-            Works
-        </NavLink>
-        <NavLink to="/contact" className="header__nav-link" onClick={props.itemClicked}>
-            Contact
-        </NavLink>
+        {navigationItems.map(item => 
+            <NavigationItem key={item.text} link={item.link} clicked={props.itemClicked}>
+                {item.text}
+            </NavigationItem>)}
     </nav>
-)
 
 export default Navigation;

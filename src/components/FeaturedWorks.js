@@ -1,15 +1,17 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
+import { Link } from "react-router-dom";
+import Button from "./Button";
 import works from "../data";
 import FeaturedWork from "./FeaturedWork";
 
 const featuredWorks = works.filter(work => work.featured);
 
-const FeaturedWorks = () => (
+const FeaturedWorks = () =>
     <section className="featured-works">
-        <Fade bottom duration={800}>
-            <h2 className="section-heading featured-works__heading">Featured Works</h2>
-        </Fade>
+        <h2 className="section-heading featured-works__heading">Featured Works</h2>
+        <Link to="/works" style={{ textDecoration: "none" }}>
+            <Button unite extra="featured-works__view-all">View All</Button>
+        </Link>
         <div className="featured-works__grid">
             {featuredWorks.map((work, index) =>
                 <FeaturedWork
@@ -22,6 +24,5 @@ const FeaturedWorks = () => (
                 />)}
         </div>
     </section>
-)
 
 export default FeaturedWorks;

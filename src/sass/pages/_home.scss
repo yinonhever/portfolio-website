@@ -25,17 +25,16 @@
 /*** FEATURED WORKS SECTION ***/
 .featured-works {
   padding: 8rem $padding-side-desktop;
-  //   background-color: #f7f7f7;
-  background-color: rgba($color-azure-light, 0.2);
+  background-color: #fafafa;
 
-  &__heading {
-    margin-bottom: 6rem;
+  &__view-all {
+    margin: 3rem auto 5rem;
   }
 
   &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 6rem;
+    grid-gap: 4.4vw;
     max-width: 100rem;
     margin: auto;
 
@@ -45,6 +44,7 @@
 
     @include respond(tablet) {
       grid-template-columns: 1fr;
+      grid-gap: 6rem;
       max-width: 50rem;
     }
   }
