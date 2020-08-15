@@ -11,4 +11,4 @@ const Button = props => {
     return <button className={classes.trim()}>{props.children}</button>;
 }
 
-export default Button;
+export default React.memo(Button);

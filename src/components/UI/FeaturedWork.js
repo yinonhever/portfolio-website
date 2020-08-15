@@ -14,8 +14,10 @@ const FeaturedWork = props => {
         else return imageSize.height;
     }
 
+    console.log("rendering FeaturedWork");
+
     return (
-        <Fade left mirror={props.mirror} duration={800}>
+        <Fade left mirror={props.mirror} duration={600}>
             <div className="featured-work">
                 <a rel="noopener noreferrer" href={props.url} target="_blank">
                     <div className="featured-work__img"

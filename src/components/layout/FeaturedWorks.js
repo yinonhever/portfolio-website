@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Button from "./Button";
-import works from "../data";
-import FeaturedWork from "./FeaturedWork";
+import Button from "../UI/Button";
+import works from "../../data";
+import FeaturedWork from "../UI/FeaturedWork";
 
 const featuredWorks = works.filter(work => work.featured);
 

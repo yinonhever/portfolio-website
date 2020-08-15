@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Logo from "./Logo";
-import NavToggle from "./NavToggle";
-import Navigation from "./Navigation";
+import Logo from "../UI/Logo";
+import NavToggle from "../UI/NavToggle";
+import Navigation from "../UI/Navigation";
 
 const Header = () => {
     const [navOpen, setNavOpen] = useState(false);

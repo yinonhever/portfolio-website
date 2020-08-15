@@ -1,7 +1,7 @@
 import React from "react";
 import Aux from "../hoc/Auxilliary";
-import PageHeading from "../components/PageHeading";
-import Form from "../components/Form";
+import PageHeading from "../components/layout/PageHeading";
+import Form from "../components/UI/Form";
 
 const Contact = () => 
     <Aux>

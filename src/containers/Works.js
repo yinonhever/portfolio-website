@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import works from "../data";
 import Aux from "../hoc/Auxilliary";
-import PageHeading from "../components/PageHeading";
-import Work from "../components/Work";
-import Gallery from "../components/Gallery";
+import PageHeading from "../components/layout/PageHeading";
+import Work from "../components/UI/Work";
+import Gallery from "../components/layout/Gallery";
 
 const Works = () => {
     const [gallery, setGallery] = useState([]);
