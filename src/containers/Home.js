@@ -10,6 +10,7 @@ const Home = () =>
         <Intro />
         <FeaturedWorks />
         <Features />
+        <Tools />
     </Aux>
 
 export default Home;

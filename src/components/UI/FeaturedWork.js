@@ -1,4 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import Button from "./Button";
 
@@ -8,15 +9,19 @@ const FeaturedWork = props => {
     const imageRef = useRef();
     const titleRef = useRef();
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         const adjustDimensions = () => {
-            const { width, height } = imageRef.current.getBoundingClientRect();
-            setImageBoxHeight(() => {
-                let boxHeight = window.innerWidth > 450 ? width * 60 / 100 : width * 65 / 100;
-                return boxHeight <= height || height === 0 ? boxHeight : height;
-            });
-            const titleHeight = titleRef.current.getBoundingClientRect().height;
-            setTitleMargin(-titleHeight / 2);
+            if (imageRef.current) {
+                const { width, height } = imageRef.current.getBoundingClientRect();
+                setImageBoxHeight(() => {
+                    let boxHeight = window.innerWidth > 450 ? width * 60 / 100 : width * 65 / 100;
+                    return boxHeight <= height || height === 0 ? boxHeight : height;
+                });
+            }
+            if (titleRef.current) {
+                const titleHeight = titleRef.current.getBoundingClientRect().height;
+                setTitleMargin(-titleHeight / 2);
+            }
         }
         adjustDimensions();
         window.addEventListener("resize", adjustDimensions);
@@ -45,7 +50,9 @@ const FeaturedWork = props => {
                             style={{ textDecoration: "none" }} className="button">
                             <Button pill>Go to website</Button>
                         </a>
-                        <Button fill>View Gallery</Button>
+                        <Link to={"/works/" + props.id} style={{ textDecoration: "none" }}>
+                            <Button unite>View Gallery</Button>
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -51,6 +51,7 @@
 
   &__text {
     margin-bottom: 1.7rem;
+    text-align: center;
 
     @include respond(tablet) {
       text-align: center;

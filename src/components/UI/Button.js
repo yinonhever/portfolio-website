@@ -8,7 +8,11 @@ const Button = props => {
     if (props.stretch) classes += "bttn-stretch ";
     if (props.extra) classes += props.extra;
 
-    return <button className={classes.trim()}>{props.children}</button>;
+    return (
+        <button className={classes.trim()} onClick={props.clicked || null}>
+            {props.children}
+        </button>
+    )
 }
 
 export default React.memo(Button);

@@ -1,8 +1,8 @@
 import React from "react";
-import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 
 const Feature = props => (
-    <Zoom duration={600}>
+    <Fade left={props.left} right={props.right} duration={600}>
         <div className="feature">
             <img className="feature__img" src={props.img} alt="illustration" />
             <h3 className="feature__title">
@@ -12,7 +12,7 @@ const Feature = props => (
                 {props.children}
             </p>
         </div>
-    </Zoom>
+    </Fade>
 )
 
 export default Feature;

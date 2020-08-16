@@ -1,27 +1,18 @@
-import React, { useState } from "react";
-import works from "../data";
+import React from "react";
+import { Switch, Route } from "react-router-dom";
 import Aux from "../hoc/Auxilliary";
 import PageHeading from "../components/layout/PageHeading";
-import Work from "../components/UI/Work";
+import WorksContent from "../components/layout/WorksContent";
 import Gallery from "../components/layout/Gallery";
 
-const Works = () => {
-    const [gallery, setGallery] = useState([]);
-    const [showGallery, setShowGallery] = useState(false);
-
-    const openGalleryHandler = selection => {
-        setShowGallery(true);
-        setGallery(selection);
-    }
-
-    return (
-        <Aux>
-            {works.map((work, index) =>
-                <div>
-
-                </div>)}
-        </Aux>
-    )
-}
+const Works = () => (
+    <Aux>
+        <PageHeading title="Works" />
+        <Switch>
+            <Route path="/works" exact component={WorksContent} />
+            <Route path="/works/:id" component={Gallery} />
+        </Switch>
+    </Aux>
+)
 
 export default Works;

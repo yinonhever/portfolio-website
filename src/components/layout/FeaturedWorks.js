@@ -19,6 +19,7 @@ const FeaturedWorks = () => (
                     title={work.title}
                     text={work.featuredText}
                     url={work.url}
+                    id={work.id}
                     mirror={index % 2 !== 0}
                     key={work.id}
                 />)}

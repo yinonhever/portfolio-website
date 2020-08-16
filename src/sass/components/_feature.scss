@@ -31,12 +31,4 @@
       font-size: 2.2rem;
     }
   }
-
-  &__text {
-    font-size: 1.55rem;
-
-    @include respond(mobile) {
-      font-size: 1.5rem;
-    }
-  }
 }

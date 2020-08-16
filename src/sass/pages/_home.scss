@@ -1,7 +1,7 @@
 /*** INTRO SECTION ***/
 .intro {
   &__container {
-    padding: 3rem $padding-side-desktop 10rem;
+    padding: 3rem $padding-side-desktop 8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -117,4 +117,15 @@
       }
     }
   }
+}
+
+.tools {
+  background-color: $color-azure-light;
+  color: $color-blue-dark;
+  padding: 8rem $padding-side-desktop;
+
+  @include respond(tablet) {
+    padding: 6rem $padding-side-mobile;
+  }
+
 }
