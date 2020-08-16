@@ -51,6 +51,10 @@
 
   &__text {
     margin-bottom: 1.7rem;
+
+    @include respond(tablet) {
+      text-align: center;
+    }
   }
 
   .button {
