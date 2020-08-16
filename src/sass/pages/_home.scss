@@ -5,10 +5,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include respond(tablet) {
+      flex-direction: column-reverse;
+      text-align: center;
+      padding: 3rem $padding-side-mobile 7rem;
+    }
   }
 
   &__content {
     width: 35vw;
+
+    @include respond(tablet) {
+      width: 100%;
+      max-width: 55rem;
+    }
   }
 
   &__heading {
@@ -16,20 +27,42 @@
     letter-spacing: -2px;
     line-height: 1.1;
     margin-bottom: 2rem;
+
+    @include respond(tablet-land) {
+      font-size: 5rem;
+    }
+
+    @include respond(mobile) {
+      font-size: 4rem;
+    }
   }
 
   &__img {
     width: 37.5vw;
+
+    @include respond(tablet) {
+      width: 100%;
+      max-width: 45rem;
+      margin-bottom: 5rem;
+    }
   }
 }
 
 /*** FEATURED WORKS SECTION ***/
 .featured-works {
-  padding: 8rem $padding-side-desktop;
+  padding: 8rem $padding-side-desktop 10rem;
   background-color: #fafafa;
+
+  @include respond(tablet) {
+    padding: 6rem $padding-side-mobile 7rem;
+  }
 
   &__view-all {
     margin: 3rem auto 5rem;
+
+    @include respond(mobile) {
+      font-size: 1.4rem;
+    }
   }
 
   &__grid {
@@ -47,6 +80,41 @@
       grid-template-columns: 1fr;
       grid-gap: 6rem;
       max-width: 50rem;
+    }
+  }
+}
+
+/*** FEATURES SECTION ***/
+.features {
+  padding: 8rem $padding-side-desktop;
+  text-align: center;
+
+  @include respond(tablet) {
+    padding: 6rem $padding-side-mobile;
+  }
+
+  &__heading {
+    margin-bottom: 6rem;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(tablet) {
+      flex-direction: column;
+      max-width: 50rem;
+      margin: auto;
+    }
+
+    .feature:not(:last-child) {
+      margin-right: 10vw;
+
+      @include respond(tablet) {
+        margin-right: 0;
+        margin-bottom: 7rem;
+      }
     }
   }
 }

@@ -7,12 +7,13 @@ const navigationItems = [
     { link: "/contact", text: "Contact" }
 ]
 
-const Navigation = props =>
+const Navigation = props => (
     <nav className="header__navigation">
-        {navigationItems.map(item => 
+        {navigationItems.map(item =>
             <NavigationItem key={item.text} link={item.link} clicked={props.itemClicked}>
                 {item.text}
             </NavigationItem>)}
     </nav>
+)
 
 export default Navigation;

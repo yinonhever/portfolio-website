@@ -9,6 +9,7 @@ const Home = () =>
     <Aux>
         <Intro />
         <FeaturedWorks />
+        <Features />
     </Aux>
 
 export default Home;

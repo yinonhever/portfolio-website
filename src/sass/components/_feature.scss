@@ -1,0 +1,42 @@
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 40rem;
+
+  @include respond(tablet) {
+    max-width: initial;
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 28rem;
+    margin-bottom: 4rem;
+
+    @include respond(tablet) {
+      max-width: 32rem;
+    }
+
+    @include respond(mobile) {
+      width: 85%;
+    }
+  }
+
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+
+    @include respond(mobile) {
+      font-size: 2.2rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.55rem;
+
+    @include respond(mobile) {
+      font-size: 1.4rem;
+    }
+  }
+}

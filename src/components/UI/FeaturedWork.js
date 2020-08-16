@@ -1,32 +1,38 @@
-import React from "react";
-import useDimensions from "react-use-dimensions";
+import React, { useEffect, useRef, useState } from "react";
 import Fade from "react-reveal/Fade";
 import Button from "./Button";
 
 const FeaturedWork = props => {
-    const [imageRef, imageSize] = useDimensions();
-    const [titleRef, titleSize] = useDimensions();
-    const imageHeight = () => {
-        let height;
-        if (window.innerWidth > 450) height = imageSize.width * 60 / 100;
-        else height = imageSize.width * 70 / 100;
-        if (height <= imageSize.height) return height;
-        else return imageSize.height;
-    }
+    const [imageBoxHeight, setImageBoxHeight] = useState(null);
+    const [titleMargin, setTitleMargin] = useState(null);
+    const imageRef = useRef();
+    const titleRef = useRef();
 
-    console.log("rendering FeaturedWork");
+    useEffect(() => {
+        const adjustDimensions = () => {
+            const { width, height } = imageRef.current.getBoundingClientRect();
+            setImageBoxHeight(() => {
+                let boxHeight = window.innerWidth > 450 ? width * 60 / 100 : width * 65 / 100;
+                return boxHeight <= height || height === 0 ? boxHeight : height;
+            });
+            const titleHeight = titleRef.current.getBoundingClientRect().height;
+            setTitleMargin(-titleHeight / 2);
+        }
+        adjustDimensions();
+        window.addEventListener("resize", adjustDimensions);
+    }, [])
 
     return (
         <Fade left mirror={props.mirror} duration={600}>
             <div className="featured-work">
                 <a rel="noopener noreferrer" href={props.url} target="_blank">
                     <div className="featured-work__img"
-                        style={{ height: imageHeight() || null }}>
+                        style={{ height: imageBoxHeight || null }}>
                         <img src={props.img} alt={props.title} ref={imageRef} />
                     </div>
                     <h3 className="featured-work__title"
                         ref={titleRef}
-                        style={{ marginTop: -(titleSize.height / 2) || null }}>
+                        style={{ marginTop: titleMargin || null }}>
                         <span>{props.title}</span>
                     </h3>
                 </a>

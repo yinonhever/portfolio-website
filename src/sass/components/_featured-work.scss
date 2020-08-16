@@ -26,7 +26,7 @@
     span {
       display: inline-block;
       color: #fff;
-      padding: 1.2rem 3rem;
+      padding: 1.35rem 3rem 1.05rem;
       background-image: linear-gradient(
         to right,
         $color-blue-dark,
@@ -63,6 +63,10 @@
 
     &:not(:last-child) {
       margin-bottom: 0.1rem;
+    }
+
+    @include respond(mobile) {
+      font-size: 1.2rem;
     }
   }
 }

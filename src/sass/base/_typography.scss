@@ -1,5 +1,5 @@
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Spartan", sans-serif;
   font-size: 1.6rem;
   font-weight: 500; 
 }
@@ -8,7 +8,6 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Spartan", sans-serif;
   font-weight: 900;
   color: $color-blue-dark;
 }
@@ -17,11 +16,15 @@ h4 {
   line-height: 1.6;
 
   @include respond(mobile) {
-    font-size: 1.5rem;
+    font-size: 1.45rem;
   }
 }
 
 .section-heading {
   font-size: 4rem;
   text-align: center;
+
+  @include respond(mobile) {
+    font-size: 3.5rem;
+  }
 }

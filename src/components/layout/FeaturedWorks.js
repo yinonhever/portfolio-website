@@ -6,7 +6,7 @@ import FeaturedWork from "../UI/FeaturedWork";
 
 const featuredWorks = works.filter(work => work.featured);
 
-const FeaturedWorks = () =>
+const FeaturedWorks = () => (
     <section className="featured-works">
         <h2 className="section-heading featured-works__heading">Featured Works</h2>
         <Link to="/works" style={{ textDecoration: "none" }}>
@@ -24,5 +24,6 @@ const FeaturedWorks = () =>
                 />)}
         </div>
     </section>
+)
 
 export default FeaturedWorks;
