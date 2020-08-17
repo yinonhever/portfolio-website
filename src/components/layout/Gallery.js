@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import works from "../../data";
+import Aux from "../../hoc/Auxilliary";
 import BackButton from "../UI/BackButton";
 import SelectedImage from "../UI/SelectedImage";
 
@@ -16,10 +17,12 @@ const Gallery = props => {
     }, [props])
 
     return (
-        <main className="gallery">
+        <Aux>
             <BackButton />
-            <div>{work.title}</div>
-        </main>
+            <main className="gallery">
+                <div>{work.title}</div>
+            </main>
+        </Aux>
     )
 }
 

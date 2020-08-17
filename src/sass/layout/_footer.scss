@@ -10,6 +10,10 @@
     text-align: center;
   }
 
+  @include respond(mobile) {
+    font-size: 1.5rem;
+  }
+
   &__container {
     display: flex;
     align-items: center;
@@ -96,6 +100,10 @@
     @include respond(mobile-land) {
       margin-top: 3rem;
       line-height: 1.5;
+    }
+
+    @include respond(mobile) {
+      font-size: 1.4rem;
     }
   }
 }
