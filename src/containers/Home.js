@@ -5,12 +5,13 @@ import FeaturedWorks from "../components/layout/FeaturedWorks";
 import Features from "../components/layout/Features";
 import Tools from "../components/layout/Tools";
 
-const Home = () =>
+const Home = () => (
     <Aux>
         <Intro />
         <FeaturedWorks />
         <Features />
         <Tools />
     </Aux>
+)
 
 export default Home;

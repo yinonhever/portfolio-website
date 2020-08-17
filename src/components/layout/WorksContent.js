@@ -4,8 +4,7 @@ import Work from "../UI/Work";
 
 const WorksContent = () => (
     <main className="works">
-        {works.map((work, index) =>
-            "work")}
+        
     </main>
 )
 
