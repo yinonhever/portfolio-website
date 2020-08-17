@@ -17,7 +17,13 @@ const Tools = () => (
     <section className="tools">
         <h2 className="section-heading tools__heading">{"Tools & Languages"}</h2>
         <div className="tools__grid">
-            {items.map(item => <ToolsItem key={item.text} text={item.text} icon={item.icon} />)}
+            {items.map((item, index) =>
+                <ToolsItem
+                    key={item.text}
+                    text={item.text}
+                    icon={item.icon}
+                    mirror={index + 1 > items.length / 2}
+                />)}
         </div>
     </section>
 )
