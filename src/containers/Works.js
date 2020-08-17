@@ -7,7 +7,7 @@ import Gallery from "../components/layout/Gallery";
 
 const Works = () => (
     <Aux>
-        <PageHeading title="Works" />
+        <PageHeading id="works" />
         <Switch>
             <Route path="/works" exact component={WorksContent} />
             <Route path="/works/:id" component={Gallery} />

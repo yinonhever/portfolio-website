@@ -5,7 +5,7 @@ import Form from "../components/UI/Form";
 
 const Contact = () => (
     <Aux>
-        <PageHeading title="Contact" />
+        <PageHeading id="contact" />
     </Aux>
 )
 

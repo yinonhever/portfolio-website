@@ -26,7 +26,7 @@ const works = [
     {
         id: "myteam",
         title: "Myteam Website",
-        featured: true,
+        featured: false,
         featuredText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
         mainImg: "./images/myteam/desktop-home.png",
         url: "https://myteam-nu.vercel.app/"
@@ -42,7 +42,7 @@ const works = [
     {
         id: "dine",
         title: "Dine Website",
-        featured: true,
+        featured: false,
         featuredText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
         mainImg: "./images/dine/desktop-home.png",
         url: "https://dine-henna.now.sh/"

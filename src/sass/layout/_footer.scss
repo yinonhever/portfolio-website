@@ -18,6 +18,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 95rem;
+    margin: auto;
 
     @include respond(mobile-land) {
       flex-direction: column;
