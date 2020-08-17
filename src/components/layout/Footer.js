@@ -6,9 +6,7 @@ const Footer = () => (
     <footer className="footer">
         <div className="footer__container">
             <div className="footer__left">
-                <Link to="/">
-                    <Logo white />
-                </Link>
+                <Logo white />
                 <div className="footer__navigation">
                     <Link to="/" className="footer__link">About</Link>
                     <Link to="/works" className="footer__link">Works</Link>
