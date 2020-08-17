@@ -14,7 +14,7 @@ const FeaturedWork = props => {
             if (imageRef.current) {
                 const { width, height } = imageRef.current.getBoundingClientRect();
                 setImageBoxHeight(() => {
-                    let boxHeight = window.innerWidth > 450 ? width * 60 / 100 : width * 65 / 100;
+                    const boxHeight = window.innerWidth > 450 ? width * 60 / 100 : width * 65 / 100;
                     return boxHeight <= height || height === 0 ? boxHeight : height;
                 });
             }

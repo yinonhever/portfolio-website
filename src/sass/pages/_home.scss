@@ -128,4 +128,58 @@
     padding: 6rem $padding-side-mobile;
   }
 
+  &__heading {
+    margin-bottom: 6rem;
+  }
+
+  &__grid {
+    max-width: 70rem;
+    margin: auto;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    grid-template-rows: repeat(5, min-content);
+    grid-row-gap: 2rem;
+
+    @include respond(tablet) {
+      max-width: 55rem;
+    }
+
+    @include respond(mobile-land) {
+      max-width: 50rem;
+    }
+
+    @media only screen and (max-width: 345px) {
+      grid-auto-flow: initial;
+      justify-items: center;
+      grid-template-rows: unset;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item-text {
+    font-size: 2.7rem;
+    font-weight: 600;
+
+    @include respond(mobile) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__item-icon {
+    fill: $color-blue-dark;
+    margin-right: 1.2rem;
+    height: 5rem;
+    width: 5rem;
+
+    @include respond(mobile) {
+      height: 3rem;
+      width: 3rem;
+    }
+  }
 }
