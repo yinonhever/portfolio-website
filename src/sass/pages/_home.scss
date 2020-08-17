@@ -178,6 +178,7 @@
     width: 5rem;
 
     @include respond(mobile) {
+      margin-right: 1rem;
       height: 3rem;
       width: 3rem;
     }

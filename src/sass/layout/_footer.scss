@@ -2,6 +2,100 @@
   background-color: $color-blue-dark;
   color: #fff;
   padding: 5rem $padding-side-desktop;
-  display: flex;
-  align-items: center;
+  font-size: 1.55rem;
+  font-weight: 500;
+
+  @include respond(tablet) {
+    padding: 5rem $padding-side-mobile;
+    text-align: center;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include respond(mobile-land) {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  &__left,
+  &__right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__left {
+    align-items: center;
+
+    @include respond(mobile-land) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  .logo {
+    margin-bottom: 4rem;
+
+    @include respond(mobile-land) {
+      margin-bottom: 3rem;
+      width: 17rem;
+    }
+  }
+
+  &__navigation {
+    display: flex;
+
+    @include respond(mobile-land) {
+      justify-content: space-between;
+      width: 100%;
+      max-width: 27rem;
+      margin: auto;
+    }
+  }
+
+  &__navigation &__link:not(:last-child) {
+    margin-right: 5rem;
+
+    @include respond(mobile-land) {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: $color-azure;
+    }
+  }
+
+  &__link-icon {
+    font-size: 2.2rem;
+    margin-right: 1rem;
+  }
+
+  &__right {
+    align-items: flex-end;
+
+    @include respond(mobile-land) {
+      align-items: center;
+    }
+  }
+
+  &__copyright {
+    color: rgba(#fff, 0.7);
+    font-size: 1.45rem;
+    margin-top: 6rem;
+
+    @include respond(mobile-land) {
+      margin-top: 3rem;
+      line-height: 1.5;
+    }
+  }
 }
