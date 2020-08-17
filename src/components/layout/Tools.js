@@ -22,7 +22,7 @@ const Tools = () => (
                     key={item.text}
                     text={item.text}
                     icon={item.icon}
-                    mirror={index + 1 > items.length / 2}
+                    mirror={index + 1 > Math.round(items.length / 2)}
                 />)}
         </div>
     </section>
