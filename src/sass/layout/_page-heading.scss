@@ -1,0 +1,19 @@
+.page-heading {
+  background-color: $color-blue-dark;
+  background-image: url(../../images/backgrounds/Parabolic-Portal.svg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 25rem;
+  position: relative;
+
+  &__title {
+    position: absolute;
+    width: 90%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5.5rem;
+    color: #fff;
+  }
+}
