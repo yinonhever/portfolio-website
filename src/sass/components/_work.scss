@@ -118,8 +118,9 @@
     padding-right: 3rem;
 
     @include respond(mobile) {
-        width: 100%;
-        max-width: 25rem;
+      width: 100%;
+      max-width: 25rem;
+      font-size: 1.2rem;
     }
   }
 }

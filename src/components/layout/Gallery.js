@@ -8,10 +8,12 @@ import SelectedImage from "../UI/SelectedImage";
 const Gallery = props => {
     const [work, setWork] = useState({});
     const [selectedImage, setSelectedImage] = useState({});
+    
     useEffect(() => {
         const matchingWork = works.find(work => work.id === props.match.params.id);
         if (matchingWork) {
             setWork(matchingWork);
+            window.scrollTo(0, 0);
         }
         else {
             props.history.push("/works");
