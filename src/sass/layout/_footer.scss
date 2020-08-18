@@ -34,9 +34,10 @@
   }
 
   &__left {
-    align-items: center;
+    align-items: flex-start;
 
     @include respond(mobile-land) {
+      align-items: center;
       margin-bottom: 5rem;
     }
   }

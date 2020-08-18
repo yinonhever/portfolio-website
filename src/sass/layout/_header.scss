@@ -11,6 +11,10 @@
     padding: 3rem $padding-side-mobile;
   }
 
+  @include respond(mobile) {
+    padding: 2rem $padding-side-mobile;
+  }
+
   &__nav-toggle {
     display: none;
   }
