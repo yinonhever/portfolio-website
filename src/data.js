@@ -6,7 +6,19 @@ const works = [
         featuredText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation.",
         mainImg: "/images/github-timeline/desktop-with-timeline.png",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing.",
-        url: "https://github-timeline-iota.vercel.app/"
+        url: "https://github-timeline-iota.vercel.app/",
+        gallery: [
+            {
+                title: "Desktop version",
+                items: [
+                    {
+                        type: "desktop",
+                        src: "/images/github-timeline/desktop-with-timeline.png",
+                        caption: "Desktop – with timeline"
+                    }
+                ]
+            }
+        ]
     },
     {
         id: "where-in-the-world",
@@ -14,8 +26,20 @@ const works = [
         featured: true,
         featuredText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
         mainImg: "/images/where-in-the-world/desktop-home.png",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.", 
-        url: "https://where-in-the-world-olive.vercel.app/"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        url: "https://where-in-the-world-olive.vercel.app/",
+        gallery: [
+            {
+                title: "Desktop version",
+                items: [
+                    {
+                        type: "desktop",
+                        src: "/images/where-in-the-world/desktop-home.png",
+                        caption: "Desktop – Home page (Dark)"
+                    }
+                ]
+            }
+        ]
     },
     {
         id: "rock-paper-scissors-lizard-spock",
@@ -29,18 +53,44 @@ const works = [
     {
         id: "myteam",
         title: "Myteam Website",
+        featured: true,
+        featuredText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
         mainImg: "/images/myteam/desktop-home.png",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation.",
-        url: "https://myteam-nu.vercel.app/"
+        url: "https://myteam-nu.vercel.app/",
+        gallery: [
+            {
+                title: "Desktop version",
+                items: [
+                    {
+                        type: "desktop",
+                        src: "/images/myteam/desktop-home.png",
+                        caption: "Desktop – Home page"
+                    }
+                ]
+            }
+        ]
     },
     {
         id: "scoot",
         title: "Scoot Website",
-        featured: true,
+        featured: false,
         featuredText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
         mainImg: "/images/scoot/desktop-home.png",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-        url: "https://scoot-lake.now.sh/"
+        url: "https://scoot-lake.now.sh/",
+        gallery: [
+            {
+                title: "Desktop version",
+                items: [
+                    {
+                        type: "desktop",
+                        src: "/images/scoot/desktop-home.png",
+                        caption: "Desktop – Home page"
+                    }
+                ]
+            }
+        ]
     },
     {
         id: "dine",

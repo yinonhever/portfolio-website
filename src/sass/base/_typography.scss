@@ -23,6 +23,7 @@ h4 {
 .section-heading {
   font-size: 4.2rem;
   text-align: center;
+  position: relative;
 
   @include respond(mobile) {
     font-size: 3.5rem;

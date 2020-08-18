@@ -20,30 +20,15 @@
   }
 }
 
-.bttn-unite,
-.bttn-fill {
+.bttn-unite {
   background-color: transparent !important;
 }
 
 .bttn-fill {
-  color: $color-azure !important;
-  border: 1px solid $color-azure !important;
-
-  &:hover {
-    color: #fff !important;
-    transition: all 0.5s cubic-bezier(0.02, 0.01, 0.47, 1);
-    transform: scale(1.1) translateZ(0);
-  }
-
   &,
   &::before,
   &::after {
     border-radius: 100px !important;
-  }
-
-  &::before,
-  &::after {
-    background-color: $color-azure !important;
   }
 }
 

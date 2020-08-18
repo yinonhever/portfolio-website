@@ -98,8 +98,7 @@
   &__button {
     @include respond(mobile) {
       width: 100%;
-      display: flex;
-      justify-content: center;
+      max-width: 25rem;
     }
 
     &:not(:last-child) {
@@ -118,9 +117,8 @@
     padding-right: 3rem;
 
     @include respond(mobile) {
-      width: 100%;
-      max-width: 25rem;
       font-size: 1.2rem;
+      width: 100%;
     }
   }
 }
