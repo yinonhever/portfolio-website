@@ -25,6 +25,7 @@ const Gallery = props => {
             <BackButton />
             <main className="gallery">
                 <h2 className="gallery__heading">{work.title}</h2>
+                <SelectedImage />
             </main>
         </Aux>
     )

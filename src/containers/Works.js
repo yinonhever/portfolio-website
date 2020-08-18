@@ -7,6 +7,7 @@ import Gallery from "../components/layout/Gallery";
 
 const Works = () => {
     useEffect(() => window.scrollTo(0, 0), []);
+    
     return (
         <Aux>
             <PageHeading title="Works" />
