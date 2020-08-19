@@ -37,6 +37,14 @@
     font-size: 1.6rem;
   }
 
+  &__intro-buttons {
+    display: flex;
+
+    & > *:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
   &__container {
     display: flex;
   }
@@ -69,7 +77,6 @@
     overflow: hidden;
     display: flex;
     align-items: center;
-    // background-color: #e0e0e0;
     box-shadow: $bshadow-1;
     outline-offset: 0.5rem;
     transition: all 0.5s;

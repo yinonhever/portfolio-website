@@ -93,20 +93,20 @@
       flex-direction: column;
       align-items: center;
     }
-  }
 
-  &__button {
-    @include respond(mobile) {
-      width: 100%;
-      max-width: 25rem;
-    }
-
-    &:not(:last-child) {
-      margin-right: 2rem;
-
+    & > * {
       @include respond(mobile) {
-        margin-right: 0;
-        margin-bottom: 1rem;
+        width: 100%;
+        max-width: 25rem;
+      }
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+
+        @include respond(mobile) {
+          margin-right: 0;
+          margin-bottom: 1rem;
+        }
       }
     }
   }

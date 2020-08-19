@@ -2,6 +2,7 @@ import React, { useLayoutEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import Button from "./Button";
+import ExternalLink from "./ExternalLink";
 
 const FeaturedWork = props => {
     const [imageBoxHeight, setImageBoxHeight] = useState(null);
@@ -30,7 +31,7 @@ const FeaturedWork = props => {
     return (
         <Fade left mirror={props.mirror} duration={600}>
             <div className="featured-work">
-                <a rel="noopener noreferrer" href={props.url} target="_blank">
+                <ExternalLink link={props.url}>
                     <div className="featured-work__img"
                         style={{ height: imageBoxHeight || null }}>
                         <img src={props.img} alt={props.title} ref={imageRef} />
@@ -40,17 +41,16 @@ const FeaturedWork = props => {
                         style={{ marginTop: titleMargin || null }}>
                         <span>{props.title}</span>
                     </h3>
-                </a>
+                </ExternalLink>
                 <div className="featured-work__content">
                     <p className="paragraph featured-work__text">
                         {props.text}
                     </p>
                     <div className="featured-work__buttons">
-                        <a rel="noopener noreferrer" href={props.url} target="_blank"
-                            style={{ textDecoration: "none" }} className="button">
+                        <ExternalLink link={props.url} classes="button">
                             <Button pill>Go to website</Button>
-                        </a>
-                        <Link to={"/works/" + props.id} style={{ textDecoration: "none" }}>
+                        </ExternalLink>
+                        <Link to={"/works/" + props.id}>
                             <Button unite>View Gallery</Button>
                         </Link>
                     </div>

@@ -2,6 +2,7 @@ import React, { useLayoutEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import Button from "./Button";
+import ExternalLink from "./ExternalLink";
 
 const Work = props => {
     const [imageBoxHeight, setImageBoxHeight] = useState(null);
@@ -33,12 +34,10 @@ const Work = props => {
                         <h2 className="work__title">{props.title}</h2>
                         <p className="paragraph work__description">{props.description}</p>
                         <div className="work__buttons">
-                            <a rel="noopener noreferrer" href={props.url} target="_blank"
-                                style={{ textDecoration: "none" }} className="work__button">
+                            <ExternalLink link={props.url}>
                                 <Button pill>Go to website</Button>
-                            </a>
-                            <Link to={"/works/" + props.id} style={{ textDecoration: "none" }}
-                                className="work__button">
+                            </ExternalLink>
+                            <Link to={"/works/" + props.id}>
                                 <Button unite>View Gallery</Button>
                             </Link>
                         </div>

@@ -3,6 +3,7 @@ import works from "../../data";
 import Aux from "../../hoc/Auxilliary";
 import BackButton from "../UI/BackButton";
 import Button from "../UI/Button";
+import ExternalLink from "../UI/ExternalLink";
 import GallerySection from "../UI/GallerySection";
 import SelectedImage from "../UI/SelectedImage";
 
@@ -35,10 +36,14 @@ const Gallery = props => {
                 <div className="gallery__intro">
                     <h2 className="gallery__heading">{work.title}</h2>
                     <p className="paragraph gallery__intro-text">{work.description}</p>
-                    <a rel="noopener noreferrer" href={work.url} target="_blank"
-                        style={{ textDecoration: "none" }}>
-                        <Button fill>Go to website</Button>
-                    </a>
+                    <div className="gallery__intro-buttons">
+                        <ExternalLink link={work.url}>
+                            <Button fill>Go to website</Button>
+                        </ExternalLink>
+                        <ExternalLink link={work.githubUrl}>
+                            <Button unite>View on Github</Button>
+                        </ExternalLink>
+                    </div>
                 </div>
                 <div className="gallery__container">
                     <div className="gallery__items">
