@@ -4,6 +4,7 @@ import Fade from "react-reveal/Fade";
 
 const SelectedImage = props => {
     const { image } = props;
+    
     return (
         <Fade right duration={600}>
             <div className="gallery__selected-text">

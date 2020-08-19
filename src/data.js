@@ -615,6 +615,45 @@ const works = [
         ]
     },
     {
+        id: "chat-app-illustration",
+        title: "Chat App Illustration",
+        mainImg: "/images/chat-app-illustration/desktop.png",
+        description: "This mockup of a chat app's interface is built entirely from scratch with CSS, complete with various common features of a chat app and accompained by nice background patterns. Beautiful loading animations are applied to the chat's elements. This mockup is completely responsive to any change in the screen's width or the browser's font size.",
+        url: "https://chat-app-illustration.vercel.app/",
+        gallery: [
+            {
+                title: "Desktop version",
+                items: [
+                    {
+                        type: "desktop",
+                        src: "/images/chat-app-illustration/desktop.png",
+                        caption: "Desktop"
+                    }
+                ]
+            },
+            {
+                title: "Tablet version",
+                items: [
+                    {
+                        type: "tablet",
+                        src: "/images/chat-app-illustration/tablet.png",
+                        caption: "Tablet"
+                    },
+                ]
+            },
+            {
+                title: "Mobile version",
+                items: [
+                    {
+                        type: "mobile",
+                        src: "/images/chat-app-illustration/mobile.png",
+                        caption: "Mobile"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         id: "social-media-dashboard",
         title: "Social Media Dashboard",
         mainImg: "/images/dashboard/desktop-dark.png",
@@ -663,45 +702,6 @@ const works = [
                         type: "mobile",
                         src: "/images/dashboard/mobile-light.png",
                         caption: "Mobile (Light)"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        id: "chat-app-illustration",
-        title: "Chat App Illustration",
-        mainImg: "/images/chat-app-illustration/desktop.png",
-        description: "This mockup of a chat app's interface is built entirely from scratch with CSS, complete with various common features of a chat app and accompained by nice background patterns. Beautiful loading animations are applied to the chat's elements. This mockup is completely responsive to any change in the screen's width or the browser's font size.",
-        url: "https://chat-app-illustration.vercel.app/",
-        gallery: [
-            {
-                title: "Desktop version",
-                items: [
-                    {
-                        type: "desktop",
-                        src: "/images/chat-app-illustration/desktop.png",
-                        caption: "Desktop"
-                    }
-                ]
-            },
-            {
-                title: "Tablet version",
-                items: [
-                    {
-                        type: "tablet",
-                        src: "/images/chat-app-illustration/tablet.png",
-                        caption: "Tablet"
-                    },
-                ]
-            },
-            {
-                title: "Mobile version",
-                items: [
-                    {
-                        type: "mobile",
-                        src: "/images/chat-app-illustration/mobile.png",
-                        caption: "Mobile"
                     }
                 ]
             }

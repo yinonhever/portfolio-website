@@ -22,8 +22,10 @@ const Gallery = props => {
     }, [props])
 
     const itemClickHandler = image => {
-        setSelectedImage(null);
-        setTimeout(() => setSelectedImage(image), 10);
+        if (image !== selectedImage) {
+            setSelectedImage(null);
+            setTimeout(() => setSelectedImage(image), 10);
+        }
     }
 
     return (
@@ -42,6 +44,7 @@ const Gallery = props => {
                     <div className="gallery__items">
                         {work.gallery && work.gallery.map(section =>
                             <GallerySection
+                                key={section.title}
                                 title={section.title}
                                 items={section.items}
                                 itemClicked={itemClickHandler}

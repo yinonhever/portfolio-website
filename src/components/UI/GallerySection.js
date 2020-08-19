@@ -6,8 +6,9 @@ const GallerySection = props => (
         <div className="gallery__grid">
             {props.items.map(item =>
                 <div
+                    key={item.src}
                     className="gallery__item"
-                    style={{ maxHeight: item.type === "desktop" ? "14rem" : "30rem" }}
+                    style={{ maxHeight: item.type === "desktop" ? "15rem" : "30rem" }}
                     onClick={() => props.itemClicked(item)}
                 >
                     <img src={item.src} alt={item.caption} />
@@ -17,4 +18,4 @@ const GallerySection = props => (
     </div>
 )
 
-export default GallerySection;
+export default React.memo(GallerySection);

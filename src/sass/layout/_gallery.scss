@@ -58,16 +58,18 @@
   &__grid {
     margin: -0.8rem;
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
   }
 
   &__item {
     margin: 0.8rem;
-    width: calc(100% / 4);
+    width: 25%;
     cursor: pointer;
     overflow: hidden;
     display: flex;
     align-items: center;
+    // background-color: #e0e0e0;
     box-shadow: $bshadow-1;
     outline-offset: 0.5rem;
     transition: all 0.5s;
