@@ -20,8 +20,6 @@ const Work = props => {
         window.addEventListener("resize", adjustHeight);
     }, [])
 
-    console.log("rendering Work");
-
     return (
         <div className={!props.mirror ? "work" : "work work--reversed"}>
             <div className="work__container">
