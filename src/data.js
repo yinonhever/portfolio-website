@@ -129,7 +129,7 @@ const works = [
                 items: [
                     {
                         type: "tablet",
-                        src: "/images/where-in-the-world/tablet-detail.png",
+                        src: "/images/where-in-the-world/tablet-home.png",
                         caption: "Tablet – Home page (Dark)"
                     },
                     {
@@ -154,7 +154,7 @@ const works = [
                 items: [
                     {
                         type: "mobile",
-                        src: "/images/where-in-the-world/mobile-detail.png",
+                        src: "/images/where-in-the-world/mobile-home.png",
                         caption: "Mobile – Home page (Dark)"
                     },
                     {
@@ -186,7 +186,7 @@ const works = [
         url: "https://rock-paper-scissors-two.vercel.app/",
         gallery: [
             {
-                title: "Game start",
+                title: "Desktop version",
                 items: [
                     {
                         type: "desktop",
@@ -194,29 +194,34 @@ const works = [
                         caption: "Desktop – game start"
                     },
                     {
+                        type: "desktop",
+                        src: "/images/rock-paper-scissors/desktop-play.png",
+                        caption: "Desktop – game finish"
+                    }
+                ]
+            },
+            {
+                title: "Tablet version",
+                items: [
+                    {
                         type: "tablet",
                         src: "/images/rock-paper-scissors/tablet-initial.png",
                         caption: "Tablet – game start"
                     },
                     {
-                        type: "mobile",
-                        src: "/images/rock-paper-scissors/mobile-initial.png",
-                        caption: "Mobile – game start"
+                        type: "tablet",
+                        src: "/images/rock-paper-scissors/tablet-play.png",
+                        caption: "Tablet – game finish"
                     }
                 ]
             },
             {
-                title: "Game finish",
+                title: "Mobile version",
                 items: [
                     {
-                        type: "desktop",
-                        src: "/images/rock-paper-scissors/desktop-play.png",
-                        caption: "Desktop – game finish"
-                    },
-                    {
-                        type: "tablet",
-                        src: "/images/rock-paper-scissors/tablet-play.png",
-                        caption: "Tablet – game finish"
+                        type: "mobile",
+                        src: "/images/rock-paper-scissors/mobile-initial.png",
+                        caption: "Mobile – game start"
                     },
                     {
                         type: "mobile",
@@ -500,18 +505,28 @@ const works = [
         url: "https://job-listings-alpha.vercel.app/",
         gallery: [
             {
-                title: "Gallery",
+                title: "Desktop version",
                 items: [
                     {
                         type: "desktop",
                         src: "/images/job-listings/desktop.png",
                         caption: "Desktop"
-                    },
+                    }
+                ]
+            },
+            {
+                title: "Tablet version",
+                items: [
                     {
                         type: "tablet",
                         src: "/images/job-listings/tablet.png",
                         caption: "Tablet"
-                    },
+                    }
+                ]
+            },
+            {
+                title: "Mobile version",
+                items: [
                     {
                         type: "mobile",
                         src: "/images/job-listings/mobile.png",
@@ -529,18 +544,28 @@ const works = [
         url: "https://manage-ten.now.sh/",
         gallery: [
             {
-                title: "Gallery",
+                title: "Desktop version",
                 items: [
                     {
                         type: "desktop",
                         src: "/images/manage/desktop.png",
                         caption: "Desktop"
-                    },
+                    }
+                ]
+            },
+            {
+                title: "Tablet version",
+                items: [
                     {
                         type: "tablet",
                         src: "/images/manage/tablet.png",
                         caption: "Tablet"
-                    },
+                    }
+                ]
+            },
+            {
+                title: "Mobile version",
+                items: [
                     {
                         type: "mobile",
                         src: "/images/manage/mobile.png",
@@ -558,18 +583,28 @@ const works = [
         url: "https://easybank-landing-page-pearl.vercel.app/",
         gallery: [
             {
-                title: "Gallery",
+                title: "Desktop version",
                 items: [
                     {
                         type: "desktop",
                         src: "/images/easybank/desktop.png",
                         caption: "Desktop"
-                    },
+                    }
+                ]
+            },
+            {
+                title: "Tablet version",
+                items: [
                     {
                         type: "tablet",
                         src: "/images/easybank/tablet.png",
                         caption: "Tablet"
-                    },
+                    }
+                ]
+            },
+            {
+                title: "Mobile version",
+                items: [
                     {
                         type: "mobile",
                         src: "/images/easybank/mobile.png",
@@ -587,7 +622,7 @@ const works = [
         url: "https://dashboard-silk.vercel.app/",
         gallery: [
             {
-                title: "Dark theme",
+                title: "Desktop version",
                 items: [
                     {
                         type: "desktop",
@@ -595,63 +630,39 @@ const works = [
                         caption: "Desktop (Dark)"
                     },
                     {
+                        type: "desktop",
+                        src: "/images/dashboard/desktop-light.png",
+                        caption: "Desktop (Light)"
+                    }
+                ]
+            },
+            {
+                title: "Tablet version",
+                items: [
+                    {
                         type: "tablet",
                         src: "/images/dashboard/tablet-dark.png",
                         caption: "Tablet (Dark)"
                     },
                     {
-                        type: "mobile",
-                        src: "/images/dashboard/mobile-dark.png",
-                        caption: "Mobile (Dark)"
+                        type: "tablet",
+                        src: "/images/dashboard/tablet-light.png",
+                        caption: "Tablet (Light)"
                     }
                 ]
             },
             {
-                title: "Light theme",
+                title: "Mobile version",
                 items: [
                     {
-                        type: "desktop",
-                        src: "/images/dashboard/desktop-light.png",
-                        caption: "Desktop (Light)"
-                    },
-                    {
-                        type: "tablet",
-                        src: "/images/dashboard/tablet-light.png",
-                        caption: "Tablet (Light)"
+                        type: "mobile",
+                        src: "/images/dashboard/mobile-dark.png",
+                        caption: "Mobile (Dark)"
                     },
                     {
                         type: "mobile",
                         src: "/images/dashboard/mobile-light.png",
                         caption: "Mobile (Light)"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        id: "bookmark",
-        title: "Bookmark Landing Page",
-        mainImg: "/images/bookmark/desktop.png",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-        url: "https://bookmark-landing-page-sigma.now.sh/",
-        gallery: [
-            {
-                title: "Gallery",
-                items: [
-                    {
-                        type: "desktop",
-                        src: "/images/bookmark/desktop.png",
-                        caption: "Desktop"
-                    },
-                    {
-                        type: "tablet",
-                        src: "/images/bookmark/tablet.png",
-                        caption: "Tablet"
-                    },
-                    {
-                        type: "mobile",
-                        src: "/images/bookmark/mobile.png",
-                        caption: "Mobile"
                     }
                 ]
             }
@@ -665,21 +676,70 @@ const works = [
         url: "https://chat-app-illustration.vercel.app/",
         gallery: [
             {
-                title: "Gallery",
+                title: "Desktop version",
                 items: [
                     {
                         type: "desktop",
                         src: "/images/chat-app-illustration/desktop.png",
                         caption: "Desktop"
-                    },
+                    }
+                ]
+            },
+            {
+                title: "Tablet version",
+                items: [
                     {
                         type: "tablet",
                         src: "/images/chat-app-illustration/tablet.png",
                         caption: "Tablet"
                     },
+                ]
+            },
+            {
+                title: "Mobile version",
+                items: [
                     {
                         type: "mobile",
                         src: "/images/chat-app-illustration/mobile.png",
+                        caption: "Mobile"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: "bookmark",
+        title: "Bookmark Landing Page",
+        mainImg: "/images/bookmark/desktop.png",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        url: "https://bookmark-landing-page-sigma.now.sh/",
+        gallery: [
+            {
+                title: "Desktop version",
+                items: [
+                    {
+                        type: "desktop",
+                        src: "/images/bookmark/desktop.png",
+                        caption: "Desktop"
+                    }
+                ]
+            },
+            {
+                title: "Tablet version",
+                items: [
+                    {
+                        type: "tablet",
+                        src: "/images/bookmark/tablet.png",
+                        caption: "Tablet"
+                    }
+                ]
+            },
+            {
+                title: "Mobile version",
+                items: [
+                    {
+                        type: "mobile",
+                        src: "/images/bookmark/mobile.png",
                         caption: "Mobile"
                     }
                 ]

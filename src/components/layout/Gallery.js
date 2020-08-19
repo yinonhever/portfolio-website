@@ -47,7 +47,9 @@ const Gallery = props => {
                                 itemClicked={itemClickHandler}
                             />)}
                     </div>
-                    {selectedImage && <SelectedImage image={selectedImage} />}
+                    <div className="gallery__selected">
+                        {selectedImage && <SelectedImage image={selectedImage} />}
+                    </div>
                 </div>
             </main>
         </Aux>

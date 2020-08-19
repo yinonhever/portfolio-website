@@ -43,7 +43,46 @@
 
   &__items {
     flex: 1;
-    padding: 0 6rem;
+    margin-right: 5rem;
+  }
+
+  &__section:not(:last-child) {
+    margin-bottom: 5rem;
+  }
+
+  &__section-title {
+    font-size: 2.7rem;
+    margin-bottom: 2rem;
+  }
+
+  &__grid {
+    margin: -0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin: 0.8rem;
+    width: calc(100% / 4);
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: $bshadow-1;
+    outline-offset: 0.5rem;
+    transition: all 0.5s;
+
+    &:hover {
+      @media (hover: hover) {
+        transform: scale(1.4);
+        outline: 0.8rem solid $color-azure;
+        z-index: 20;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
   }
 
   &__selected {
