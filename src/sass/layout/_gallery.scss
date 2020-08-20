@@ -201,9 +201,5 @@
 
   &__selected-img {
     box-shadow: $bshadow-1;
-
-    @include respond(mobile-land) {
-      max-height: 150rem;
-    }
   }
 }

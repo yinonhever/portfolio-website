@@ -23,10 +23,8 @@ const Gallery = props => {
     }, [props])
 
     const itemClickHandler = image => {
-        if (image !== selectedImage) {
-            setSelectedImage(null);
-            setTimeout(() => setSelectedImage(image), 10);
-        }
+        setSelectedImage(null);
+        setTimeout(() => setSelectedImage(image), 10);
     }
 
     return (

@@ -510,6 +510,7 @@ const works = [
         mainImg: "/images/job-listings/desktop.png",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
         url: "https://job-listings-alpha.vercel.app/",
+        githubUrl: "https://github.com/yinonhever/job-listings",
         gallery: [
             {
                 title: "Desktop version",

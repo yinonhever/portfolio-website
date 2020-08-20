@@ -18,4 +18,4 @@ const GallerySection = props => (
     </div>
 )
 
-export default React.memo(GallerySection);
+export default GallerySection;
