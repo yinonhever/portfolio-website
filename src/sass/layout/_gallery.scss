@@ -60,6 +60,8 @@
 
     @include respond(mobile) {
       flex-direction: column;
+      align-items: center;
+      width: 100%;
 
       .button {
         font-size: 1.2rem;
@@ -67,12 +69,19 @@
       }
     }
 
-    & > *:not(:last-child) {
-      margin-right: 2rem;
-
+    & > * {
       @include respond(mobile) {
-        margin: 0;
-        margin-bottom: 1rem;
+        width: 100%;
+        max-width: 25rem;  
+      }
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+
+        @include respond(mobile) {
+          margin: 0;
+          margin-bottom: 1rem;
+        }
       }
     }
   }
@@ -99,7 +108,7 @@
     margin-bottom: 5rem;
 
     @include respond(mobile) {
-      margin-bottom: 7rem;
+      margin-bottom: 6rem;
     }
   }
 
@@ -146,9 +155,11 @@
     }
 
     &:hover {
-      transform: scale(1.4);
-      outline: 0.8rem solid $color-azure;
-      z-index: 20;
+      @media (hover: hover) {
+        transform: scale(1.4);
+        outline: 0.8rem solid $color-azure;
+        z-index: 20;
+      }
     }
 
     img {
@@ -162,7 +173,7 @@
 
     @include respond(mobile-land) {
       width: 100%;
-      margin-bottom: 7rem;
+      margin-bottom: 6rem;
     }
   }
 
