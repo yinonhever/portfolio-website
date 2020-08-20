@@ -31,7 +31,7 @@ const FeaturedWork = props => {
     return (
         <Fade left mirror={props.mirror} duration={600}>
             <div className="featured-work">
-                <ExternalLink link={props.url}>
+                <Link to={"/works/" + props.id}>
                     <div className="featured-work__img"
                         style={{ height: imageBoxHeight || null }}>
                         <img src={props.img} alt={props.title} ref={imageRef} />
@@ -41,7 +41,7 @@ const FeaturedWork = props => {
                         style={{ marginTop: titleMargin || null }}>
                         <span>{props.title}</span>
                     </h3>
-                </ExternalLink>
+                </Link>
                 <div className="featured-work__content">
                     <p className="paragraph featured-work__text">
                         {props.text}

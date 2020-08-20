@@ -25,9 +25,11 @@ const Work = props => {
         <div className={!props.mirror ? "work" : "work work--reversed"}>
             <div className="work__container">
                 <Fade left mirror={props.mirror} duration={600}>
-                    <div className="work__img" style={{ height: imageBoxHeight || null }}>
-                        <img ref={imageRef} src={props.img} alt={props.title} />
-                    </div>
+                    <Link to={"/works/" + props.id}>
+                        <div className="work__img" style={{ height: imageBoxHeight || null }}>
+                            <img ref={imageRef} src={props.img} alt={props.title} />
+                        </div>
+                    </Link>
                 </Fade>
                 <Fade right mirror={props.mirror} duration={600}>
                     <div className="work__content">
