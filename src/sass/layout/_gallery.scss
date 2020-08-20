@@ -5,6 +5,10 @@
     padding: 0 $padding-side-mobile 8rem;
   }
 
+  @include respond(mobile) {
+    padding-bottom: 7rem;
+  }
+
   &__intro {
     display: flex;
     flex-direction: column;
@@ -12,6 +16,10 @@
     text-align: center;
     margin: 0 auto 8rem;
     max-width: 85rem;
+
+    @include respond(mobile) {
+      margin-bottom: 6rem;
+    }
   }
 
   &__heading {
@@ -20,6 +28,10 @@
     margin: auto;
     position: relative;
 
+    @include respond(mobile) {
+      font-size: 3rem;
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -27,6 +39,7 @@
       left: 50%;
       transform: translateX(-50%);
       width: 30%;
+      min-width: 10rem;
       height: 6px;
       background-color: $color-azure;
     }
@@ -35,32 +48,72 @@
   &__intro-text {
     margin: 6rem 0 2.5rem;
     font-size: 1.6rem;
+
+    @include respond(mobile) {
+      font-size: 1.5rem;
+      margin: 4.5rem 0 3rem;
+    }
   }
 
   &__intro-buttons {
     display: flex;
 
+    @include respond(mobile) {
+      flex-direction: column;
+
+      .button {
+        font-size: 1.2rem;
+        width: 100%;
+      }
+    }
+
     & > *:not(:last-child) {
       margin-right: 2rem;
+
+      @include respond(mobile) {
+        margin: 0;
+        margin-bottom: 1rem;
+      }
     }
   }
 
   &__container {
     display: flex;
+
+    @include respond(mobile-land) {
+      flex-direction: column-reverse;
+    }
   }
 
   &__items {
     flex: 1;
     margin-right: 5rem;
+
+    @include respond(mobile-land) {
+      flex: initial;
+      margin-right: 0;
+    }
   }
 
   &__section:not(:last-child) {
     margin-bottom: 5rem;
+
+    @include respond(mobile) {
+      margin-bottom: 7rem;
+    }
   }
 
   &__section-title {
     font-size: 2.7rem;
     margin-bottom: 2rem;
+
+    @include respond(mobile-land) {
+      text-align: center;
+    }
+
+    @include respond(mobile) {
+      font-size: 2.2rem;
+    }
   }
 
   &__grid {
@@ -68,11 +121,16 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+
+    @include respond(mobile-land) {
+      justify-content: center;
+    }
   }
 
   &__item {
     margin: 0.8rem;
     width: 25%;
+    min-width: 10rem;
     cursor: pointer;
     overflow: hidden;
     display: flex;
@@ -81,12 +139,16 @@
     outline-offset: 0.5rem;
     transition: all 0.5s;
 
+    @include respond(mobile) {
+      width: 40%;
+      max-width: 16rem;
+      min-width: 12rem;
+    }
+
     &:hover {
-      @media (hover: hover) {
-        transform: scale(1.4);
-        outline: 0.8rem solid $color-azure;
-        z-index: 20;
-      }
+      transform: scale(1.4);
+      outline: 0.8rem solid $color-azure;
+      z-index: 20;
     }
 
     img {
@@ -97,6 +159,11 @@
   &__selected {
     width: 47%;
     text-align: center;
+
+    @include respond(mobile-land) {
+      width: 100%;
+      margin-bottom: 7rem;
+    }
   }
 
   &__selected-text {
@@ -106,14 +173,26 @@
   &__selected-title {
     font-size: 2.7rem;
     margin-bottom: 1rem;
+
+    @include respond(mobile) {
+      font-size: 2.2rem;
+    }
   }
 
   &__selected-subtext {
     font-size: 1.4rem;
     font-weight: 600;
+
+    @include respond(mobile) {
+      font-size: 1.3rem;
+    }
   }
 
   &__selected-img {
     box-shadow: $bshadow-1;
+
+    @include respond(mobile-land) {
+      max-height: 150rem;
+    }
   }
 }

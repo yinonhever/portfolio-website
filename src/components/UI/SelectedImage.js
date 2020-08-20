@@ -20,6 +20,7 @@ const SelectedImage = props => {
                     className="gallery__selected-img"
                     src={image.src}
                     fullscreenOnMobile={true}
+                    mobileBreakpoint={700}
                 />
             </div>
         </Fade>

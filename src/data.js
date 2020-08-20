@@ -7,6 +7,7 @@ const works = [
         mainImg: "/images/github-timeline/desktop-with-timeline.png",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing.",
         url: "https://github-timeline-iota.vercel.app/",
+        githubUrl: "https://github.com/yinonhever/github-timeline",
         gallery: [
             {
                 title: "Desktop version",
@@ -98,6 +99,7 @@ const works = [
         mainImg: "/images/where-in-the-world/desktop-home.png",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
         url: "https://where-in-the-world-olive.vercel.app/",
+        githubUrl: "https://github.com/yinonhever/where-in-the-world",
         gallery: [
             {
                 title: "Desktop version",
@@ -184,6 +186,7 @@ const works = [
         mainImg: "/images/rock-paper-scissors/desktop-initial.png",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation.",
         url: "https://rock-paper-scissors-two.vercel.app/",
+        githubUrl: "https://github.com/yinonhever/rock-paper-scissors",
         gallery: [
             {
                 title: "Desktop version",
@@ -240,6 +243,7 @@ const works = [
         mainImg: "/images/myteam/desktop-home.png",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation.",
         url: "https://myteam-nu.vercel.app/",
+        githubUrl: "https://github.com/yinonhever/myteam",
         gallery: [
             {
                 title: "Desktop version",
@@ -311,6 +315,7 @@ const works = [
         mainImg: "/images/scoot/desktop-home.png",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
         url: "https://scoot-lake.now.sh/",
+        githubUrl: "https://github.com/yinonhever/scoot",
         gallery: [
             {
                 title: "Desktop version",
@@ -395,6 +400,7 @@ const works = [
         mainImg: "/images/dine/desktop-home.png",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation.",
         url: "https://dine-henna.now.sh/",
+        githubUrl: "https://github.com/yinonhever/dine",
         gallery: [
             {
                 title: "Desktop version",
@@ -449,6 +455,7 @@ const works = [
         mainImg: "/images/shortly/desktop-initial.png",
         description: "A landing page for a mock company called Shortly, which manages shortened links for business clients. This page also serves as a functional web app, allowing users to generate shortened URLs, copy them to their clipboard, and keep the list of their shortened URLs even after refreshing the browser.",
         url: "https://shortly-bay.vercel.app/",
+        githubUrl: "https://github.com/yinonhever/shortly",
         gallery: [
             {
                 title: "Desktop version",
@@ -542,6 +549,7 @@ const works = [
         mainImg: "/images/manage/desktop.png",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
         url: "https://manage-ten.now.sh/",
+        githubUrl: "https://github.com/yinonhever/manage",
         gallery: [
             {
                 title: "Desktop version",
@@ -581,6 +589,7 @@ const works = [
         mainImg: "/images/easybank/desktop.png",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
         url: "https://easybank-landing-page-pearl.vercel.app/",
+        githubUrl: "https://github.com/yinonhever/easybank-landing-page",
         gallery: [
             {
                 title: "Desktop version",
@@ -620,6 +629,7 @@ const works = [
         mainImg: "/images/chat-app-illustration/desktop.png",
         description: "This mockup of a chat app's interface is built entirely from scratch with CSS, complete with various common features of a chat app and accompained by nice background patterns. Beautiful loading animations are applied to the chat's elements. This mockup is completely responsive to any change in the screen's width or the browser's font size.",
         url: "https://chat-app-illustration.vercel.app/",
+        githubUrl: "https://github.com/yinonhever/chat-app-illustration",
         gallery: [
             {
                 title: "Desktop version",
@@ -659,6 +669,7 @@ const works = [
         mainImg: "/images/dashboard/desktop-dark.png",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
         url: "https://dashboard-silk.vercel.app/",
+        githubUrl: "https://github.com/yinonhever/dashboard",
         gallery: [
             {
                 title: "Desktop version",
@@ -713,6 +724,7 @@ const works = [
         mainImg: "/images/bookmark/desktop.png",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
         url: "https://bookmark-landing-page-sigma.now.sh/",
+        githubUrl: "https://github.com/yinonhever/bookmark",
         gallery: [
             {
                 title: "Desktop version",
