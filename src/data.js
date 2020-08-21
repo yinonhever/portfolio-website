@@ -5,7 +5,14 @@ const works = [
         featured: true,
         featuredText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation.",
         mainImg: "/images/github-timeline/desktop-with-timeline.png",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing.",
+        description:
+            `
+                This app allows users to submit a Github username and generate a
+                graphical timeline of the user's repositories, as well as a chart tallying the number of
+                repositories per year. The app, fetcching data from the Github API, creates a
+                well-structured graphical display of the data, with unique design and animations. Users can
+                also view the history of all their valid searches, which is saved into the browser's storage.
+            `,
         url: "https://github-timeline-iota.vercel.app/",
         githubUrl: "https://github.com/yinonhever/github-timeline",
         gallery: [
@@ -97,7 +104,10 @@ const works = [
         featured: true,
         featuredText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
         mainImg: "/images/where-in-the-world/desktop-home.png",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        description:
+            `
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+            `,
         url: "https://where-in-the-world-olive.vercel.app/",
         githubUrl: "https://github.com/yinonhever/where-in-the-world",
         gallery: [
@@ -184,7 +194,13 @@ const works = [
         featured: true,
         featuredText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
         mainImg: "/images/rock-paper-scissors/desktop-initial.png",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation.",
+        description:
+            `
+                An extended version of the classic Rock, Paper, Scissors game. With a unique design and
+                interface, and beautiful animations and transitions that highlight every step of the
+                game, this app turns this rather simple game into a fun, even addictive experience. The user's
+                total score is retained even after refreshing the browser.
+            `,
         url: "https://rock-paper-scissors-two.vercel.app/",
         githubUrl: "https://github.com/yinonhever/rock-paper-scissors",
         gallery: [
@@ -238,7 +254,7 @@ const works = [
     {
         id: "myteam",
         title: "Myteam Website",
-        featured: true,
+        featured: false,
         featuredText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
         mainImg: "/images/myteam/desktop-home.png",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation.",
@@ -310,10 +326,16 @@ const works = [
     {
         id: "scoot",
         title: "Scoot Website",
-        featured: false,
+        featured: true,
         featuredText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
         mainImg: "/images/scoot/desktop-home.png",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        description:
+            `
+                A beautiful 4-page website for a mock company called Scoot. This website includes a wide
+                variety of complex design features, decorative elements and background patterns, a unique
+                layout, and a lot of small details that change drastically between different screen sizes, which 
+                I made completely responsive.
+            `,
         url: "https://scoot-lake.now.sh/",
         githubUrl: "https://github.com/yinonhever/scoot",
         gallery: [
@@ -628,7 +650,7 @@ const works = [
         id: "chat-app-illustration",
         title: "Chat App Illustration",
         mainImg: "/images/chat-app-illustration/desktop.png",
-        description: "This mockup of a chat app's interface is built entirely from scratch with CSS, complete with various common features of a chat app and accompained by nice background patterns. Beautiful loading animations are applied to the chat's elements. This mockup is completely responsive to any change in the screen's width or the browser's font size.",
+        description: "This mockup of a chat app's interface is built entirely from scratch with CSS, complete with various common features of a chat app and accompained by background patterns. Beautiful loading animations are applied to the chat's elements. This mockup is completely responsive to any change in the screen's width or the browser's font size.",
         url: "https://chat-app-illustration.vercel.app/",
         githubUrl: "https://github.com/yinonhever/chat-app-illustration",
         gallery: [

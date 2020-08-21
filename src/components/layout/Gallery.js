@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import works from "../../data";
+import Fade from "react-reveal/Fade";
 import Aux from "../../hoc/Auxilliary";
 import BackButton from "../UI/BackButton";
 import Button from "../UI/Button";
@@ -16,6 +17,7 @@ const Gallery = props => {
         if (matchingWork) {
             setWork(matchingWork);
             setSelectedImage(matchingWork.gallery[0].items[0]);
+            window.scrollTo(0, 300);
         }
         else {
             props.history.push("/works");
@@ -25,24 +27,27 @@ const Gallery = props => {
     const itemClickHandler = image => {
         setSelectedImage(null);
         setTimeout(() => setSelectedImage(image), 10);
+        window.scrollTo(0, 800);
     }
 
     return (
         <Aux>
             <BackButton />
             <main className="gallery">
-                <div className="gallery__intro">
-                    <h2 className="gallery__heading">{work.title}</h2>
-                    <p className="paragraph gallery__intro-text">{work.description}</p>
-                    <div className="gallery__intro-buttons">
-                        <ExternalLink link={work.url}>
-                            <Button fill>Go to website</Button>
-                        </ExternalLink>
-                        <ExternalLink link={work.githubUrl}>
-                            <Button unite>View on Github</Button>
-                        </ExternalLink>
+                <Fade left duration={600}>
+                    <div className="gallery__intro">
+                        <h2 className="gallery__heading">{work.title}</h2>
+                        <p className="paragraph gallery__intro-text">{work.description}</p>
+                        <div className="gallery__intro-buttons">
+                            <ExternalLink link={work.url}>
+                                <Button fill>Go to website</Button>
+                            </ExternalLink>
+                            <ExternalLink link={work.githubUrl}>
+                                <Button unite>View on Github</Button>
+                            </ExternalLink>
+                        </div>
                     </div>
-                </div>
+                </Fade>
                 <div className="gallery__container">
                     <div className="gallery__items">
                         {work.gallery && work.gallery.map(section =>

@@ -22,7 +22,7 @@ const Footer = () => (
                     <i className="footer__link-icon fab fa-github" />
                     <span>View on Github</span>
                 </a>
-                <p className="footer__copyright">&copy; 2020 Yinon Hever. All right reserved</p>
+                <p className="footer__copyright">&copy; 2020 Yinon Hever. All rights reserved</p>
             </div>
         </div>
     </footer>

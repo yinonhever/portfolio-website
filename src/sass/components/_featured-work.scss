@@ -1,8 +1,10 @@
 .featured-work {
   background-color: #fff;
+  border-radius: 0.8rem;
   box-shadow: $bshadow-1;
 
   &__img {
+    border-radius: 0.8rem 0.8rem 0 0;
     border-bottom: 1px solid #ccc;
     overflow: hidden;
 
@@ -26,13 +28,14 @@
     span {
       display: inline-block;
       color: #fff;
+      font-size: 2.5rem;
       padding: 1.35rem 3rem 1.05rem;
       background-image: linear-gradient(
         to right,
         $color-blue-dark,
         $color-blue-light
       );
-      font-size: 2.5rem;
+      border-radius: 0.5rem;
       max-width: 90%;
 
       @include respond(mobile) {

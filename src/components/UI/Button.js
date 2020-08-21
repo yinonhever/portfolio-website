@@ -7,7 +7,6 @@ const Button = props => {
     if (props.fill) classes += "bttn-fill ";
     if (props.stretch) classes += "bttn-stretch ";
     if (props.extra) classes += props.extra;
-    console.log("Button renderd");
 
     return (
         <button className={classes.trim()} onClick={props.clicked || null}>

@@ -1,0 +1,32 @@
+// .form {
+//   margin: 10rem;
+
+//   &__field {
+//     width: 50rem;
+//     position: relative;
+//     font-size: 1.5rem;
+//   }
+
+//   &__label {
+//     position: absolute;
+//     left: 2rem;
+//     bottom: 1rem;
+//     font-size: inherit;
+//     transition: all 0.4s;
+//   }
+
+//   input {
+//     width: 100%;
+//     height: 100%;
+//     border: none;
+//     border-bottom: 1px solid $color-blue-dark;
+//     font: inherit;
+//     padding: 1rem 2rem;
+//     outline: none;
+//   }
+
+//   input:focus + &__label {
+//     font-size: 1.1rem;
+//     transform: translateY(-3rem);
+//   }
+// }

@@ -15,10 +15,12 @@
 
   &__content {
     width: 35vw;
+    margin-top: -2rem;
 
     @include respond(tablet) {
       width: 100%;
       max-width: 55rem;
+      margin-top: 0;
     }
   }
 
