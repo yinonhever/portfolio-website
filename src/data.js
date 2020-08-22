@@ -540,7 +540,12 @@ const works = [
                     {
                         type: "desktop",
                         src: "/images/job-listings/desktop.png",
-                        caption: "Desktop"
+                        caption: "Desktop – initial"
+                    },
+                    {
+                        type: "desktop",
+                        src: "/images/job-listings/desktop-filtered.png",
+                        caption: "Desktop – filtered"
                     }
                 ]
             },
@@ -550,7 +555,12 @@ const works = [
                     {
                         type: "tablet",
                         src: "/images/job-listings/tablet.png",
-                        caption: "Tablet"
+                        caption: "Tablet – initial"
+                    },
+                    {
+                        type: "tablet",
+                        src: "/images/job-listings/tablet-filtered.png",
+                        caption: "Tablet – filtered"
                     }
                 ]
             },
@@ -560,7 +570,12 @@ const works = [
                     {
                         type: "mobile",
                         src: "/images/job-listings/mobile.png",
-                        caption: "Mobile"
+                        caption: "Mobile – initial"
+                    },
+                    {
+                        type: "mobile",
+                        src: "/images/job-listings/mobile-filtered.png",
+                        caption: "Mobile – filtered"
                     }
                 ]
             }

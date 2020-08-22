@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../UI/Logo";
+import ExternalLink from "../UI/ExternalLink";
 
 const Footer = () => (
     <footer className="footer">
@@ -14,15 +15,13 @@ const Footer = () => (
                 </div>
             </div>
             <div className="footer__right">
-                <a
-                    className="footer__link"
-                    rel="noopener noreferrer"
-                    href="https://github.com/yinonhever"
-                    target="_blank">
+                <ExternalLink link="https://github.com/yinonhever" classes="footer__link">
                     <i className="footer__link-icon fab fa-github" />
                     <span>View on Github</span>
-                </a>
-                <p className="footer__copyright">&copy; 2020 Yinon Hever. All rights reserved</p>
+                </ExternalLink>
+                <p className="footer__copyright">
+                    &copy; 2020 Yinon Hever. All rights reserved
+                </p>
             </div>
         </div>
     </footer>

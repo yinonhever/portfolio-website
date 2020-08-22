@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useLayoutEffect } from "react";
 import Aux from "../hoc/Auxilliary";
 import PageHeading from "../components/layout/PageHeading";
 import Form from "../components/UI/Form";
@@ -7,11 +7,19 @@ import SuccessModal from "../components/UI/SuccessModal";
 const Contact = () => {
     const [showSuccess, setShowSuccess] = useState(false);
 
+    useLayoutEffect(() => window.scrollTo(0, 0), []);
+
+    const submitHandler = data => {
+        console.log(data)
+    }
+
     return (
         <Aux>
             <PageHeading title="Contact" />
-            <Form submit={() => setShowSuccess(true)} />
-            <SuccessModal active={showSuccess} closed={() => setShowSuccess(false)} />
+            <main className="contact">
+                <Form submit={submitHandler} />
+                <SuccessModal active={showSuccess} closed={() => setShowSuccess(false)} />
+            </main>
         </Aux>
     )
 }
