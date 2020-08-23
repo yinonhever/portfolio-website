@@ -5,6 +5,7 @@ import PageHeading from "../components/layout/PageHeading";
 import Form from "../components/UI/Form";
 import Spinner from "../components/UI/Spinner";
 import Modal from "../components/UI/Modal";
+import illustration from "../images/Illustrations/undraw_contact_us_15o2.svg";
 
 const Contact = () => {
     const [loading, setLoading] = useState(false);
@@ -18,6 +19,7 @@ const Contact = () => {
         axios.post("https://portfolio-website-b6e1d.firebaseio.com/messages.json", data)
             .then(() => {
                 setLoading(false);
+                setError(false);
                 setShowModal(true);
             })
             .catch(() => {
@@ -32,7 +34,7 @@ const Contact = () => {
             <PageHeading title="Contact" />
             <main className="contact">
                 <section className="contact__intro">
-                    
+                    <img className="contact__img" src={illustration} alt="contact" />
                 </section>
                 <Form submit={submitHandler} />
             </main>

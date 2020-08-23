@@ -111,8 +111,8 @@ const works = [
         featuredText:
             `
                 An app that displays information on all of the world's countries, allowing users to
-                search for countries by name and filter them by region, and view a page with detailed information
-                by clicking on a country's card. The user can also switch the website's theme between 
+                search for countries by name and filter them by region, and to view a page with detailed information
+                when clicking on a country's card. The user can also switch the website's theme between 
                 Dark and Light mode.
             `,
         mainImg: "/images/where-in-the-world/desktop-home.png",
@@ -512,7 +512,12 @@ const works = [
         id: "url-shortening",
         title: "URL Shortening Landing Page",
         mainImg: "/images/shortly/desktop-initial.png",
-        description: "A landing page for a mock company called Shortly, which manages shortened links for business clients. This page also serves as a functional web app, allowing users to generate shortened URLs, copy them to their clipboard, and keep the list of their shortened URLs even after refreshing the browser.",
+        description:
+            `
+                A landing page for a mock company called Shortly, which manages shortened links for business clients.
+                This page also serves as a functional web app, allowing users to generate shortened URLs, copy them
+                to their clipboard, and keep the list of their shortened URLs even after refreshing the browser.
+            `,
         url: "https://shortly-bay.vercel.app/",
         githubUrl: "https://github.com/yinonhever/shortly",
         gallery: [

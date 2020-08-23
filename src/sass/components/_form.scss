@@ -2,9 +2,10 @@
   width: 100%;
   max-width: 60rem;
   margin: auto;
-  padding: 3rem 4rem;
+  padding: 4rem;
   border-radius: 0.8rem;
   box-shadow: $bshadow-1;
+  background-color: $color-azure-light;
   overflow: hidden;
 
   @include respond(mobile) {
@@ -17,21 +18,21 @@
     position: relative;
 
     &.error {
-      margin-bottom: 4rem;
+      margin-bottom: 4.5rem;
     }
 
     &:last-of-type {
       margin-bottom: 3rem;
 
       &.error {
-        margin-bottom: 5rem;
+        margin-bottom: 5.5rem;
       }
     }
 
     &::after {
       content: "This field is required";
       position: absolute;
-      left: 1rem;
+      left: 1.5rem;
       top: calc(100% + 1rem);
       font-size: 1.3rem;
       font-weight: 600;
@@ -65,10 +66,9 @@
     width: 100%;
     font: inherit;
     font-size: 1.5rem;
-    border: none;
+    border: 2px solid transparent;
     outline: none;
-    border-bottom: 1px solid $color-blue-dark;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem;
     transition: border-color 0.5s;
 
     @include respond(mobile) {
@@ -76,13 +76,13 @@
     }
 
     &:focus {
-      border-bottom: 1px solid $color-azure;
+      border-color: $color-azure;
     }
   }
 
   &__textarea {
     resize: none;
-    height: 10rem;
+    height: 11rem;
   }
 
   .button {
