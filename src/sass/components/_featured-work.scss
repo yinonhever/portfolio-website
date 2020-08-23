@@ -35,7 +35,6 @@
         $color-blue-dark,
         $color-blue-light
       );
-      border-radius: 0.5rem;
       max-width: 90%;
 
       @include respond(mobile) {

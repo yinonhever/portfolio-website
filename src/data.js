@@ -3,7 +3,13 @@ const works = [
         id: "github-timeline-app",
         title: "Github Timeline App",
         featured: true,
-        featuredText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation.",
+        featuredText:
+            `
+                An app that allows users to submit a Github username and generates a graphical timeline
+                and a yearly chart of the user's repositories, with a unique, well-structured and animated
+                design. Users can also view the history of all their valid searches, which is saved into
+                their browser's storage.
+            `,
         mainImg: "/images/github-timeline/desktop-with-timeline.png",
         description:
             `
@@ -11,7 +17,7 @@ const works = [
                 graphical timeline of the user's repositories, as well as a chart tallying the number of
                 repositories per year. The app, fetcching data from the Github API, creates a
                 well-structured graphical display of the data, with unique design and animations. Users can
-                also view the history of all their valid searches, which is saved into the browser's storage.
+                also view the history of all their valid searches, which is saved into their browser's storage.
             `,
         url: "https://github-timeline-iota.vercel.app/",
         githubUrl: "https://github.com/yinonhever/github-timeline",
@@ -102,11 +108,20 @@ const works = [
         id: "where-in-the-world",
         title: "Where in the World?",
         featured: true,
-        featuredText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+        featuredText:
+            `
+                An app that displays information on all of the world's countries, allowing users to
+                search for countries by name and filter them by region, and view a page with detailed information
+                by clicking on a country's card. The user can also switch the website's theme between 
+                Dark and Light mode.
+            `,
         mainImg: "/images/where-in-the-world/desktop-home.png",
         description:
             `
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                An app that displays information on all of the world's countries, fetching data from
+                the REST Countries API. On the website's homepage users can search for countries by name, as well as filter countries by
+                their region. By clicking on a country's card, users can view a page with detailed information about 
+                the country. The user can also switch the website's theme between Dark and Light mode.
             `,
         url: "https://where-in-the-world-olive.vercel.app/",
         githubUrl: "https://github.com/yinonhever/where-in-the-world",
@@ -192,7 +207,12 @@ const works = [
         id: "rock-paper-scissors-lizard-spock",
         title: "Rock, Paper, Scissors, Lizard, Spock",
         featured: true,
-        featuredText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+        featuredText:
+            `
+                An extended version of the classic Rock, Paper, Scissors game. With a unique design and
+                interface, and beautiful animations and transitions that highlight every step of the
+                game, this app turns this rather simple game into a fun, even addictive experience.
+            `,
         mainImg: "/images/rock-paper-scissors/desktop-initial.png",
         description:
             `
@@ -252,86 +272,19 @@ const works = [
         ]
     },
     {
-        id: "myteam",
-        title: "Myteam Website",
-        featured: false,
-        featuredText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-        mainImg: "/images/myteam/desktop-home.png",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation.",
-        url: "https://myteam-nu.vercel.app/",
-        githubUrl: "https://github.com/yinonhever/myteam",
-        gallery: [
-            {
-                title: "Desktop version",
-                items: [
-                    {
-                        type: "desktop",
-                        src: "/images/myteam/desktop-home.png",
-                        caption: "Desktop – Home page"
-                    },
-                    {
-                        type: "desktop",
-                        src: "/images/myteam/desktop-about.png",
-                        caption: "Desktop – About page"
-                    },
-                    {
-                        type: "desktop",
-                        src: "/images/myteam/desktop-contact.png",
-                        caption: "Desktop – Contact page"
-                    }
-                ]
-            },
-            {
-                title: "Tablet version",
-                items: [
-                    {
-                        type: "tablet",
-                        src: "/images/myteam/tablet-home.png",
-                        caption: "Tablet – Home page"
-                    },
-                    {
-                        type: "tablet",
-                        src: "/images/myteam/tablet-about.png",
-                        caption: "Tablet – About page"
-                    },
-                    {
-                        type: "tablet",
-                        src: "/images/myteam/tablet-contact.png",
-                        caption: "Tablet – Contact page"
-                    }
-                ]
-            },
-            {
-                title: "Mobile version",
-                items: [
-                    {
-                        type: "mobile",
-                        src: "/images/myteam/mobile-home.png",
-                        caption: "Mobile – Home page"
-                    },
-                    {
-                        type: "mobile",
-                        src: "/images/myteam/mobile-about.png",
-                        caption: "Mobile – About page"
-                    },
-                    {
-                        type: "mobile",
-                        src: "/images/myteam/mobile-contact.png",
-                        caption: "Mobile – Contact page"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         id: "scoot",
         title: "Scoot Website",
         featured: true,
-        featuredText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+        featuredText:
+            `
+                A beautiful four-page website for a mock company called Scoot, including a wide
+                variety of complex design features, decorative elements and background patterns, a unique
+                layout, and a lot of fully-responsive small details.
+            `,
         mainImg: "/images/scoot/desktop-home.png",
         description:
             `
-                A beautiful 4-page website for a mock company called Scoot. This website includes a wide
+                A beautiful four-page website for a mock company called Scoot. This website includes a wide
                 variety of complex design features, decorative elements and background patterns, a unique
                 layout, and a lot of small details that change drastically between different screen sizes, which 
                 I made completely responsive.
@@ -417,10 +370,94 @@ const works = [
         ]
     },
     {
+        id: "myteam",
+        title: "Myteam Website",
+        featured: false,
+        featuredText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+        mainImg: "/images/myteam/desktop-home.png",
+        description:
+            `
+                This three-page website includes a quiet complex layout, with a lot of transformations between
+                different screen sizes. Among its highlights are an animated mobile menu, a testimonial section,
+                the directors' cards with animated switching content, and a responsive contact page with
+                full form validation.
+            `,
+        url: "https://myteam-nu.vercel.app/",
+        githubUrl: "https://github.com/yinonhever/myteam",
+        gallery: [
+            {
+                title: "Desktop version",
+                items: [
+                    {
+                        type: "desktop",
+                        src: "/images/myteam/desktop-home.png",
+                        caption: "Desktop – Home page"
+                    },
+                    {
+                        type: "desktop",
+                        src: "/images/myteam/desktop-about.png",
+                        caption: "Desktop – About page"
+                    },
+                    {
+                        type: "desktop",
+                        src: "/images/myteam/desktop-contact.png",
+                        caption: "Desktop – Contact page"
+                    }
+                ]
+            },
+            {
+                title: "Tablet version",
+                items: [
+                    {
+                        type: "tablet",
+                        src: "/images/myteam/tablet-home.png",
+                        caption: "Tablet – Home page"
+                    },
+                    {
+                        type: "tablet",
+                        src: "/images/myteam/tablet-about.png",
+                        caption: "Tablet – About page"
+                    },
+                    {
+                        type: "tablet",
+                        src: "/images/myteam/tablet-contact.png",
+                        caption: "Tablet – Contact page"
+                    }
+                ]
+            },
+            {
+                title: "Mobile version",
+                items: [
+                    {
+                        type: "mobile",
+                        src: "/images/myteam/mobile-home.png",
+                        caption: "Mobile – Home page"
+                    },
+                    {
+                        type: "mobile",
+                        src: "/images/myteam/mobile-about.png",
+                        caption: "Mobile – About page"
+                    },
+                    {
+                        type: "mobile",
+                        src: "/images/myteam/mobile-contact.png",
+                        caption: "Mobile – Contact page"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         id: "dine",
         title: "Dine Website",
         mainImg: "/images/dine/desktop-home.png",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation.",
+        description:
+            `  
+                A two-page website for a demo restaurant called Dine. The Home page includes a wide variety
+                of complex, beautifully designed sections, including a slider with switching content.
+                The Booking page includes a fully-validated reservation form, including validation
+                for the date and time entered by the user.
+            `,
         url: "https://dine-henna.now.sh/",
         githubUrl: "https://github.com/yinonhever/dine",
         gallery: [
@@ -530,7 +567,12 @@ const works = [
         id: "job-listings",
         title: "Job Listings with Filtering",
         mainImg: "/images/job-listings/desktop.png",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        description:
+            `
+                This page includes a beautifully-designed, fully-responsive set of demo job listings, with 
+                each listing including a list of its categories (the role, the level, and the required
+                languages and tools). Users can dynamically filter the job listings by category.
+            `,
         url: "https://job-listings-alpha.vercel.app/",
         githubUrl: "https://github.com/yinonhever/job-listings",
         gallery: [
