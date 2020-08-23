@@ -665,7 +665,13 @@ const works = [
         id: "chat-app-illustration",
         title: "Chat App Illustration",
         mainImg: "/images/chat-app-illustration/desktop.png",
-        description: "This mockup of a chat app's interface is built entirely from scratch with CSS, complete with various common features of a chat app and accompained by background patterns. Beautiful loading animations are applied to the chat's elements. This mockup is completely responsive to any change in the screen's width or the browser's font size.",
+        description:
+            `
+                This mockup of a chat app's interface is built entirely from scratch with CSS, complete
+                with various common features of a chat app and accompained by background patterns. Beautiful
+                loading animations are applied to the chat's elements. This mockup is completely responsive
+                to any change in the screen's width or the browser's font size.
+           `,
         url: "https://chat-app-illustration.vercel.app/",
         githubUrl: "https://github.com/yinonhever/chat-app-illustration",
         gallery: [

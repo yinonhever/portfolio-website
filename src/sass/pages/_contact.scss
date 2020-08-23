@@ -1,3 +1,121 @@
 .contact {
   padding: 8rem $padding-side-desktop;
+
+  @include respond(mobile) {
+    padding: 6rem $padding-side-mobile;
+  }
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid $color-azure;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: $color-azure transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(#fff, 0.8);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__content {
+    position: absolute;
+    background-color: #fff;
+    width: 90%;
+    max-width: 50rem;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: $bshadow-1;
+    border-radius: 0.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.5s;
+  }
+
+  &.active &__content {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  &__close {
+    font-size: 2.3rem;
+    color: $color-blue-dark;
+    transition: color 0.5s;
+    cursor: pointer;
+    margin-bottom: 2rem;
+
+    @include respond(mobile) {
+      font-size: 2rem;
+    }
+
+    &:hover {
+      color: $color-azure !important;
+    }
+  }
+
+  &.error &__close {
+    color: $color-error;
+  }
+
+  &__heading {
+    font-size: 2.7rem;
+    margin-bottom: 2rem;
+
+    @include respond(mobile) {
+      font-size: 2.2rem;
+    }
+  }
+
+  &.error &__heading {
+    color: $color-error;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+
+    @include respond(mobile) {
+      font-size: 1.5rem;
+    }
+  }
 }
