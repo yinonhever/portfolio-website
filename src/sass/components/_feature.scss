@@ -10,12 +10,13 @@
   }
 
   &__img {
-    width: 100%;
-    max-width: 28rem;
+    height: 25rem;
     margin-bottom: 4rem;
 
     @include respond(tablet) {
+      width: 100%;
       max-width: 32rem;
+      height: auto;
     }
 
     @include respond(mobile) {

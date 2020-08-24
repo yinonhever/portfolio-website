@@ -102,7 +102,6 @@
   &__row {
     display: flex;
     justify-content: center;
-    align-items: center;
 
     @include respond(tablet) {
       flex-direction: column;

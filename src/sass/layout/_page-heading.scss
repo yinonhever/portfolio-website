@@ -6,8 +6,11 @@
   height: 25rem;
   position: relative;
 
-  @include respond(mobile) {
+  @include respond(mobile-land) {
     background-attachment: initial;
+  }
+
+  @include respond(mobile) {
     height: 22rem;
   }
 

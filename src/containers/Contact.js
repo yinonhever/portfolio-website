@@ -1,5 +1,6 @@
 import React, { useState, useLayoutEffect } from "react";
 import axios from "axios";
+import Fade from "react-reveal/Fade";
 import Aux from "../hoc/Auxilliary";
 import PageHeading from "../components/layout/PageHeading";
 import Form from "../components/UI/Form";
@@ -34,7 +35,9 @@ const Contact = () => {
             <PageHeading title="Contact" />
             <main className="contact">
                 <section className="contact__intro">
-                    <img className="contact__img" src={illustration} alt="contact" />
+                    <Fade right duration={600}>
+                        <img className="contact__img" src={illustration} alt="contact" />
+                    </Fade>
                 </section>
                 <Form submit={submitHandler} />
             </main>

@@ -135,6 +135,10 @@
     }
 
     &__nav-link {
+      opacity: 0;
+      transform: translateX(-50vw);
+      transition: all 0.5s;
+
       &:not(:last-child) {
         margin-right: 0;
         margin-bottom: 3.5rem;
@@ -144,6 +148,11 @@
         color: #fff !important;
         font-size: 2rem;
       }
+    }
+
+    &.active &__nav-link {
+      opacity: 1;
+      transform: translateX(0);
     }
   }
 }

@@ -1,0 +1,12 @@
+.works {
+  &__img {
+    padding: 8rem $padding-side-mobile 0;
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 80rem;
+      margin: auto;
+    }
+  }
+}

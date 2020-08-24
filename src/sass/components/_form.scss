@@ -29,6 +29,21 @@
       }
     }
 
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 0;
+      background-color: $color-error;
+      transition: all 0.3s;
+    }
+
+    &.error::before {
+      width: 0.6rem;
+    }
+
     &::after {
       content: "This field is required";
       position: absolute;
@@ -70,13 +85,14 @@
     outline: none;
     padding: 1.5rem;
     transition: border-color 0.5s;
+    display: block;
 
     @include respond(mobile) {
       font-size: 1.45rem;
     }
 
     &:focus {
-      border-color: $color-azure;
+      border-color: $color-azure !important;
     }
   }
 

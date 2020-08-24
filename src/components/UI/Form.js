@@ -37,7 +37,7 @@ const Form = props => {
                         type="tel"
                         name="phone"
                         placeholder="Phone (optional)"
-                        ref={register({ required: false })}
+                        ref={register()}
                     />
                 </div>
                 <div className="form__field">
@@ -45,7 +45,7 @@ const Form = props => {
                         type="text"
                         name="company"
                         placeholder="Company (optional)"
-                        ref={register({ required: false })}
+                        ref={register()}
                     />
                 </div>
                 <div className={errors.subject ? "form__field error" : "form__field"}>
