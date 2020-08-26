@@ -5,7 +5,7 @@ import Button from "./Button";
 import ExternalLink from "./ExternalLink";
 
 const Work = props => {
-    const [imageBoxHeight, setImageBoxHeight] = useState(null);
+    const [imageBoxHeight, setImageBoxHeight] = useState();
     const imageRef = useRef();
     useLayoutEffect(() => {
         const adjustHeight = () => {
@@ -26,7 +26,7 @@ const Work = props => {
             <div className="work__container">
                 <Fade left mirror={props.mirror} duration={600}>
                     <Link to={"/works/" + props.id}>
-                        <div className="work__img" style={{ height: imageBoxHeight || null }}>
+                        <div className="work__img" style={{ height: imageBoxHeight || "20rem" }}>
                             <img ref={imageRef} src={props.img} alt={props.title} />
                         </div>
                     </Link>

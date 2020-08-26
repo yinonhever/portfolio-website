@@ -42,6 +42,10 @@
 
     &.error::before {
       width: 0.6rem;
+
+      @include respond(mobile) {
+        width: 0.4rem;
+      }
     }
 
     &::after {
@@ -68,12 +72,16 @@
       transform: translateX(0);
     }
 
-    &.message.error::after {
-      content: "Please enter a message";
+    &#email::after {
+      content: "Invalid email";
     }
 
-    &.error.invalid::after {
-      content: "Invalid email";
+    &#email.empty::after {
+      content: "This field is required";
+    }
+
+    &:last-of-type.error::after {
+      content: "Please enter a message";
     }
   }
 
@@ -88,7 +96,7 @@
     display: block;
 
     @include respond(mobile) {
-      font-size: 1.45rem;
+      font-size: 1.4rem;
     }
 
     &:focus {

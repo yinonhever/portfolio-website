@@ -372,8 +372,6 @@ const works = [
     {
         id: "myteam",
         title: "Myteam Website",
-        featured: false,
-        featuredText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
         mainImg: "/images/myteam/desktop-home.png",
         description:
             `
@@ -632,7 +630,13 @@ const works = [
         id: "manage",
         title: "Manage Landing Page",
         mainImg: "/images/manage/desktop.png",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        description:
+            `
+                This beautiful ladning page features a rich, detailed layout, with unique background patterns
+                and a lot of changes between differnet screen sizes. Among its highlights is the fully-responsive
+                testimonial carousel, which has completely different configuration for desktop and mobile
+                devices.
+            `,
         url: "https://manage-ten.now.sh/",
         githubUrl: "https://github.com/yinonhever/manage",
         gallery: [
@@ -672,7 +676,12 @@ const works = [
         id: "easybank",
         title: "Easybank Landing Page",
         mainImg: "/images/easybank/desktop.png",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        description: 
+            `
+                A landing page for a mock company that offers banking solutions. This page is highlighted
+                by its rich use of color gradients, its two repsonsive grids of features and article 
+                thumbnails, and the bledning of the intro image with its background pattern.
+            `,
         url: "https://easybank-landing-page-pearl.vercel.app/",
         githubUrl: "https://github.com/yinonhever/easybank-landing-page",
         gallery: [
@@ -758,7 +767,12 @@ const works = [
         id: "social-media-dashboard",
         title: "Social Media Dashboard",
         mainImg: "/images/dashboard/desktop-dark.png",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        description: 
+            `
+                A demo dashboard of a user's activity across social media platforms. This page features
+                two fully-responsive grids, an accurate, detailed layout of the cards' content, and the 
+                option to switch the dashboard's theme between Dark and Light mode.
+            `,
         url: "https://dashboard-silk.vercel.app/",
         githubUrl: "https://github.com/yinonhever/dashboard",
         gallery: [
@@ -813,7 +827,12 @@ const works = [
         id: "bookmark",
         title: "Bookmark Landing Page",
         mainImg: "/images/bookmark/desktop.png",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        description: 
+            `
+                A unique landing page featuring a responsive tabs section with animated panels, background
+                patterns built entirely from scratch with CSS, a FAQ accordion and a unique arrangement of
+                the call-to-action cards.
+            `,
         url: "https://bookmark-landing-page-sigma.now.sh/",
         githubUrl: "https://github.com/yinonhever/bookmark",
         gallery: [

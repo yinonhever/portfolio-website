@@ -2,7 +2,7 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 
 const GallerySection = props => (
-    <Fade left cascade duration={400}>
+    <Fade left cascade duration={400} appear spy={props.items}>
         <div className="gallery__section">
             <h3 className="gallery__section-title">{props.title}</h3>
             <div className="gallery__grid">

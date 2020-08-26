@@ -1,16 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import works from "../../data";
-import Fade from "react-reveal/Fade";
 import Aux from "../../hoc/Auxilliary";
 import BackButton from "../UI/BackButton";
-import Button from "../UI/Button";
-import ExternalLink from "../UI/ExternalLink";
+import GalleryIntro from "./GalleryIntro";
 import GallerySection from "../UI/GallerySection";
 import SelectedImage from "../UI/SelectedImage";
+import Suggestions from "../layout/Suggestions";
 
 const Gallery = props => {
     const [work, setWork] = useState({});
-    const [selectedImage, setSelectedImage] = useState(null);
+    const [selectedImage, setSelectedImage] = useState();
 
     useEffect(() => {
         const matchingWork = works.find(work => work.id === props.match.params.id);
@@ -34,21 +33,8 @@ const Gallery = props => {
         <Aux>
             <BackButton />
             <main className="gallery">
-                <Fade left duration={600}>
-                    <div className="gallery__intro">
-                        <h2 className="gallery__heading">{work.title}</h2>
-                        <p className="paragraph gallery__intro-text">{work.description}</p>
-                        <div className="gallery__intro-buttons">
-                            <ExternalLink link={work.url}>
-                                <Button fill>Go to website</Button>
-                            </ExternalLink>
-                            <ExternalLink link={work.githubUrl}>
-                                <Button unite>View on Github</Button>
-                            </ExternalLink>
-                        </div>
-                    </div>
-                </Fade>
-                <div className="gallery__container">
+                <GalleryIntro work={work} />
+                <section className="gallery__container">
                     <div className="gallery__items">
                         {work.gallery && work.gallery.map(section =>
                             <GallerySection
@@ -61,8 +47,9 @@ const Gallery = props => {
                     <div className="gallery__selected">
                         {selectedImage && <SelectedImage image={selectedImage} />}
                     </div>
-                </div>
+                </section>
             </main>
+            <Suggestions items={["manage", "myteam", "scoot", "github-timeline-app", "dine", "bookmark"]} />
         </Aux>
     )
 }

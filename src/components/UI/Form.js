@@ -22,8 +22,8 @@ const Form = props => {
                         ref={register({ required: true })}
                     />
                 </div>
-                <div className={!errors.email ? "form__field" :
-                    errors.email?.type === "pattern" ? "form__field error invalid" :
+                <div id="email" className={!errors.email ? "form__field" :
+                    errors.email?.type === "required" ? "form__field error empty" :
                         "form__field error"}>
                     <input className="form__input"
                         type="text"

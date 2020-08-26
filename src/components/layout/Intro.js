@@ -1,6 +1,6 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
-import illustration from "../../images/Illustrations/coding_2.svg";
+import illustration from "../../images/Illustrations/Setup Wizard-amico-animated.svg";
 
 const Intro = () => (
     <section className="intro">

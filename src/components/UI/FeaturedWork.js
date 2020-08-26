@@ -5,8 +5,8 @@ import Button from "./Button";
 import ExternalLink from "./ExternalLink";
 
 const FeaturedWork = props => {
-    const [imageBoxHeight, setImageBoxHeight] = useState(null);
-    const [titleMargin, setTitleMargin] = useState(null);
+    const [imageBoxHeight, setImageBoxHeight] = useState();
+    const [titleMargin, setTitleMargin] = useState();
     const imageRef = useRef();
     const titleRef = useRef();
 
