@@ -19,10 +19,10 @@ const Carousel = props => {
     return (
         <Fade left duration={600} appear spy={props.items}>
             <Swiper
-                spaceBetween={50}
+                spaceBetween={window.innerWidth > 600 ? 50 : 35}
                 slidesPerView={slidesPerView}
                 navigation
-                freeMode
+                freeMode={window.innerWidth > 600 ? true : false}
                 pagination={{ clickable: true }}
                 loop
                 className="swiper"

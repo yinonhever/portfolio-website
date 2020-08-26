@@ -8,12 +8,12 @@ const Suggestions = props => {
         props.items.forEach(item => carouselItems.push(<Suggestion id={item} key={item} />));
     }
 
-    return (
+    return props.items ?
         <section className="suggestions">
             <h2 className="suggestions__heading">Related Works</h2>
             <Carousel items={carouselItems} />
         </section>
-    )
+        : null
 }
 
 export default Suggestions;

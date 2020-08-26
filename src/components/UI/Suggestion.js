@@ -31,4 +31,4 @@ const Suggestion = props => {
 
 }
 
-export default Suggestion;
+export default React.memo(Suggestion);
