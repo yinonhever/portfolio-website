@@ -21,9 +21,9 @@ const Contact = () => {
             {
                 headers: { token: "GT73K1w_gnsj-qSNdE_pcOP86sCJLsNgGu_ZyAEStdU" },
                 body: {
-                    "to": "yinonehever@gmail.com",
-                    "subject": data.subject,
-                    "html": data.message
+                    to: "yinonehever@gmail.com",
+                    subject: data.subject,
+                    html: data.message
                 }
             })
             .then(() => {

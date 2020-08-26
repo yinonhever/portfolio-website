@@ -1,5 +1,8 @@
 .footer {
   background-color: $color-blue-dark-2;
+  background-image: url(../../images/backgrounds/Kissing-Silhouette.svg);
+  background-attachment: fixed;
+  background-size: cover;
   color: #fff;
   padding: 5rem $padding-side-desktop;
   font-size: 1.55rem;
@@ -8,6 +11,11 @@
   @include respond(tablet) {
     padding: 5rem $padding-side-mobile;
     text-align: center;
+    background-position: center;
+  }
+
+  @include respond(mobile-land) {
+    background-attachment: initial;
   }
 
   @include respond(mobile) {

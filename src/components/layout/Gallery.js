@@ -5,7 +5,6 @@ import BackButton from "../UI/BackButton";
 import GalleryIntro from "./GalleryIntro";
 import GallerySection from "../UI/GallerySection";
 import SelectedImage from "../UI/SelectedImage";
-import Suggestions from "../layout/Suggestions";
 
 const Gallery = props => {
     const [work, setWork] = useState({});
@@ -49,7 +48,6 @@ const Gallery = props => {
                     </div>
                 </section>
             </main>
-            <Suggestions items={work.suggestions} />
         </Aux>
     )
 }

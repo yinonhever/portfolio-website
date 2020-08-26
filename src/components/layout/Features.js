@@ -1,6 +1,6 @@
 import React from "react";
 import Feature from "./Feature";
-import illustration1 from "../../images/Illustrations/coding_2.svg";
+import illustration1 from "../../images/Illustrations/coding_.svg";
 import illustration2 from "../../images/Illustrations/illustration-15.svg";
 
 const Features = () => (

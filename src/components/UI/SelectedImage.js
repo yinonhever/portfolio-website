@@ -6,7 +6,7 @@ const SelectedImage = props => {
     const { image } = props;
     
     return (
-        <Fade right duration={600} appear spy={image}>
+        <Fade right duration={600}>
             <div className="gallery__selected-text">
                 <h4 className="gallery__selected-title">{image.caption}</h4>
                 <p className="gallery__selected-subtext">Click on the image to zoom</p>

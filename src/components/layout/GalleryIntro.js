@@ -7,7 +7,7 @@ const GalleryIntro = props => {
     const { work } = props;
 
     return (
-        <Fade left duration={600} spy={work}>
+        <Fade left duration={600}>
             <section className="gallery__intro">
                 <h2 className="gallery__heading">{work.title}</h2>
                 <p className="paragraph gallery__intro-text">{work.description}</p>
