@@ -17,16 +17,25 @@ const Contact = () => {
 
     const submitHandler = data => {
         setLoading(true);
-        axios.post("https://portfolio-website-b6e1d.firebaseio.com/messages.json", data)
+        axios.get("https://nagc.tech/mail",
+            {
+                headers: { token: "GT73K1w_gnsj-qSNdE_pcOP86sCJLsNgGu_ZyAEStdU" },
+                body: {
+                    "to": "yinonehever@gmail.com",
+                    "subject": data.subject,
+                    "html": data.message
+                }
+            })
             .then(() => {
                 setLoading(false);
                 setError(false);
                 setShowModal(true);
             })
-            .catch(() => {
+            .catch(error => {
                 setLoading(false);
                 setError(true);
                 setShowModal(true);
+                console.log(error);
             })
     }
 

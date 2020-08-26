@@ -49,7 +49,7 @@ const Gallery = props => {
                     </div>
                 </section>
             </main>
-            <Suggestions items={["manage", "myteam", "scoot", "github-timeline-app", "dine", "bookmark"]} />
+            <Suggestions items={work.suggestions} />
         </Aux>
     )
 }
