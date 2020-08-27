@@ -9,7 +9,7 @@
     @include respond(tablet) {
       flex-direction: column-reverse;
       text-align: center;
-      padding: 3 $padding-side-mobile 7rem;
+      padding: 2rem $padding-side-mobile 7rem;
     }
   }
 
