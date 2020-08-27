@@ -7,6 +7,11 @@ const Header = () => {
     const [navOpen, setNavOpen] = useState(false);
     useEffect(() => {
         document.querySelector("body").style.overflow = navOpen ? "hidden" : null;
+        window.addEventListener("resize", () => {
+            if (window.innerWidth > 700 && navOpen) {
+                setNavOpen(false);
+            }
+        })
     }, [navOpen])
 
     return (

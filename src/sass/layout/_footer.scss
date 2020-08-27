@@ -73,6 +73,10 @@
   &__navigation &__link:not(:last-child) {
     margin-right: 5rem;
 
+    @include respond(tablet) {
+      margin-right: 3.5rem;
+    }
+
     @include respond(mobile-land) {
       margin-right: 0;
     }
