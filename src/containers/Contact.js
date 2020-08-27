@@ -15,27 +15,32 @@ const Contact = () => {
 
     useLayoutEffect(() => window.scrollTo(0, 0), []);
 
-    const submitHandler = data => {
+    const submitHandler = (data, event) => {
         setLoading(true);
-        axios.get("https://nagc.tech/mail",
+        axios.post("https://nagc.tech/mail",
             {
-                headers: { token: "GT73K1w_gnsj-qSNdE_pcOP86sCJLsNgGu_ZyAEStdU" },
-                body: {
-                    to: "yinonehever@gmail.com",
-                    subject: data.subject,
-                    html: data.message
-                }
-            })
+                to: "yinonehever@gmail.com",
+                subject: "New message from " + data.name,
+                html: `
+                    <p><strong>Name: </strong> ${data.name}</p><br />
+                    <p><strong>Email: </strong> ${data.email}</p><br />
+                    <p><strong>Phone: </strong> ${data.phone}</p><br />
+                    <p><strong>Company: </strong> ${data.company}</p><br />
+                    <p><strong>Subject: </strong> ${data.subject}</p><br />
+                    <p><strong>Message: </strong> ${data.message}</p>
+                `
+            },
+            { headers: { token: "GT73K1w_gnsj-qSNdE_pcOP86sCJLsNgGu_ZyAEStdU" } })
             .then(() => {
+                event.target.reset();
                 setLoading(false);
                 setError(false);
                 setShowModal(true);
             })
-            .catch(error => {
+            .catch(() => {
                 setLoading(false);
                 setError(true);
                 setShowModal(true);
-                console.log(error);
             })
     }
 

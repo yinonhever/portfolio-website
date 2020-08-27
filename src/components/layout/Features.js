@@ -5,7 +5,7 @@ import illustration2 from "../../images/Illustrations/illustration-15.svg";
 
 const Features = () => (
     <section className="features">
-        <h2 className="section-heading features__heading">What I do</h2>
+        <h2 className="section-heading features__heading">What I Do</h2>
         <div className="features__row">
             <Feature left img={illustration1} heading="Lorem ipsum dolor">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu

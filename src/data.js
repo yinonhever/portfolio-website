@@ -5,7 +5,7 @@ const works = [
         featured: true,
         featuredText:
             `
-                An app that allows users to submit a Github username and generates a graphical timeline
+                An app that allows users to submit a Github username and generate a graphical timeline
                 and a yearly chart of the user's repositories, with a unique, well-structured and animated
                 design. Users can also view the history of all their valid searches, which is saved into
                 their browser's storage.
@@ -451,10 +451,10 @@ const works = [
         mainImg: "/images/dine/desktop-home.png",
         description:
             `  
-                A two-page website for a demo restaurant called Dine. The Home page includes a wide variety
+                A two-page website for a demo restaurant called Dine. The Home page features a variety
                 of complex, beautifully designed sections, including a slider with switching content.
-                The Booking page includes a fully-validated reservation form, including validation
-                for the date and time entered by the user.
+                The Booking page includes a responsive, fully-validated reservation form, including complete and
+                accurate validation for the date and time entered by the user.
             `,
         url: "https://dine-henna.now.sh/",
         githubUrl: "https://github.com/yinonhever/dine",
@@ -632,7 +632,7 @@ const works = [
         mainImg: "/images/manage/desktop.png",
         description:
             `
-                This beautiful ladning page features a rich, detailed layout, with unique background patterns
+                This beautiful landing page features a rich, detailed layout, with unique background patterns
                 and a lot of changes between differnet screen sizes. Among its highlights is the fully-responsive
                 testimonial carousel, which has completely different configuration for desktop and mobile
                 devices.
@@ -676,7 +676,7 @@ const works = [
         id: "easybank",
         title: "Easybank Landing Page",
         mainImg: "/images/easybank/desktop.png",
-        description: 
+        description:
             `
                 A landing page for a mock company that offers banking solutions. This page is highlighted
                 by its rich use of color gradients, its two repsonsive grids of features and article 
@@ -723,10 +723,10 @@ const works = [
         mainImg: "/images/chat-app-illustration/desktop.png",
         description:
             `
-                This mockup of a chat app's interface is built entirely from scratch with CSS, complete
-                with various common features of a chat app and accompained by background patterns. Beautiful
-                loading animations are applied to the chat's elements. This mockup is completely responsive
-                to any change in the screen's width or the browser's font size.
+                This mockup of a chat app's interface is built entirely from scratch with CSS, complete with
+                various common features of a chat app and beautiful background patterns. The chat's elements are animated when the page is
+                loaded, simulating an actual chat conversation. This mockup is completely responsive to any change
+                in the screen's width or the browser's font size, and feels like an actual image on the screen.
            `,
         url: "https://chat-app-illustration.vercel.app/",
         githubUrl: "https://github.com/yinonhever/chat-app-illustration",
@@ -767,7 +767,7 @@ const works = [
         id: "social-media-dashboard",
         title: "Social Media Dashboard",
         mainImg: "/images/dashboard/desktop-dark.png",
-        description: 
+        description:
             `
                 A demo dashboard of a user's activity across social media platforms. This page features
                 two fully-responsive grids, an accurate, detailed layout of the cards' content, and the 
@@ -827,7 +827,7 @@ const works = [
         id: "bookmark",
         title: "Bookmark Landing Page",
         mainImg: "/images/bookmark/desktop.png",
-        description: 
+        description:
             `
                 A unique landing page featuring a responsive tabs section with animated panels, background
                 patterns built entirely from scratch with CSS, a FAQ accordion and a unique arrangement of

@@ -6,14 +6,9 @@ import Button from "./Button";
 const Form = props => {
     const { register, handleSubmit, errors } = useForm({ mode: "onChange" });
 
-    const onSubmit = (data, event) => {
-        event.target.reset();
-        props.submit(data);
-    };
-
     return (
         <Fade left duration={600}>
-            <form className="form" onSubmit={handleSubmit(onSubmit)}>
+            <form className="form" onSubmit={handleSubmit(props.submit)}>
                 <div className={errors.name ? "form__field error" : "form__field"}>
                     <input className="form__input"
                         type="text"
