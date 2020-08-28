@@ -1,5 +1,6 @@
 import React, { useState, useLayoutEffect } from "react";
 import axios from "axios";
+import emailTemplate from "../utility/emailTemplate";
 import Fade from "react-reveal/Fade";
 import Aux from "../hoc/Auxilliary";
 import PageHeading from "../components/layout/PageHeading";
@@ -17,19 +18,7 @@ const Contact = () => {
 
     const submitHandler = (data, event) => {
         setLoading(true);
-        axios.post("https://nagc.tech/mail",
-            {
-                to: "yinonehever@gmail.com",
-                subject: "New message from " + data.name,
-                html: `
-                    <p><strong>Name: </strong> ${data.name}</p><br />
-                    <p><strong>Email: </strong> ${data.email}</p><br />
-                    <p><strong>Phone: </strong> ${data.phone}</p><br />
-                    <p><strong>Company: </strong> ${data.company}</p><br />
-                    <p><strong>Subject: </strong> ${data.subject}</p><br />
-                    <p><strong>Message: </strong> ${data.message}</p>
-                `
-            },
+        axios.post("https://nagc.tech/mail", emailTemplate(data),
             { headers: { token: "GT73K1w_gnsj-qSNdE_pcOP86sCJLsNgGu_ZyAEStdU" } })
             .then(() => {
                 event.target.reset();
