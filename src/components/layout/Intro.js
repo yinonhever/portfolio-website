@@ -9,9 +9,9 @@ const Intro = () => (
                 <div className="intro__content">
                     <h1 className="intro__heading">Sed tamen intellego quid</h1>
                     <p className="paragraph intro__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation.
+                        I'm Yinon, a front-end web developer. I'm dedicated to building and improving
+                        beautiful, standout websites and web apps, with optimized functionality and
+                        complete user experience.
                     </p>
                 </div>
             </Fade>
