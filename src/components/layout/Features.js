@@ -8,9 +8,10 @@ const Features = () => (
         <h2 className="section-heading features__heading">What I Do</h2>
         <div className="features__row">
             <Feature left img={illustration1} heading="Lorem ipsum dolor">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum.
+                I'm committed to coding beautiful and accurate designs with a wide variety of layouts, effects,
+                animations and complex elements, making them as pixel-perfect as possible and ensuring
+                their ultimate responsiveness for any possible screen size. I take care of every small detail
+                to bring any website to its most optimal appearance.
             </Feature>
             <Feature right img={illustration2} heading="Dolore magna aliqua">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

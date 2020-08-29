@@ -201,5 +201,10 @@
 
   &__selected-img {
     box-shadow: $bshadow-1;
+    margin: auto;
+
+    figure {
+      display: block;
+    }
   }
 }

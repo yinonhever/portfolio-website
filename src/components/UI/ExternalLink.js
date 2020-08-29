@@ -5,7 +5,8 @@ const ExternalLink = props => (
         rel="noopener noreferrer"
         href={props.link}
         target="_blank"
-        className={props.classes || null}>
+        className={props.classes || null}
+    >
         {props.children}
     </a>
 )
