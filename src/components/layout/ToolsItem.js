@@ -12,4 +12,4 @@ const ToolsItem = props => (
     </Fade>
 )
 
-export default ToolsItem;
+export default React.memo(ToolsItem);

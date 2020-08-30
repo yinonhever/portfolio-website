@@ -9,7 +9,7 @@ const items = [
     { text: "jQuery", icon: "icon-jquery" },
     { text: "ReactJS", icon: "icon-react" },
     { text: "Redux", icon: "icon-redux" },
-    { text: "Router", icon: "icon-reactrouter" },
+    { text: "React Router", icon: "icon-reactrouter" },
     { text: "Next.js", icon: "icon-next-dot-js" },
     { text: "Firebase", icon: "icon-firebase" },
     { text: "Node.js", icon: "icon-node-dot-js" }

@@ -165,7 +165,12 @@
       max-width: 50rem;
     }
 
-    @media only screen and (max-width: 350px) {
+    @include respond(mobile) {
+      margin: 0 -2rem;
+      max-width: initial;
+    }
+
+    @media only screen and (max-width: 345px) {
       grid-auto-flow: initial;
       justify-items: center;
       grid-template-columns: 1fr;
@@ -175,6 +180,10 @@
   &__item {
     display: flex;
     align-items: center;
+
+    @include respond(mobile) {
+      margin: 0 2rem;
+    }
   }
 
   &__item-text {
@@ -183,6 +192,7 @@
 
     @include respond(mobile) {
       font-size: 1.8rem;
+      line-height: 1.4;
     }
   }
 
