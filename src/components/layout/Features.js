@@ -14,9 +14,10 @@ const Features = () => (
                 to bring any website to its most optimal appearance.
             </Feature>
             <Feature right img={illustration2} heading="Dolore magna aliqua">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                I build various web applications with full, optimized functionality and a professional,
+                well-designed interface with maximum usability. I make sure to create a seamless
+                user experience for any web app, allowing users to browse, navigate and use the website's 
+                content in the easiest and most efficient way possible.
             </Feature>
         </div>
     </section>

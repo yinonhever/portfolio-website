@@ -10,14 +10,12 @@
     "lodash": "^4.17.20",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
-    "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.13.1",
     "react-hook-form": "^6.4.1",
     "react-inner-image-zoom": "^1.1.1",
     "react-reveal": "^1.2.2",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^3.4.3",
-    "swiper": "^6.1.2"
+    "react-scripts": "^3.4.3"
   },
   "scripts": {
     "start": "react-scripts start",

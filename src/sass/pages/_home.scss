@@ -14,13 +14,16 @@
   }
 
   &__content {
-    width: 35vw;
+    width: 37vw;
     margin-top: -2rem;
+
+    @include respond(tablet-land) {
+      margin-top: 0;
+    }
 
     @include respond(tablet) {
       width: 100%;
       max-width: 55rem;
-      margin-top: 0;
     }
   }
 
@@ -31,11 +34,23 @@
     margin-bottom: 2rem;
 
     @include respond(tablet-land) {
-      font-size: 5rem;
+      font-size: 4.5rem;
+    }
+
+    @include respond(tablet) {
+      font-size: 5.5rem;
     }
 
     @include respond(mobile) {
       font-size: 4rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.7rem;
+
+    @include respond(mobile) {
+      font-size: 1.6rem;
     }
   }
 
@@ -101,18 +116,19 @@
 
   &__row {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 105rem;
 
-    @include respond(tablet) {
+    @include respond(tablet-land) {
       flex-direction: column;
-      max-width: 50rem;
-      margin: auto;
+      max-width: 55rem;
     }
 
     .feature:not(:last-child) {
-      margin-right: 10vw;
+      margin-right: 8vw;
 
-      @include respond(tablet) {
+      @include respond(tablet-land) {
         margin-right: 0;
         margin-bottom: 7rem;
       }
