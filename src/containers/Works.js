@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from "react";
+import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Aux from "../hoc/Auxilliary";
 import PageHeading from "../components/layout/PageHeading";
@@ -6,7 +6,7 @@ import WorksMain from "../components/layout/WorksMain";
 import Gallery from "../components/layout/Gallery";
 
 const Works = () => {
-    useLayoutEffect(() => window.scrollTo(0, 0), []);
+    window.scrollTo(0, 0);
     
     return (
         <Aux>
