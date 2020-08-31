@@ -28,7 +28,7 @@
   }
 
   &__heading {
-    font-size: 6rem;
+    font-size: 5.7rem;
     letter-spacing: -1px;
     line-height: 1.1;
     margin-bottom: 2rem;
@@ -68,7 +68,7 @@
 /*** FEATURED WORKS SECTION ***/
 .featured-works {
   padding: 8rem $padding-side-desktop 10rem;
-  background-color: rgba($color-azure-light, 0.5);
+  background-color: $color-azure-light;
 
   @include respond(tablet) {
     padding: 6rem $padding-side-mobile 7rem;
@@ -158,16 +158,16 @@
     grid-row-gap: 2rem;
 
     @include respond(tablet) {
-      max-width: 55rem;
+      max-width: 60rem;
     }
 
     @include respond(mobile-land) {
-      max-width: 50rem;
+      max-width: initial;
     }
 
     @include respond(mobile) {
       margin: 0 -2rem;
-      max-width: initial;
+      grid-row-gap: 1.75rem;
     }
 
     @media only screen and (max-width: 345px) {
