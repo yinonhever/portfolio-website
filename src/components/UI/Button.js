@@ -1,8 +1,9 @@
 import React from "react";
 
 const Button = props => {
+    const types = ["unite", "pill", "fill", "stretch"];
     let classes = "button bttn-primary bttn-no-outline ";
-    ["unite", "pill", "fill", "stretch"].forEach(type => {
+    types.forEach(type => {
         if (props[type]) classes += "bttn-" + type + " ";
     })
     if (props.extra) classes += props.extra;
