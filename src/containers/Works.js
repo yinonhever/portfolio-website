@@ -1,22 +1,16 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Aux from "../hoc/Auxilliary";
-import PageHeading from "../components/layout/PageHeading";
+import Page from "../hoc/Page";
 import WorksMain from "../components/layout/WorksMain";
 import Gallery from "../components/layout/Gallery";
 
-const Works = () => {
-    window.scrollTo(0, 0);
-    
-    return (
-        <Aux>
-            <PageHeading title="Works" />
-            <Switch>
-                <Route path="/works" exact component={WorksMain} />
-                <Route path="/works/:id" component={Gallery} />
-            </Switch>
-        </Aux>
-    )
-}
+const Works = () => (
+    <Page title="Works">
+        <Switch>
+            <Route path="/works" exact component={WorksMain} />
+            <Route path="/works/:id" component={Gallery} />
+        </Switch>
+    </Page>
+)
 
 export default Works;

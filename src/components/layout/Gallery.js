@@ -16,6 +16,7 @@ const Gallery = props => {
             setWork(matchingWork);
             setSelectedImage(matchingWork.gallery[0].items[0]);
             window.scrollTo(0, 300);
+            console.log(props);
         }
         else {
             props.history.push("/works");

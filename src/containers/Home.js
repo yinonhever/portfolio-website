@@ -1,21 +1,17 @@
 import React from "react";
-import Aux from "../hoc/Auxilliary";
+import Page from "../hoc/Page";
 import Intro from "../components/layout/Intro";
 import FeaturedWorks from "../components/layout/FeaturedWorks";
 import Features from "../components/layout/Features";
 import Tools from "../components/layout/Tools";
 
-const Home = () => {
-    window.scrollTo(0, 0);
-
-    return (
-        <Aux>
-            <Intro />
-            <FeaturedWorks />
-            <Features />
-            <Tools />
-        </Aux>
-    )
-}
+const Home = () => (
+    <Page>
+        <Intro />
+        <FeaturedWorks />
+        <Features />
+        <Tools />
+    </Page>
+)
 
 export default Home;
