@@ -13,7 +13,7 @@ const Work = props => (
                     <WorkImg classes="work__img" src={props.img} alt={props.title} />
                 </Link>
             </Fade>
-            <Fade right mirror={props.mirror} duration={600}>
+            <Fade right cascade mirror={props.mirror} duration={500}>
                 <div className="work__content">
                     <h2 className="work__title">{props.title}</h2>
                     <p className="paragraph work__description">{props.description}</p>
