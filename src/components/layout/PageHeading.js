@@ -1,13 +1,13 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
+import Flip from "react-reveal/Flip";
 
 const PageHeading = props => (
     <section className="page-heading">
-        <Fade duration={600}>
+        <Flip left duration={1000}>
             <div style={{ height: "100%" }}>
                 <h1 className="page-heading__title">{props.title}</h1>
             </div>
-        </Fade>
+        </Flip>
     </section>
 )
 
