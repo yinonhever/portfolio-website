@@ -46,6 +46,7 @@
     }
   }
 
+  /*** MOBILE VIEW ***/
   @include respond(mobile-land) {
     &.active {
       color: #fff;

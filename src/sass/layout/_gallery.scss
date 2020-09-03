@@ -1,4 +1,5 @@
 .gallery {
+  /*** GENERAL PAGE ***/
   padding: 0 $padding-side-desktop 8rem;
 
   @include respond(tablet-land) {
@@ -9,6 +10,7 @@
     padding-bottom: 7rem;
   }
 
+  /*** INTRO SECTION ***/
   &__intro {
     display: flex;
     flex-direction: column;
@@ -86,6 +88,7 @@
     }
   }
 
+  /*** THE GALLERY CONTAINER ***/
   &__container {
     display: flex;
 
@@ -94,6 +97,7 @@
     }
   }
 
+  /*** THE GALLERY SECTIONS AND ITEMS ***/
   &__items {
     flex: 1;
     margin-right: 5rem;
@@ -167,6 +171,7 @@
     }
   }
 
+  /*** THE SELECTED IMAGE ***/
   &__selected {
     width: 47%;
     text-align: center;
