@@ -834,7 +834,7 @@ const works = [
                 the call-to-action cards.
             `,
         url: "https://bookmark-landing-page-sigma.now.sh/",
-        githubUrl: "https://github.com/yinonhever/bookmark",
+        githubUrl: "https://github.com/yinonhever/Bookmark-Landing-Page",
         gallery: [
             {
                 title: "Desktop version",
