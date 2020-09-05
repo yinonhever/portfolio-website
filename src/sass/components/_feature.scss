@@ -62,6 +62,10 @@
 
 .zoom-out-bg {
   animation: backgroundZoomOut 1s;
+
+  @include respond(mobile) {
+    animation: none;
+  }
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet {
@@ -84,4 +88,8 @@
     bottom: initial !important;
     top: 3rem;
   }
+}
+
+.swiper-slide, .swiper-wrapper, .swiper-container {
+  background-color: $color-blue-dark !important;
 }

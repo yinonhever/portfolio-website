@@ -15,6 +15,7 @@
 
   @include respond(mobile) {
     background-attachment: initial;
+    animation: none;
   }
 
   &__content {
@@ -76,6 +77,11 @@
 
   @include respond(tablet) {
     padding: 6rem $padding-side-mobile 7rem;
+  }
+
+  & > * {
+    position: relative;
+    z-index: 10;
   }
 
   &__view-all {

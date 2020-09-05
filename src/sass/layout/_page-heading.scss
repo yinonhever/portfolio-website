@@ -14,6 +14,7 @@
 
   @include respond(mobile) {
     height: 30rem;
+    animation: none;
   }
 
   &__title {
