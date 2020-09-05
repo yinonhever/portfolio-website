@@ -4,7 +4,10 @@
   justify-content: space-between;
   align-items: center;
   color: $color-blue-dark;
-  position: relative;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
   z-index: 999;
 
   @include respond(tablet) {
@@ -42,7 +45,7 @@
       font-family: "Spartan", sans-serif;
       font-size: 1.6rem;
       font-weight: 700;
-      color: $color-blue;
+      color: #fff;
     }
   }
 
@@ -80,7 +83,7 @@
       &::after {
         width: 2.5rem;
         height: 2px;
-        background-color: $color-blue;
+        background-color: #fff;
       }
 
       &::before,
@@ -104,7 +107,6 @@
 
       &::before,
       &::after {
-        background-color: #fff;
         top: 0;
       }
 
@@ -146,7 +148,7 @@
       }
 
       .button {
-        color: #fff !important;
+        color: #fff;
         font-size: 2rem;
       }
     }

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import emailTemplate from "../../utility/emailTemplate";
-import Aux from "../../hoc/Auxilliary";
 import Fade from "react-reveal/Fade";
+import Aux from "../../hoc/Auxilliary";
 import Form from "../UI/Form";
 import Spinner from "../UI/Spinner";
 import Modal from "../UI/Modal";

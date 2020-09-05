@@ -1,44 +1,62 @@
 /*** INTRO SECTION ***/
 .intro {
-  &__container {
-    padding: 3rem $padding-side-desktop 8rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  height: 70rem;
+  background-color: $color-blue-dark;
+  background-image: url(../../images/web-dev-2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  animation: backgroundZoomOut 1s;
+  position: relative;
 
-    @include respond(tablet) {
-      flex-direction: column-reverse;
-      text-align: center;
-      padding: 2rem $padding-side-mobile 7rem;
-    }
+  @include respond(tablet) {
+    height: 60rem;
+  }
+
+  @include respond(mobile) {
+    background-attachment: initial;
   }
 
   &__content {
     width: 37vw;
-    margin-top: -2rem;
+    min-width: 45rem;
+    max-width: 75rem;
+    position: absolute;
+    right: 10%;
+    top: 40%;
 
-    @include respond(tablet-land) {
-      margin-top: 0;
+    & > * {
+      color: #fff;
     }
 
     @include respond(tablet) {
+      right: 50%;
+      transform: translateX(50%);
       width: 100%;
+      min-width: initial;
       max-width: 55rem;
+      text-align: center;
+    }
+
+    @include respond(mobile) {
+      padding: 0 $padding-side-mobile;
+    }
+
+    @media only screen and (max-width: 365px) {
+      top: initial;
+      bottom: 12.5%;
+      hyphens: auto;
     }
   }
 
   &__heading {
-    font-size: 5.7rem;
+    font-size: 5.5rem;
     letter-spacing: -1px;
     line-height: 1.1;
     margin-bottom: 2rem;
 
-    @include respond(tablet-land) {
-      font-size: 4.5rem;
-    }
-
     @include respond(tablet) {
-      font-size: 5.5rem;
+      font-size: 5rem;
     }
 
     @include respond(mobile) {
@@ -47,21 +65,7 @@
   }
 
   &__text {
-    font-size: 1.7rem;
-
-    @include respond(mobile) {
-      font-size: 1.6rem;
-    }
-  }
-
-  &__img {
-    width: 37.5vw;
-
-    @include respond(tablet) {
-      width: 100%;
-      max-width: 45rem;
-      margin-bottom: 5rem;
-    }
+    font-size: 1.6rem;
   }
 }
 
@@ -208,5 +212,15 @@
       height: 3rem;
       width: 3rem;
     }
+  }
+}
+
+@keyframes backgroundZoomOut {
+  0% {
+    background-size: 220%;
+  }
+
+  100% {
+    background-size: 100%;
   }
 }

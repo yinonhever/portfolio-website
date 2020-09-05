@@ -20,7 +20,7 @@ const WorkImg = props => {
 
     return (
         <div className={props.classes}
-            style={{ height: imageBoxHeight || null }}>
+            style={{ height: imageBoxHeight || "20rem" }}>
             <img src={props.src} alt={props.alt} ref={imageRef} />
         </div>
     )

@@ -1,9 +1,11 @@
 .page-heading {
-  background-color: $color-blue-dark;
-  background-image: url(../../images/backgrounds/Rainbow-Spinner-4.svg);
+  height: 37rem;
+  background-color: $color-blue-dark-2;
+  background-image: url(../../images/web-dev-1.jpg);
   background-attachment: fixed;
   background-size: cover;
-  height: 25rem;
+  background-position: center;
+  animation: backgroundZoomOut 1s;
   position: relative;
 
   @include respond(mobile-land) {
@@ -11,12 +13,11 @@
   }
 
   @include respond(mobile) {
-    height: 22rem;
+    height: 30rem;
   }
 
   &__title {
     position: absolute;
-    width: 90%;
     text-align: center;
     left: $padding-side-mobile;
     right: $padding-side-mobile;

@@ -16,7 +16,7 @@ const Header = () => {
 
     return (
         <header className={navOpen ? "header active" : "header"}>
-            <Logo white={navOpen} clicked={() => setNavOpen(false)} />
+            <Logo clicked={() => setNavOpen(false)} />
             <NavToggle clicked={() => setNavOpen(!navOpen)} />
             <Navigation itemClicked={() => setNavOpen(false)} />
         </header>
