@@ -463,7 +463,7 @@ a {
   border-radius: 0.8rem;
   -webkit-box-shadow: rgba(62, 57, 107, 0.3) 0px 6px 16px 0px;
           box-shadow: rgba(62, 57, 107, 0.3) 0px 6px 16px 0px;
-  background-color: #dcecfc;
+  background-color: #c9e4ff;
   overflow: hidden;
 }
 
@@ -1616,7 +1616,7 @@ a {
 /*** FEATURED WORKS SECTION ***/
 .featured-works {
   padding: 8rem 9vw 10rem;
-  background-color: #dcecfc;
+  background-color: #c9e4ff;
 }
 
 @media only screen and (max-width: 900px) {
@@ -1710,7 +1710,7 @@ a {
 
 /*** TOOLS SECTION ***/
 .tools {
-  background-color: #dcecfc;
+  background-color: #c9e4ff;
   color: #041464;
   padding: 8rem 9vw;
 }
