@@ -14,7 +14,7 @@
 }
 
 .swiper-pagination-bullets {
-  @include respond(mobile) {
+  @include respond(mobile-land) {
     bottom: initial !important;
     top: 3rem;
   }

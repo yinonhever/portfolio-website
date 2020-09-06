@@ -28,7 +28,7 @@ const slides = [
 
 const Features = () => (
     <Swiper
-        spaceBetween={0}
+        spaceBetween={window.innerWidth > 700 ? 0 : 30}
         slidesPerView={1}
         pagination={{ clickable: true }}
         loop

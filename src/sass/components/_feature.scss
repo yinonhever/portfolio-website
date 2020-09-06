@@ -7,9 +7,6 @@
 
     @include respond(mobile-land) {
       background-attachment: initial;
-    }
-
-    @include respond(mobile) {
       height: 40rem;
     }
   }
@@ -31,7 +28,7 @@
     top: 20%;
     left: 10%;
 
-    @include respond(mobile) {
+    @include respond(mobile-land) {
       position: initial;
       width: 100%;
       min-width: initial;

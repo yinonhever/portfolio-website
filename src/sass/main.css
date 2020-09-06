@@ -606,11 +606,6 @@ a {
 @media only screen and (max-width: 700px) {
   .feature__img {
     background-attachment: initial;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .feature__img {
     height: 40rem;
   }
 }
@@ -633,7 +628,7 @@ a {
   left: 10%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .feature__content {
     position: initial;
     width: 100%;
@@ -830,7 +825,7 @@ a {
   background-color: #fff;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .swiper-pagination-bullets {
     bottom: initial !important;
     top: 3rem;
@@ -1589,9 +1584,6 @@ a {
   .intro__content {
     top: initial;
     bottom: 12.5%;
-    -webkit-hyphens: auto;
-        -ms-hyphens: auto;
-            hyphens: auto;
   }
 }
 
@@ -1611,6 +1603,9 @@ a {
 @media only screen and (max-width: 600px) {
   .intro__heading {
     font-size: 4rem;
+    -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
   }
 }
 
