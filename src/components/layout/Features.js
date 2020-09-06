@@ -1,11 +1,12 @@
 import React from "react";
-import SwiperCore, { Pagination, Autoplay } from "swiper";
+import SwiperCore, { Pagination, Navigation, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
 import "swiper/components/pagination/pagination.scss";
+import "swiper/components/navigation/navigation.scss";
 import Feature from "./Feature";
 
-SwiperCore.use([Autoplay, Pagination]);
+SwiperCore.use([Pagination, Navigation, Autoplay]);
 
 const slides = [
     {
@@ -31,6 +32,7 @@ const Features = () => (
         spaceBetween={window.innerWidth > 700 ? 0 : 30}
         slidesPerView={1}
         pagination={{ clickable: true }}
+        navigation
         loop
         autoplay={{ delay: 8000 }}
         speed={500}

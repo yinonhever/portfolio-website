@@ -836,6 +836,24 @@ a {
   background-color: #030f4e !important;
 }
 
+.swiper-button-prev, .swiper-button-next {
+  color: #fff !important;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+  color: #1d89ff !important;
+}
+
+.swiper-button-prev.swiper-button-prev {
+  left: 2rem;
+}
+
+.swiper-button-next.swiper-button-next {
+  right: 2rem;
+}
+
 .header {
   padding: 3rem 9vw;
   display: -webkit-box;
