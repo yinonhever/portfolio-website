@@ -6,7 +6,7 @@ import Aux from "../../hoc/Auxilliary";
 import Form from "../UI/Form";
 import Spinner from "../UI/Spinner";
 import Modal from "../UI/Modal";
-import illustration from "../../images/Illustrations/undraw_contact_us_15o2.svg";
+import illustration from "../../images/undraw_contact_us_15o2.svg";
 
 const ContactMain = () => {
     const [loading, setLoading] = useState(false);

@@ -32,7 +32,7 @@ const Features = () => (
         slidesPerView={1}
         pagination={{ clickable: true }}
         loop
-        autoplay={{ delay: 7000 }}
+        autoplay={{ delay: 8000 }}
         speed={500}
     >
         {slides.map(slide =>
