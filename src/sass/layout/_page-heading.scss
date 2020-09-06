@@ -1,20 +1,23 @@
 .page-heading {
   height: 37rem;
-  background-color: $color-blue-dark-2;
-  background-image: url(../../images/web-dev-1.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  animation: backgroundZoomOut 1s;
   position: relative;
-
-  @include respond(mobile-land) {
-    background-attachment: initial;
-  }
 
   @include respond(mobile) {
     height: 30rem;
-    animation: none;
+  }
+
+  &__bg {
+    height: 100%;
+    background-color: $color-blue-dark-2;
+    background-image: url(../../images/web-dev-1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    animation: backgroundZoomOut 1s;
+
+    @include respond(mobile-land) {
+      background-attachment: initial;
+    }
   }
 
   &__title {

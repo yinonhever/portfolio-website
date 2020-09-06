@@ -3,6 +3,7 @@ import Fade from "react-reveal/Fade";
 
 const PageHeading = props => (
     <section className="page-heading">
+        <div className="page-heading__bg" />
         <h1 className="page-heading__title">
             <Fade duration={700}>
                 <span>{props.title}</span>

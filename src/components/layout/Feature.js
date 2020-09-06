@@ -7,7 +7,7 @@ const Feature = props => (
         <Reveal effect="zoom-out-bg" duration={props.id === "slide1" ? 1000 : 0}>
             <div className="feature__img" />
         </Reveal>
-        <Fade bottom duration={700} appear spy={props.active}>
+        <Fade bottom duration={window.innerWidth > 700 ? 700 : 0} appear spy={props.active}>
             <div className="feature__content">
                 <h3 className="feature__title">
                     {props.heading}

@@ -1,21 +1,24 @@
 /*** INTRO SECTION ***/
 .intro {
   height: 70rem;
-  background-color: $color-blue-dark;
-  background-image: url(../../images/web-dev-2.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  animation: backgroundZoomOut 1s;
   position: relative;
 
   @include respond(tablet) {
     height: 60rem;
   }
 
-  @include respond(mobile) {
-    background-attachment: initial;
-    animation: none;
+  &__bg {
+    height: 100%;
+    background-color: $color-blue-dark;
+    background-image: url(../../images/web-dev-2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    animation: backgroundZoomOut 1s;
+
+    @include respond(mobile) {
+      background-attachment: initial;
+    }
   }
 
   &__content {
@@ -77,11 +80,6 @@
 
   @include respond(tablet) {
     padding: 6rem $padding-side-mobile 7rem;
-  }
-
-  & > * {
-    position: relative;
-    z-index: 10;
   }
 
   &__view-all {
@@ -218,15 +216,5 @@
       height: 3rem;
       width: 3rem;
     }
-  }
-}
-
-@keyframes backgroundZoomOut {
-  0% {
-    background-size: 220%;
-  }
-
-  100% {
-    background-size: 100%;
   }
 }

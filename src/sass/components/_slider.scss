@@ -1,0 +1,25 @@
+.swiper-pagination-bullet.swiper-pagination-bullet {
+  opacity: 1;
+  border: 1px solid #fff;
+  border-radius: 0;
+  background-color: transparent;
+  width: 1rem;
+  height: 1rem;
+  transform: rotate(45deg);
+  margin: 0 6px !important;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+.swiper-pagination-bullets {
+  @include respond(mobile) {
+    bottom: initial !important;
+    top: 3rem;
+  }
+}
+
+.swiper-slide, .swiper-wrapper, .swiper-container {
+  background-color: $color-blue-dark-2 !important;
+}

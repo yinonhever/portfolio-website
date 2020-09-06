@@ -1,8 +1,4 @@
 .feature {
-  @include respond(mobile) {
-    padding-bottom: 5rem;
-  }
-
   &__img {
     height: 70rem;
     width: 100%;
@@ -37,12 +33,11 @@
 
     @include respond(mobile) {
       position: initial;
-      width: 75%;
-      margin: -12rem auto 0;
+      width: 100%;
       min-width: initial;
-      padding: 2.5rem;
+      padding: 4rem $padding-side-mobile;
       text-align: center;
-      background-color: $color-blue-dark-2;
+      box-sizing: border-box;
     }
 
     & > * {
@@ -58,38 +53,4 @@
       font-size: 2.4rem;
     }
   }
-}
-
-.zoom-out-bg {
-  animation: backgroundZoomOut 1s;
-
-  @include respond(mobile) {
-    animation: none;
-  }
-}
-
-.swiper-pagination-bullet.swiper-pagination-bullet {
-  opacity: 1;
-  border: 1px solid #fff;
-  border-radius: 0;
-  background-color: transparent;
-  width: 1rem;
-  height: 1rem;
-  transform: rotate(45deg);
-  margin: 0 6px !important;
-}
-
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: #fff;
-}
-
-.swiper-pagination-bullets {
-  @include respond(mobile) {
-    bottom: initial !important;
-    top: 3rem;
-  }
-}
-
-.swiper-slide, .swiper-wrapper, .swiper-container {
-  background-color: $color-blue-dark !important;
 }

@@ -3,6 +3,7 @@ import Fade from "react-reveal/Fade";
 
 const Intro = () => (
     <section className="intro">
+        <div className="intro__bg" />
         <Fade left cascade duration={400}>
             <div className="intro__content">
                 <h1 className="intro__heading">Powerful web development</h1>

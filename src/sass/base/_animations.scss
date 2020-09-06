@@ -1,0 +1,13 @@
+@keyframes backgroundZoomOut {
+  0% {
+    transform: scale(2.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.zoom-out-bg {
+  animation: backgroundZoomOut 1s;
+}
