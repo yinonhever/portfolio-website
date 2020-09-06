@@ -850,8 +850,20 @@ a {
   left: 2rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .swiper-button-prev.swiper-button-prev {
+    left: 1rem;
+  }
+}
+
 .swiper-button-next.swiper-button-next {
   right: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .swiper-button-next.swiper-button-next {
+    right: 1rem;
+  }
 }
 
 .header {
@@ -951,12 +963,12 @@ a {
     width: 2.5rem;
     height: 2px;
     background-color: #fff;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .header__nav-toggle::before, .header__nav-toggle::after {
     content: "";
     position: absolute;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
   }
   .header__nav-toggle::before {
     top: -0.8rem;
@@ -1561,7 +1573,7 @@ a {
           animation: backgroundZoomOut 1s;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .intro__bg {
     background-attachment: initial;
   }

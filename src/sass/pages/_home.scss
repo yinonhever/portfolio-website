@@ -16,7 +16,7 @@
     background-position: center;
     animation: backgroundZoomOut 1s;
 
-    @include respond(mobile) {
+    @include respond(mobile-land) {
       background-attachment: initial;
     }
   }

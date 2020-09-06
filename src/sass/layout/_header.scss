@@ -84,13 +84,13 @@
         width: 2.5rem;
         height: 2px;
         background-color: #fff;
+        transition: all 0.5s;
       }
 
       &::before,
       &::after {
         content: "";
         position: absolute;
-        transition: all 0.5s;
       }
 
       &::before {

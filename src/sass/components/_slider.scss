@@ -35,8 +35,16 @@
 
 .swiper-button-prev.swiper-button-prev {
   left: 2rem;
+
+  @include respond(mobile) {
+    left: 1rem;
+  }
 }
 
 .swiper-button-next.swiper-button-next {
   right: 2rem;
+
+  @include respond(mobile) {
+    right: 1rem;
+  }
 }
