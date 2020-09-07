@@ -76,7 +76,7 @@
 /*** FEATURED WORKS SECTION ***/
 .featured-works {
   padding: 8rem $padding-side-desktop 10rem;
-  background-color: $color-azure-light;
+  background-color: rgba($color-azure-light-2, 0.5);
 
   @include respond(tablet) {
     padding: 6rem $padding-side-mobile 7rem;

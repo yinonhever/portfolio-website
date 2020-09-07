@@ -1,27 +1,24 @@
 .gallery {
-  /*** GENERAL PAGE ***/
-  padding: 0 $padding-side-desktop 8rem;
-
-  @include respond(tablet-land) {
-    padding: 0 $padding-side-mobile 8rem;
-  }
-
-  @include respond(mobile) {
-    padding-bottom: 7rem;
-  }
-
   /*** INTRO SECTION ***/
   &__intro {
+    padding: 0 $padding-side-desktop 8rem;
+
+    @include respond(tablet-land) {
+      padding: 0 $padding-side-mobile 8rem;
+    }
+
+    @include respond(mobile) {
+      padding-bottom: 6rem;
+    }
+  }
+
+  &__intro-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 0 auto 8rem;
+    margin: auto;
     max-width: 85rem;
-
-    @include respond(mobile) {
-      margin-bottom: 6rem;
-    }
   }
 
   &__heading {
@@ -91,9 +88,19 @@
   /*** THE GALLERY CONTAINER ***/
   &__container {
     display: flex;
+    background-color: rgba($color-azure-light-2, 0.5);
+    padding: 8rem $padding-side-desktop 9rem;
+
+    @include respond(tablet-land) {
+      padding: 8rem $padding-side-mobile 9rem;
+    }
 
     @include respond(mobile-land) {
       flex-direction: column-reverse;
+    }
+
+    @include respond(mobile) {
+      padding: 7rem $padding-side-mobile;
     }
   }
 

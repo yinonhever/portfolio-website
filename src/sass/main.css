@@ -1097,27 +1097,29 @@ a {
 }
 
 .gallery {
-  /*** GENERAL PAGE ***/
-  padding: 0 9vw 8rem;
   /*** INTRO SECTION ***/
   /*** THE GALLERY CONTAINER ***/
   /*** THE GALLERY SECTIONS AND ITEMS ***/
   /*** THE SELECTED IMAGE ***/
 }
 
+.gallery__intro {
+  padding: 0 9vw 8rem;
+}
+
 @media only screen and (max-width: 1150px) {
-  .gallery {
+  .gallery__intro {
     padding: 0 7vw 8rem;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .gallery {
-    padding-bottom: 7rem;
+  .gallery__intro {
+    padding-bottom: 6rem;
   }
 }
 
-.gallery__intro {
+.gallery__intro-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1129,14 +1131,8 @@ a {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin: 0 auto 8rem;
+  margin: auto;
   max-width: 85rem;
-}
-
-@media only screen and (max-width: 600px) {
-  .gallery__intro {
-    margin-bottom: 6rem;
-  }
 }
 
 .gallery__heading {
@@ -1222,6 +1218,14 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: rgba(195, 223, 252, 0.5);
+  padding: 8rem 9vw 9rem;
+}
+
+@media only screen and (max-width: 1150px) {
+  .gallery__container {
+    padding: 8rem 7vw 9rem;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -1230,6 +1234,12 @@ a {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .gallery__container {
+    padding: 7rem 7vw;
   }
 }
 
@@ -1661,7 +1671,7 @@ a {
 /*** FEATURED WORKS SECTION ***/
 .featured-works {
   padding: 8rem 9vw 10rem;
-  background-color: #c9e4ff;
+  background-color: rgba(195, 223, 252, 0.5);
 }
 
 @media only screen and (max-width: 900px) {
