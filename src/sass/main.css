@@ -184,10 +184,22 @@ a {
           flex-direction: column;
 }
 
+@media only screen and (max-width: 600px) {
+  .featured-work {
+    border-radius: 0.4rem;
+  }
+}
+
 .featured-work__img {
   border-radius: 0.8rem 0.8rem 0 0;
   border-bottom: 1px solid #ccc;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .featured-work__img {
+    border-radius: 0.4rem 0.4rem 0 0;
+  }
 }
 
 .featured-work__img img {
@@ -1687,6 +1699,12 @@ a {
         grid-template-columns: 1fr;
     grid-gap: 6rem;
     max-width: 50rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .featured-works__grid {
+    grid-gap: 4.5rem;
   }
 }
 
