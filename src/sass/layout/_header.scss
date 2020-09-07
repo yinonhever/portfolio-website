@@ -76,15 +76,16 @@
 
     &__nav-toggle {
       position: relative;
-      display: inline-block;
+      display: block;
 
-      &,
+      span,
       &::before,
       &::after {
         width: 2.5rem;
         height: 2px;
         background-color: #fff;
         transition: all 0.5s;
+        display: block;
       }
 
       &::before,
@@ -103,7 +104,10 @@
     }
 
     &.active &__nav-toggle {
-      background-color: transparent;
+      span {
+        transform: translateX(20rem);
+        opacity: 0;
+      }
 
       &::before,
       &::after {
