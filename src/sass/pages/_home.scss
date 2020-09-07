@@ -1,4 +1,4 @@
-/*** INTRO SECTION ***/
+// INTRO SECTION
 .intro {
   height: 70rem;
   position: relative;
@@ -73,7 +73,7 @@
   }
 }
 
-/*** FEATURED WORKS SECTION ***/
+// FEATURED WORKS SECTION
 .featured-works {
   padding: 8rem $padding-side-desktop 10rem;
   background-color: rgba($color-azure-light-2, 0.5);
@@ -113,7 +113,7 @@
   }
 }
 
-/*** FEATURES SECTION ***/
+// FEATURES SECTION
 .features {
   padding: 8rem $padding-side-desktop;
   text-align: center;
@@ -148,7 +148,7 @@
   }
 }
 
-/*** TOOLS SECTION ***/
+// TOOLS SECTION
 .tools {
   background-color: $color-azure-light;
   color: $color-blue-dark;

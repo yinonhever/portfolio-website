@@ -16,7 +16,7 @@ body {
           box-sizing: border-box;
 }
 
-section:not(.gallery__container), main {
+section, main {
   overflow: hidden;
 }
 
@@ -895,7 +895,6 @@ a {
   right: 0;
   top: 0;
   z-index: 999;
-  /*** MOBILE VIEW ***/
 }
 
 @media only screen and (max-width: 900px) {
@@ -1094,13 +1093,6 @@ a {
   .page-heading__title {
     font-size: 4rem;
   }
-}
-
-.gallery {
-  /*** INTRO SECTION ***/
-  /*** THE GALLERY CONTAINER ***/
-  /*** THE GALLERY SECTIONS AND ITEMS ***/
-  /*** THE SELECTED IMAGE ***/
 }
 
 .gallery__intro {
@@ -1575,7 +1567,6 @@ a {
   }
 }
 
-/*** INTRO SECTION ***/
 .intro {
   height: 70rem;
   position: relative;
@@ -1668,7 +1659,6 @@ a {
   font-size: 1.6rem;
 }
 
-/*** FEATURED WORKS SECTION ***/
 .featured-works {
   padding: 8rem 9vw 10rem;
   background-color: rgba(195, 223, 252, 0.5);
@@ -1721,7 +1711,6 @@ a {
   }
 }
 
-/*** FEATURES SECTION ***/
 .features {
   padding: 8rem 9vw;
   text-align: center;
@@ -1769,7 +1758,6 @@ a {
   }
 }
 
-/*** TOOLS SECTION ***/
 .tools {
   background-color: #c9e4ff;
   color: #041464;

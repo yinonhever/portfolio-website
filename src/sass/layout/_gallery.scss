@@ -1,5 +1,5 @@
 .gallery {
-  /*** INTRO SECTION ***/
+  // INTRO SECTION
   &__intro {
     padding: 0 $padding-side-desktop 8rem;
 
@@ -85,7 +85,7 @@
     }
   }
 
-  /*** THE GALLERY CONTAINER ***/
+  // THE GALLERY CONTAINER
   &__container {
     display: flex;
     background-color: rgba($color-azure-light-2, 0.5);
@@ -104,7 +104,7 @@
     }
   }
 
-  /*** THE GALLERY SECTIONS AND ITEMS ***/
+  // THE GALLERY SECTIONS AND ITEMS
   &__items {
     flex: 1;
     margin-right: 5rem;
@@ -178,7 +178,7 @@
     }
   }
 
-  /*** THE SELECTED IMAGE ***/
+  // THE SELECTED IMAGE
   &__selected {
     width: 47%;
     text-align: center;
