@@ -49,7 +49,7 @@
     }
   }
 
-  // MOBILE VIEW 
+  // MOBILE VIEW
   @include respond(mobile-land) {
     &.active {
       color: #fff;
@@ -76,22 +76,21 @@
 
     &__nav-toggle {
       position: relative;
-      display: block;
+      display: inline-block;
 
-      span,
+      &,
       &::before,
       &::after {
         width: 2.5rem;
         height: 2px;
         background-color: #fff;
-        transition: all 0.5s;
-        display: block;
       }
 
       &::before,
       &::after {
         content: "";
         position: absolute;
+        transition: all 0.5s;
       }
 
       &::before {
@@ -104,10 +103,7 @@
     }
 
     &.active &__nav-toggle {
-      span {
-        transform: translateX(20rem);
-        opacity: 0;
-      }
+      background-color: transparent;
 
       &::before,
       &::after {

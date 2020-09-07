@@ -1,8 +1,5 @@
 import React from "react";
 
-const NavToggle = props => (
-    <div className="header__nav-toggle" onClick={props.clicked}>
-        <span />
-    </div>
-)
+const NavToggle = props => <span className="header__nav-toggle" onClick={props.clicked} />
+
 export default NavToggle;
