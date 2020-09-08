@@ -115,37 +115,7 @@
 
 // FEATURES SECTION
 .features {
-  padding: 8rem $padding-side-desktop;
-  text-align: center;
-
-  @include respond(tablet) {
-    padding: 6rem $padding-side-mobile;
-  }
-
-  &__heading {
-    margin-bottom: 6rem;
-  }
-
-  &__row {
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    max-width: 105rem;
-
-    @include respond(tablet-land) {
-      flex-direction: column;
-      max-width: 55rem;
-    }
-
-    .feature:not(:last-child) {
-      margin-right: 8vw;
-
-      @include respond(tablet-land) {
-        margin-right: 0;
-        margin-bottom: 7rem;
-      }
-    }
-  }
+  background-color: $color-blue-dark-2;
 }
 
 // TOOLS SECTION

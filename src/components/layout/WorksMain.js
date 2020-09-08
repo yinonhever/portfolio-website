@@ -13,7 +13,8 @@ const WorksMain = () => (
                 description={work.description}
                 url={work.url}
                 mirror={index % 2 !== 0}
-            />)}
+            />
+        )}
     </main>
 )
 

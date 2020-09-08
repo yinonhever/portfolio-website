@@ -28,24 +28,26 @@ const slides = [
 ]
 
 const Features = () => (
-    <Swiper
-        spaceBetween={window.innerWidth > 700 ? 0 : 30}
-        slidesPerView={1}
-        pagination={{ clickable: true }}
-        navigation
-        loop
-        autoplay={{ delay: 8000 }}
-        speed={500}
-    >
-        {slides.map(slide =>
-            <SwiperSlide>
-                <Feature key={slide.id} id={slide.id} heading={slide.heading}>
-                    {slide.text}
-                </Feature>
-            </SwiperSlide>
-        )}
-    </Swiper>
+    <section className="features">
+        <Swiper
+            spaceBetween={window.innerWidth > 700 ? 0 : 30}
+            slidesPerView={1}
+            pagination={{ clickable: true }}
+            navigation
+            loop
+            autoplay={{ delay: 8000 }}
+            speed={500}
+            simulateTouch={false}
+        >
+            {slides.map(slide =>
+                <SwiperSlide key={slide.id}>
+                    <Feature id={slide.id} heading={slide.heading}>
+                        {slide.text}
+                    </Feature>
+                </SwiperSlide>
+            )}
+        </Swiper>
+    </section>
 )
-
 
 export default Features;

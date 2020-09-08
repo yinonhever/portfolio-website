@@ -34,7 +34,8 @@ const Tools = () => {
                         text={item.text}
                         icon={item.icon}
                         mirror={index + 1 > Math.round(items.length / 2)}
-                    />)}
+                    />
+                )}
             </div>
         </section>
     )
