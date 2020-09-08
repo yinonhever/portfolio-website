@@ -3,12 +3,19 @@ import Aux from "./Auxilliary";
 import PageHeading from "../components/layout/PageHeading";
 
 const Page = props => {
+    const { title, children } = props;
+    if (title) {
+        document.title = title + " – Yinon Hever";
+    }
+    else {
+        document.title = "Yinon Hever – Portfolio Website";
+    }
     window.scrollTo(0, 0);
 
     return (
         <Aux>
-            {props.title && <PageHeading title={props.title} />}
-            {props.children}
+            {title && <PageHeading title={title} />}
+            {children}
         </Aux>
     )
 }
