@@ -41,11 +41,10 @@ const Features = () => (
                 autoplay={{ delay: 8000 }}
                 speed={700}
                 effect="cube"
-                cubeEffect={{ slideShadows: false }}
             >
                 {slides.map(slide =>
                     <SwiperSlide key={slide.id}>
-                        <Feature id={slide.id} heading={slide.heading} text={slide.text} />
+                        <Feature {...slide} />
                     </SwiperSlide>
                 )}
             </Swiper>
