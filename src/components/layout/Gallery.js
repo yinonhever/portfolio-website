@@ -15,6 +15,7 @@ const Gallery = props => {
         if (matchingWork) {
             setWork(matchingWork);
             setSelectedImage(matchingWork.gallery[0].items[0]);
+            document.title = matchingWork.title + " – Yinon Hever";
             window.scrollTo(0, 300);
         }
         else {

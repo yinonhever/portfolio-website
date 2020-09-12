@@ -1,12 +1,14 @@
 import React from "react";
-import SwiperCore, { Pagination, Navigation, Autoplay } from "swiper";
+import SwiperCore, { Pagination, Navigation, Autoplay, EffectCube } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/navigation/navigation.scss";
+import "swiper/components/effect-cube/effect-cube.scss";
+import Fade from "react-reveal/Fade";
 import Feature from "./Feature";
 
-SwiperCore.use([Pagination, Navigation, Autoplay]);
+SwiperCore.use([Pagination, Navigation, Autoplay, EffectCube]);
 
 const slides = [
     {
@@ -29,24 +31,26 @@ const slides = [
 
 const Features = () => (
     <section className="features">
-        <Swiper
-            spaceBetween={window.innerWidth > 700 ? 0 : 30}
-            slidesPerView={1}
-            pagination={{ clickable: true }}
-            navigation
-            loop
-            autoplay={{ delay: 8000 }}
-            speed={500}
-            simulateTouch={false}
-        >
-            {slides.map(slide =>
-                <SwiperSlide key={slide.id}>
-                    <Feature id={slide.id} heading={slide.heading}>
-                        {slide.text}
-                    </Feature>
-                </SwiperSlide>
-            )}
-        </Swiper>
+        <Fade left duration={700}>
+            <Swiper
+                spaceBetween={window.innerWidth > 700 ? 0 : 30}
+                slidesPerView={1}
+                pagination={{ clickable: true }}
+                navigation
+                loop
+                autoplay={{ delay: 8000 }}
+                speed={700}
+                simulateTouch={false}
+                effect="cube"
+                cubeEffect={{ slideShadows: false }}
+            >
+                {slides.map(slide =>
+                    <SwiperSlide key={slide.id}>
+                        <Feature id={slide.id} heading={slide.heading} text={slide.text} />
+                    </SwiperSlide>
+                )}
+            </Swiper>
+        </Fade>
     </section>
 )
 
