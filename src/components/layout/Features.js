@@ -40,7 +40,6 @@ const Features = () => (
                 loop
                 autoplay={{ delay: 8000 }}
                 speed={700}
-                simulateTouch={false}
                 effect="cube"
                 cubeEffect={{ slideShadows: false }}
             >
