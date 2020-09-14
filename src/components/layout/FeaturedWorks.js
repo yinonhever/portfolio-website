@@ -9,8 +9,8 @@ const featuredWorks = works.filter(work => work.featured);
 const FeaturedWorks = () => (
     <section className="featured-works">
         <h2 className="section-heading featured-works__heading">Featured Works</h2>
-        <Link to="/works">
-            <Button unite extra="featured-works__view-all">View All</Button>
+        <Link to="/works" className="featured-works__view-all">
+            <Button unite>View All</Button>
         </Link>
         <div className="featured-works__grid">
             {featuredWorks.map((work, index) =>

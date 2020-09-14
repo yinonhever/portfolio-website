@@ -84,16 +84,20 @@
 .featured-works {
   padding: 8rem $padding-side-desktop 10rem;
   background-color: rgba($color-azure-light-2, 0.5);
+  text-align: center;
 
   @include respond(tablet) {
     padding: 6rem $padding-side-mobile 7rem;
   }
 
   &__view-all {
-    margin: 3rem auto 5rem;
+    display: inline-block;
+    margin: 3rem 0 5rem;
 
-    @include respond(mobile) {
-      font-size: 1.4rem;
+    .button {
+      @include respond(mobile) {
+        font-size: 1.4rem;
+      }
     }
   }
 
