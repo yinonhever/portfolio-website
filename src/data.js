@@ -204,38 +204,44 @@ const works = [
         ]
     },
     {
-        id: "rock-paper-scissors-lizard-spock",
-        title: "Rock, Paper, Scissors, Lizard, Spock",
+        id: "myteam",
+        title: "Myteam Website",
+        mainImg: "/images/myteam/desktop-home.png",
         featured: true,
         featuredText:
             `
-                An extended version of the classic Rock, Paper, Scissors game. With a unique design and
-                interface, and beautiful animations and transitions that highlight every step of the
-                game, this app turns this rather simple game into a fun, even addictive experience.
+                A beautiful three-page website with a rich color scheme, featuring a quiet complex layout with a
+                lot of transformations between different screen sizes. The site includes a wide variety of unique, well-detailed,
+                fully-responsive sections and features.
             `,
-        mainImg: "/images/rock-paper-scissors/desktop-initial.png",
         description:
             `
-                An extended version of the classic Rock, Paper, Scissors game. With a unique design and
-                interface, and beautiful animations and transitions that highlight every step of the
-                game, this app turns this rather simple game into a fun, even addictive experience. The user's
-                total score is retained even after refreshing the browser.
+                A beautiful three-page website with a rich color scheme, featuring a quiet complex layout with a
+                lot of transformations between different screen sizes. The site includes a wide variety of unique, well-detailed,
+                fully-responsive sections and features. Among its highlights are an animated 
+                mobile menu, a testimonial section, the directors' cards with animated switching content, and a
+                responsive contact page with full form validation.
             `,
-        url: "https://rock-paper-scissors-two.vercel.app/",
-        githubUrl: "https://github.com/yinonhever/rock-paper-scissors",
+        url: "https://myteam-nu.vercel.app/",
+        githubUrl: "https://github.com/yinonhever/myteam",
         gallery: [
             {
                 title: "Desktop version",
                 items: [
                     {
                         type: "desktop",
-                        src: "/images/rock-paper-scissors/desktop-initial.png",
-                        caption: "Desktop – game start"
+                        src: "/images/myteam/desktop-home.png",
+                        caption: "Desktop – Home page"
                     },
                     {
                         type: "desktop",
-                        src: "/images/rock-paper-scissors/desktop-play.png",
-                        caption: "Desktop – game finish"
+                        src: "/images/myteam/desktop-about.png",
+                        caption: "Desktop – About page"
+                    },
+                    {
+                        type: "desktop",
+                        src: "/images/myteam/desktop-contact.png",
+                        caption: "Desktop – Contact page"
                     }
                 ]
             },
@@ -244,13 +250,18 @@ const works = [
                 items: [
                     {
                         type: "tablet",
-                        src: "/images/rock-paper-scissors/tablet-initial.png",
-                        caption: "Tablet – game start"
+                        src: "/images/myteam/tablet-home.png",
+                        caption: "Tablet – Home page"
                     },
                     {
                         type: "tablet",
-                        src: "/images/rock-paper-scissors/tablet-play.png",
-                        caption: "Tablet – game finish"
+                        src: "/images/myteam/tablet-about.png",
+                        caption: "Tablet – About page"
+                    },
+                    {
+                        type: "tablet",
+                        src: "/images/myteam/tablet-contact.png",
+                        caption: "Tablet – Contact page"
                     }
                 ]
             },
@@ -259,13 +270,18 @@ const works = [
                 items: [
                     {
                         type: "mobile",
-                        src: "/images/rock-paper-scissors/mobile-initial.png",
-                        caption: "Mobile – game start"
+                        src: "/images/myteam/mobile-home.png",
+                        caption: "Mobile – Home page"
                     },
                     {
                         type: "mobile",
-                        src: "/images/rock-paper-scissors/mobile-play.png",
-                        caption: "Mobile – game finish"
+                        src: "/images/myteam/mobile-about.png",
+                        caption: "Mobile – About page"
+                    },
+                    {
+                        type: "mobile",
+                        src: "/images/myteam/mobile-contact.png",
+                        caption: "Mobile – Contact page"
                     }
                 ]
             }
@@ -277,14 +293,14 @@ const works = [
         featured: true,
         featuredText:
             `
-                A beautiful four-page website for a mock company called Scoot, including a wide
+                A four-page website for a mock company called Scoot, including a wide
                 variety of complex design features, decorative elements and background patterns, a unique
                 layout, and a lot of fully-responsive small details.
             `,
         mainImg: "/images/scoot/desktop-home.png",
         description:
             `
-                A beautiful four-page website for a mock company called Scoot. This website includes a wide
+                A four-page website for a mock company called Scoot. This website includes a wide
                 variety of complex design features, decorative elements and background patterns, a unique
                 layout, and a lot of small details that change drastically between different screen sizes, which 
                 I made completely responsive.
@@ -370,36 +386,37 @@ const works = [
         ]
     },
     {
-        id: "myteam",
-        title: "Myteam Website",
-        mainImg: "/images/myteam/desktop-home.png",
+        id: "rock-paper-scissors-lizard-spock",
+        title: "Rock, Paper, Scissors, Lizard, Spock",
+        featuredText:
+            `
+                An extended version of the classic Rock, Paper, Scissors game. With a unique design and
+                interface, and beautiful animations and transitions that highlight every step of the
+                game, this app turns this rather simple game into a fun, even addictive experience.
+            `,
+        mainImg: "/images/rock-paper-scissors/desktop-initial.png",
         description:
             `
-                This three-page website includes a quiet complex layout, with a lot of transformations between
-                different screen sizes. Among its highlights are an animated mobile menu, a testimonial section,
-                the directors' cards with animated switching content, and a responsive contact page with
-                full form validation.
+                An extended version of the classic Rock, Paper, Scissors game. With a unique design and
+                interface, and beautiful animations and transitions that highlight every step of the
+                game, this app turns this rather simple game into a fun, even addictive experience. The user's
+                total score is retained even after refreshing the browser.
             `,
-        url: "https://myteam-nu.vercel.app/",
-        githubUrl: "https://github.com/yinonhever/myteam",
+        url: "https://rock-paper-scissors-two.vercel.app/",
+        githubUrl: "https://github.com/yinonhever/rock-paper-scissors",
         gallery: [
             {
                 title: "Desktop version",
                 items: [
                     {
                         type: "desktop",
-                        src: "/images/myteam/desktop-home.png",
-                        caption: "Desktop – Home page"
+                        src: "/images/rock-paper-scissors/desktop-initial.png",
+                        caption: "Desktop – game start"
                     },
                     {
                         type: "desktop",
-                        src: "/images/myteam/desktop-about.png",
-                        caption: "Desktop – About page"
-                    },
-                    {
-                        type: "desktop",
-                        src: "/images/myteam/desktop-contact.png",
-                        caption: "Desktop – Contact page"
+                        src: "/images/rock-paper-scissors/desktop-play.png",
+                        caption: "Desktop – game finish"
                     }
                 ]
             },
@@ -408,18 +425,13 @@ const works = [
                 items: [
                     {
                         type: "tablet",
-                        src: "/images/myteam/tablet-home.png",
-                        caption: "Tablet – Home page"
+                        src: "/images/rock-paper-scissors/tablet-initial.png",
+                        caption: "Tablet – game start"
                     },
                     {
                         type: "tablet",
-                        src: "/images/myteam/tablet-about.png",
-                        caption: "Tablet – About page"
-                    },
-                    {
-                        type: "tablet",
-                        src: "/images/myteam/tablet-contact.png",
-                        caption: "Tablet – Contact page"
+                        src: "/images/rock-paper-scissors/tablet-play.png",
+                        caption: "Tablet – game finish"
                     }
                 ]
             },
@@ -428,18 +440,13 @@ const works = [
                 items: [
                     {
                         type: "mobile",
-                        src: "/images/myteam/mobile-home.png",
-                        caption: "Mobile – Home page"
+                        src: "/images/rock-paper-scissors/mobile-initial.png",
+                        caption: "Mobile – game start"
                     },
                     {
                         type: "mobile",
-                        src: "/images/myteam/mobile-about.png",
-                        caption: "Mobile – About page"
-                    },
-                    {
-                        type: "mobile",
-                        src: "/images/myteam/mobile-contact.png",
-                        caption: "Mobile – Contact page"
+                        src: "/images/rock-paper-scissors/mobile-play.png",
+                        caption: "Mobile – game finish"
                     }
                 ]
             }

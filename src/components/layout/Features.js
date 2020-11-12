@@ -7,12 +7,14 @@ import "swiper/components/navigation/navigation.scss";
 import "swiper/components/effect-cube/effect-cube.scss";
 import Fade from "react-reveal/Fade";
 import Feature from "./Feature";
+import image1 from "../../images/web-dev-6.jpg";
+import image2 from "../../images/web-dev-3.jpg";
 
 SwiperCore.use([Pagination, Navigation, Autoplay, EffectCube]);
 
 const slides = [
     {
-        id: "slide1",
+        img: image1,
         heading: "Beautifully optimized, responsive designs",
         text: `I'm committed to coding beautiful and accurate designs with a wide variety of layouts, effects,
             animations and complex elements, making them as pixel-perfect as possible and ensuring
@@ -20,7 +22,7 @@ const slides = [
             to bring any website to its most optimal appearance.`
     },
     {
-        id: "slide2",
+        img: image2,
         heading: "Fully functional, usable apps",
         text: `I build various web applications with full, optimized functionality and a professional,
             well-designed interface with maximum usability. I make sure to create a seamless
@@ -30,10 +32,9 @@ const slides = [
 ]
 
 const Features = () => (
-    <section className="features">
-        <Fade left duration={700}>
+    <Fade left duration={700}>
+        <section className="features">
             <Swiper
-                spaceBetween={window.innerWidth > 700 ? 0 : 30}
                 slidesPerView={1}
                 pagination={{ clickable: true }}
                 navigation
@@ -43,13 +44,13 @@ const Features = () => (
                 effect="cube"
             >
                 {slides.map(slide =>
-                    <SwiperSlide key={slide.id}>
+                    <SwiperSlide key={slide.img}>
                         <Feature {...slide} />
                     </SwiperSlide>
                 )}
             </Swiper>
-        </Fade>
-    </section>
+        </section>
+    </Fade>
 )
 
 export default Features;

@@ -10,9 +10,8 @@ const navigationItems = [
 const Navigation = props => (
     <nav className="header__navigation">
         {navigationItems.map(item =>
-            <NavigationItem key={item.text} link={item.link} clicked={props.itemClicked}>
-                {item.text}
-            </NavigationItem>)}
+            <NavigationItem key={item.text} clicked={props.itemClicked} {...item} />
+        )}
     </nav>
 )
 

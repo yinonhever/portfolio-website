@@ -13,21 +13,21 @@ const ContactMain = () => {
     const [error, setError] = useState(false);
     const [showModal, setShowModal] = useState(false);
 
-    const submitHandler = (data, event) => {
+    const submitHandler = async (data, event) => {
         setLoading(true);
-        axios.post("https://nagc.tech/mail", emailTemplate(data),
-            { headers: { token: "GT73K1w_gnsj-qSNdE_pcOP86sCJLsNgGu_ZyAEStdU" } })
-            .then(() => {
-                event.target.reset();
-                setLoading(false);
-                setError(false);
-                setShowModal(true);
-            })
-            .catch(() => {
-                setLoading(false);
-                setError(true);
-                setShowModal(true);
-            })
+
+        try {
+            await axios.post("https://nagc.tech/mail", emailTemplate(data),
+                { headers: { token: "GT73K1w_gnsj-qSNdE_pcOP86sCJLsNgGu_ZyAEStdU" } });
+            event.target.reset();
+            setError(false);
+        }
+        catch {
+            setError(true);
+        }
+
+        setLoading(false);
+        setShowModal(true);
     }
 
     return (

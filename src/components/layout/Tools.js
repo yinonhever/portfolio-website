@@ -6,13 +6,19 @@ const items = [
     { text: "CSS", icon: "icon-css3" },
     { text: "Sass", icon: "icon-sass" },
     { text: "JavaScript", icon: "icon-javascript" },
-    { text: "jQuery", icon: "icon-jquery" },
     { text: "ReactJS", icon: "icon-react" },
+    { text: "Vue.js", icon: "icon-vue-dot-js" },
     { text: "Redux", icon: "icon-redux" },
     { text: "React Router", icon: "icon-reactrouter" },
     { text: "Next.js", icon: "icon-next-dot-js" },
+    { text: "jQuery", icon: "icon-jquery" },
+    { text: "Node.js", icon: "icon-node-dot-js" },
+    { text: "Express.js", altIcon: "/images/express.svg" },
+    { text: "EJS", altIcon: "/images/ejs.svg" },
+    { text: "MongoDB", icon: "icon-mongodb" },
     { text: "Firebase", icon: "icon-firebase" },
-    { text: "Node.js", icon: "icon-node-dot-js" }
+    { text: "PHP", icon: "icon-php" },
+    { text: "Wordpress", icon: "icon-wordpress" }
 ]
 
 const Tools = () => {
@@ -33,6 +39,7 @@ const Tools = () => {
                         key={item.text}
                         text={item.text}
                         icon={item.icon}
+                        altIcon={item.altIcon}
                         mirror={index + 1 > Math.round(items.length / 2)}
                     />
                 )}

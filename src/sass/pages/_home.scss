@@ -131,7 +131,7 @@
 
 // TOOLS SECTION
 .tools {
-  background-color: $color-azure-light;
+  background-color: rgba($color-azure-light-2, 0.5);
   color: $color-blue-dark;
   padding: 8rem $padding-side-desktop;
 
@@ -160,7 +160,7 @@
     }
 
     @include respond(mobile) {
-      margin: 0 -2rem;
+      margin: 0 -1rem;
       grid-row-gap: 1.75rem;
     }
 
@@ -176,7 +176,7 @@
     align-items: center;
 
     @include respond(mobile) {
-      margin: 0 2rem;
+      margin: 0 1rem;
     }
   }
 
