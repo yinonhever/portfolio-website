@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from "react";
+import React, { useState, useEffect } from "react";
 import ToolsItem from "./ToolsItem";
 
 const items = [
@@ -9,24 +9,29 @@ const items = [
     { text: "ReactJS", icon: "icon-react" },
     { text: "Vue.js", icon: "icon-vue-dot-js" },
     { text: "Redux", icon: "icon-redux" },
-    { text: "React Router", icon: "icon-reactrouter" },
     { text: "Next.js", icon: "icon-next-dot-js" },
+    { text: "Nuxt.js", icon: "icon-nuxt-dot-js" },
     { text: "jQuery", icon: "icon-jquery" },
     { text: "Node.js", icon: "icon-node-dot-js" },
     { text: "Express.js", altIcon: "/images/express.svg" },
+    { text: "Pugjs", altIcon: "/images/pugjs-icon.svg" },
     { text: "EJS", altIcon: "/images/ejs.svg" },
+    { text: "Socket.io", altIcon: "/images/socketio-icon.svg" },
     { text: "MongoDB", icon: "icon-mongodb" },
     { text: "Firebase", icon: "icon-firebase" },
-    { text: "PHP", icon: "icon-php" },
-    { text: "Wordpress", icon: "icon-wordpress" }
 ]
 
-const Tools = () => {
+const useRows = () => {
     const [columns, setColumns] = useState(window.innerWidth > 900 ? 3 : 2);
-    useLayoutEffect(() => {
+    useEffect(() => {
         window.addEventListener("resize", () => setColumns(window.innerWidth > 900 ? 3 : 2));
     }, [])
     const rows = Math.ceil(items.length / columns);
+    return rows;
+}
+
+const Tools = () => {
+    const rows = useRows();
 
     return (
         <section className="tools">
