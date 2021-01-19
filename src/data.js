@@ -1,5 +1,134 @@
 const works = [
     {
+        id: "realtime-chat-app",
+        title: "Realtime Chat App",
+        featured: true,
+        featuredText:
+            `    
+                A social chat app built with Vue.js, Node/Express and Socket.io, allowing
+                users to sign up, create and edit their profiles and chat with other users of
+                the app, with live updates in realtime when a message is received or deleted.
+            `,
+        mainImg: "/images/chatter/desktop-chat.png",
+        description:
+            `
+                A social chat app built with Vue.js, Node/Express and Socket.io, allowing
+                users to sign up, create and edit their profiles, explore other users of the
+                app and chat with them. The chats, as well as the user's My Chats page, are
+                updated in realtime when the user receives a message or when a message is
+                deleted, and feature a well-designed and animated interface.
+            `,
+        url: "https://chatter.vercel.app/",
+        githubUrl: "https://github.com/yinonhever/chatter",
+        gallery: [
+            {
+                title: "Desktop version",
+                items: [
+                    {
+                        type: "desktop",
+                        src: "/images/chatter/desktop-chat.png",
+                        caption: "Desktop – Chat page"
+                    },
+                    {
+                        type: "desktop",
+                        src: "/images/chatter/desktop-my-chats.png",
+                        caption: "Desktop – My Chats page"
+                    },
+                    {
+                        type: "desktop",
+                        src: "/images/chatter/desktop-my-profile.png",
+                        caption: "Desktop – Profile page"
+                    },
+                    {
+                        type: "desktop",
+                        src: "/images/chatter/desktop-explore.png",
+                        caption: "Desktop – Explore page"
+                    },
+                    {
+                        type: "desktop",
+                        src: "/images/chatter/desktop-login.png",
+                        caption: "Desktop – Login page"
+                    },
+                    {
+                        type: "desktop",
+                        src: "/images/chatter/desktop-signup.png",
+                        caption: "Desktop – Signup page"
+                    },
+                ]
+            },
+            {
+                title: "Tablet version",
+                items: [
+                    {
+                        type: "tablet",
+                        src: "/images/chatter/tablet-chat.png",
+                        caption: "Tablet – Chat page"
+                    },
+                    {
+                        type: "tablet",
+                        src: "/images/chatter/tablet-my-chats.png",
+                        caption: "Tablet – My Chats page"
+                    },
+                    {
+                        type: "tablet",
+                        src: "/images/chatter/tablet-my-profile.png",
+                        caption: "Tablet – Profile page"
+                    },
+                    {
+                        type: "tablet",
+                        src: "/images/chatter/tablet-explore.png",
+                        caption: "Tablet – Explore page"
+                    },
+                    {
+                        type: "tablet",
+                        src: "/images/chatter/tablet-login.png",
+                        caption: "Tablet – Login page"
+                    },
+                    {
+                        type: "tablet",
+                        src: "/images/chatter/tablet-signup.png",
+                        caption: "Tablet – Signup page"
+                    },
+                ]
+            },
+            {
+                title: "mobile version",
+                items: [
+                    {
+                        type: "mobile",
+                        src: "/images/chatter/mobile-chat.png",
+                        caption: "Mobile – Chat page"
+                    },
+                    {
+                        type: "mobile",
+                        src: "/images/chatter/mobile-my-chats.png",
+                        caption: "Mobile – My Chats page"
+                    },
+                    {
+                        type: "mobile",
+                        src: "/images/chatter/mobile-my-profile.png",
+                        caption: "Mobile – Profile page"
+                    },
+                    {
+                        type: "mobile",
+                        src: "/images/chatter/mobile-explore.png",
+                        caption: "Mobile – Explore page"
+                    },
+                    {
+                        type: "mobile",
+                        src: "/images/chatter/mobile-login.png",
+                        caption: "Mobile – Login page"
+                    },
+                    {
+                        type: "mobile",
+                        src: "/images/chatter/mobile-signup.png",
+                        caption: "Mobile – Signup page"
+                    },
+                ]
+            }
+        ]
+    },
+    {
         id: "github-timeline-app",
         title: "Github Timeline App",
         featured: true,
@@ -288,9 +417,145 @@ const works = [
         ]
     },
     {
+        id: "designo",
+        title: "Designo Website",
+        mainImg: "/images/designo/desktop-home.png",
+        description:
+            `
+                A seven-page website for a fictional design firm, featuring a variety of
+                different page templates, sections and decorative elements, with smooth
+                transitions between the site's pages. The website's Locations page includes
+                real interactive maps for the company's locations, while the Contact page
+                features a fully-validated contact form with animated error messages.
+            `,
+        url: "https://designo.vercel.app/",
+        githubUrl: "https://github.com/yinonhever/designo",
+        gallery: [
+            {
+                title: "Desktop version",
+                items: [
+                    {
+                        type: "desktop",
+                        src: "/images/designo/desktop-home.png",
+                        caption: "Desktop – Home page"
+                    },
+                    {
+                        type: "desktop",
+                        src: "/images/designo/desktop-about.png",
+                        caption: "Desktop – About page"
+                    },
+                    {
+                        type: "desktop",
+                        src: "/images/designo/desktop-web-design.png",
+                        caption: "Desktop – Web Design page"
+                    },
+                    {
+                        type: "desktop",
+                        src: "/images/designo/desktop-app-design.png",
+                        caption: "Desktop – App Design page"
+                    },
+                    {
+                        type: "desktop",
+                        src: "/images/designo/desktop-graphic-design.png",
+                        caption: "Desktop – Graphic Design page"
+                    },
+                    {
+                        type: "desktop",
+                        src: "/images/designo/desktop-locations.png",
+                        caption: "Desktop – Locations page"
+                    },
+                    {
+                        type: "desktop",
+                        src: "/images/designo/desktop-contact.png",
+                        caption: "Desktop – Contact page"
+                    }
+                ]
+            },
+            {
+                title: "Tablet version",
+                items: [
+                    {
+                        type: "tablet",
+                        src: "/images/designo/tablet-home.png",
+                        caption: "Tablet – Home page"
+                    },
+                    {
+                        type: "tablet",
+                        src: "/images/designo/tablet-about.png",
+                        caption: "Tablet – About page"
+                    },
+                    {
+                        type: "tablet",
+                        src: "/images/designo/tablet-web-design.png",
+                        caption: "Tablet – Web Design page"
+                    },
+                    {
+                        type: "tablet",
+                        src: "/images/designo/tablet-app-design.png",
+                        caption: "Tablet – App Design page"
+                    },
+                    {
+                        type: "tablet",
+                        src: "/images/designo/tablet-graphic-design.png",
+                        caption: "Tablet – Graphic Design page"
+                    },
+                    {
+                        type: "tablet",
+                        src: "/images/designo/tablet-locations.png",
+                        caption: "Tablet – Locations page"
+                    },
+                    {
+                        type: "tablet",
+                        src: "/images/designo/tablet-contact.png",
+                        caption: "Tablet – Contact page"
+                    }
+                ]
+            },
+            {
+                title: "Mobile version",
+                items: [
+                    {
+                        type: "mobile",
+                        src: "/images/designo/mobile-home.png",
+                        caption: "Mobile – Home page"
+                    },
+                    {
+                        type: "mobile",
+                        src: "/images/designo/mobile-about.png",
+                        caption: "Mobile – About page"
+                    },
+                    {
+                        type: "mobile",
+                        src: "/images/designo/mobile-web-design.png",
+                        caption: "Mobile – Web Design page"
+                    },
+                    {
+                        type: "mobile",
+                        src: "/images/designo/mobile-app-design.png",
+                        caption: "Mobile – App Design page"
+                    },
+                    {
+                        type: "mobile",
+                        src: "/images/designo/mobile-graphic-design.png",
+                        caption: "Mobile – Graphic Design page"
+                    },
+                    {
+                        type: "mobile",
+                        src: "/images/designo/mobile-locations.png",
+                        caption: "Mobile – Locations page"
+                    },
+                    {
+                        type: "mobile",
+                        src: "/images/designo/mobile-contact.png",
+                        caption: "Mobile – Contact page"
+                    }
+                ]
+            },
+        ]
+    },
+    {
         id: "scoot",
         title: "Scoot Website",
-        featured: true,
         featuredText:
             `
                 A four-page website for a mock company called Scoot, including a wide
@@ -514,6 +779,97 @@ const works = [
         ]
     },
     {
+        id: "sudoku",
+        title: "Sudoku Game",
+        mainImg: "/images/sudoku/desktop-game.png",
+        description:
+            `
+                A sudoku game with three levels. The app requires the user to create an account or
+                login in order to start playing the game. Once the user is logged in, their
+                total score is saved into their account, as points are awarded based on the
+                number of wins and the levels played.
+            `,
+        url: "http://sudoku-topaz.vercel.app/",
+        githubUrl: "https://github.com/yinonhever/sudoku",
+        gallery: [
+            {
+                title: "Desktop version",
+                items: [
+                    {
+                        type: "desktop",
+                        src: "/images/sudoku/desktop-game.png",
+                        caption: "Desktop – Game screen"
+                    },
+                    {
+                        type: "desktop",
+                        src: "/images/sudoku/desktop-levels.png",
+                        caption: "Desktop – Levels screen"
+                    },
+                    {
+                        type: "desktop",
+                        src: "/images/sudoku/desktop-login.png",
+                        caption: "Desktop – Login screen"
+                    },
+                    {
+                        type: "desktop",
+                        src: "/images/sudoku/desktop-signup.png",
+                        caption: "Desktop – Signup screen"
+                    }
+                ]
+            },
+            {
+                title: "Tablet version",
+                items: [
+                    {
+                        type: "tablet",
+                        src: "/images/sudoku/tablet-game.png",
+                        caption: "Tablet – Game screen"
+                    },
+                    {
+                        type: "tablet",
+                        src: "/images/sudoku/tablet-levels.png",
+                        caption: "Tablet – Levels screen"
+                    },
+                    {
+                        type: "tablet",
+                        src: "/images/sudoku/tablet-login.png",
+                        caption: "Tablet – Login screen"
+                    },
+                    {
+                        type: "tablet",
+                        src: "/images/sudoku/tablet-signup.png",
+                        caption: "Tablet – Signup screen"
+                    }
+                ]
+            },
+            {
+                title: "Mobile version",
+                items: [
+                    {
+                        type: "mobile",
+                        src: "/images/sudoku/mobile-game.png",
+                        caption: "Mobile – Game screen"
+                    },
+                    {
+                        type: "mobile",
+                        src: "/images/sudoku/mobile-levels.png",
+                        caption: "Mobile – Levels screen"
+                    },
+                    {
+                        type: "mobile",
+                        src: "/images/sudoku/mobile-login.png",
+                        caption: "Mobile – Login screen"
+                    },
+                    {
+                        type: "mobile",
+                        src: "/images/sudoku/mobile-signup.png",
+                        caption: "Mobile – Signup screen"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         id: "url-shortening",
         title: "URL Shortening Landing Page",
         mainImg: "/images/shortly/desktop-initial.png",
@@ -568,6 +924,99 @@ const works = [
                         type: "mobile",
                         src: "/images/shortly/mobile-active.png",
                         caption: "Mobile – active"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: "clock-app",
+        title: "Clock App",
+        mainImg: "/images/clock-app/desktop-night-initial.png",
+        description:
+            `
+                A clock app displaying information based on the user's IP address. The app
+                displays an auto-updating clock, the user's timezone and additional details on
+                the current date and week, while the site's theme and background image are
+                updated automatically based on the current time. The app also includes a
+                random quotes feature, which the user can refresh to generate new random
+                quotes on the fly.
+            `,
+        url: "https://clock-app-git-main.yinonhever.vercel.app/",
+        githubUrl: "https://github.com/yinonhever/clock-app",
+        gallery: [
+            {
+                title: "Desktop version",
+                items: [
+                    {
+                        type: "desktop",
+                        src: "/images/clock-app/desktop-night-initial.png",
+                        caption: "Desktop – Night (initial)"
+                    },
+                    {
+                        type: "desktop",
+                        src: "/images/clock-app/desktop-night-active.png",
+                        caption: "Desktop – Night (active)"
+                    },
+                    {
+                        type: "desktop",
+                        src: "/images/clock-app/desktop-day-initial.png",
+                        caption: "Desktop – Day (initial)"
+                    },
+                    {
+                        type: "desktop",
+                        src: "/images/clock-app/desktop-day-active.png",
+                        caption: "Desktop – Day (active)"
+                    }
+                ]
+            },
+            {
+                title: "Tablet version",
+                items: [
+                    {
+                        type: "tablet",
+                        src: "/images/clock-app/tablet-night-initial.png",
+                        caption: "Tablet – Night (initial)"
+                    },
+                    {
+                        type: "tablet",
+                        src: "/images/clock-app/tablet-night-active.png",
+                        caption: "Tablet – Night (active)"
+                    },
+                    {
+                        type: "tablet",
+                        src: "/images/clock-app/tablet-day-initial.png",
+                        caption: "Tablet – Day (initial)"
+                    },
+                    {
+                        type: "tablet",
+                        src: "/images/clock-app/tablet-day-active.png",
+                        caption: "Tablet – Day (active)"
+                    }
+                ]
+            },
+            {
+                title: "Mobile version",
+                items: [
+                    {
+                        type: "mobile",
+                        src: "/images/clock-app/mobile-night-initial.png",
+                        caption: "Mobile – Night (initial)"
+                    },
+                    {
+                        type: "mobile",
+                        src: "/images/clock-app/mobile-night-active.png",
+                        caption: "Mobile – Night (active)"
+                    },
+                    {
+                        type: "mobile",
+                        src: "/images/clock-app/mobile-day-initial.png",
+                        caption: "Mobile – Day (initial)"
+                    },
+                    {
+                        type: "mobile",
+                        src: "/images/clock-app/mobile-day-active.png",
+                        caption: "Mobile – Day (active)"
                     }
                 ]
             }
@@ -629,6 +1078,69 @@ const works = [
                         src: "/images/job-listings/mobile-filtered.png",
                         caption: "Mobile – filtered"
                     }
+                ]
+            }
+        ]
+    },
+    {
+        id: "to-do-list",
+        title: "To-Do List App",
+        mainImg: "/images/todo-app/desktop-night.png",
+        description:
+            `
+                A To-Do app allowing users to add or delete items, mark items as completed,
+                and filter the list to view only active items or completed ones. The user can
+                drag-and-drop the list items to change their order, and the list in its
+                updated order is saved into the browser's storage and retained after reloading
+                the page. Users can also toggle the site's theme between Night Mode and Day
+                Mode.
+            `,
+        url: "https://todo-app-topaz-nu.vercel.app/",
+        githubUrl: "https://github.com/yinonhever/todo-app",
+        gallery: [
+            {
+                title: "Desktop version",
+                items: [
+                    {
+                        type: "desktop",
+                        src: "/images/todo-app/desktop-night.png",
+                        caption: "Desktop – Night"
+                    },
+                    {
+                        type: "desktop",
+                        src: "/images/todo-app/desktop-day.png",
+                        caption: "Desktop – Day"
+                    },
+                ]
+            },
+            {
+                title: "Tablet version",
+                items: [
+                    {
+                        type: "tablet",
+                        src: "/images/todo-app/tablet-night.png",
+                        caption: "Tablet – Night"
+                    },
+                    {
+                        type: "tablet",
+                        src: "/images/todo-app/tablet-day.png",
+                        caption: "Tablet – Day"
+                    },
+                ]
+            },
+            {
+                title: "Mobile version",
+                items: [
+                    {
+                        type: "mobile",
+                        src: "/images/todo-app/mobile-night.png",
+                        caption: "Mobile – Night"
+                    },
+                    {
+                        type: "mobile",
+                        src: "/images/todo-app/mobile-day.png",
+                        caption: "Mobile – Day"
+                    },
                 ]
             }
         ]
