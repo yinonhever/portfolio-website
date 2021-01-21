@@ -36,6 +36,11 @@ const works = [
                     },
                     {
                         type: "desktop",
+                        src: "/images/chatter/desktop-edit-profile.png",
+                        caption: "Desktop – Edit Profile page"
+                    },
+                    {
+                        type: "desktop",
                         src: "/images/chatter/desktop-my-profile.png",
                         caption: "Desktop – Profile page"
                     },
@@ -71,6 +76,11 @@ const works = [
                     },
                     {
                         type: "tablet",
+                        src: "/images/chatter/tablet-edit-profile.png",
+                        caption: "tablet – Edit Profile page"
+                    },
+                    {
+                        type: "tablet",
                         src: "/images/chatter/tablet-my-profile.png",
                         caption: "Tablet – Profile page"
                     },
@@ -89,6 +99,11 @@ const works = [
                         src: "/images/chatter/tablet-signup.png",
                         caption: "Tablet – Signup page"
                     },
+                    {
+                        type: "tablet",
+                        src: "/images/chatter/tablet-navigation.png",
+                        caption: "Tablet – Navigation"
+                    }
                 ]
             },
             {
@@ -103,6 +118,11 @@ const works = [
                         type: "mobile",
                         src: "/images/chatter/mobile-my-chats.png",
                         caption: "Mobile – My Chats page"
+                    },
+                    {
+                        type: "mobile",
+                        src: "/images/chatter/mobile-edit-profile.png",
+                        caption: "mobile – Edit Profile page"
                     },
                     {
                         type: "mobile",
@@ -124,6 +144,11 @@ const works = [
                         src: "/images/chatter/mobile-signup.png",
                         caption: "Mobile – Signup page"
                     },
+                    {
+                        type: "mobile",
+                        src: "/images/chatter/mobile-navigation.png",
+                        caption: "Mobile – Navigation"
+                    }
                 ]
             }
         ]
