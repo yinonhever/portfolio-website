@@ -5,18 +5,20 @@ const works = [
         featured: true,
         featuredText:
             `    
-                A social chat app built with Vue.js, Node/Express and Socket.io, allowing
-                users to sign up, create and edit their profiles and chat with other users of
-                the app, with live updates in realtime when a message is received or deleted.
+            A social chat app that allows
+            users to sign up, create and edit their profiles, explore other users of the
+            app and chat with them. The chat pages are
+            updated in realtime when the user receives a message or when a message is
+            deleted, while featuring a well-designed and animated interface.
             `,
         mainImg: "/images/chatter/desktop-chat.png",
         description:
             `
-                A social chat app built with Vue.js, Node/Express and Socket.io, allowing
+                A social chat app built with Vue.js, Node/Express and Socket.io. The app allows
                 users to sign up, create and edit their profiles, explore other users of the
                 app and chat with them. The chats, as well as the user's My Chats page, are
                 updated in realtime when the user receives a message or when a message is
-                deleted, and feature a well-designed and animated interface.
+                deleted, while featuring a well-designed and animated interface.
             `,
         url: "https://chatter.vercel.app/",
         githubUrl: "https://github.com/yinonhever/chatter",
@@ -77,7 +79,7 @@ const works = [
                     {
                         type: "tablet",
                         src: "/images/chatter/tablet-edit-profile.png",
-                        caption: "tablet – Edit Profile page"
+                        caption: "Tablet – Edit Profile page"
                     },
                     {
                         type: "tablet",
@@ -122,7 +124,7 @@ const works = [
                     {
                         type: "mobile",
                         src: "/images/chatter/mobile-edit-profile.png",
-                        caption: "mobile – Edit Profile page"
+                        caption: "Mobile – Edit Profile page"
                     },
                     {
                         type: "mobile",
@@ -676,6 +678,97 @@ const works = [
         ]
     },
     {
+        id: "sudoku",
+        title: "Sudoku Game",
+        mainImg: "/images/sudoku/desktop-game.png",
+        description:
+            `
+                A sudoku game with three levels. The app requires the user to create an account or
+                login in order to start playing the game. Once the user is logged in, their
+                total score is saved into their account, as points are awarded based on the
+                number of wins and the levels played.
+            `,
+        url: "http://sudoku-topaz.vercel.app/",
+        githubUrl: "https://github.com/yinonhever/sudoku",
+        gallery: [
+            {
+                title: "Desktop version",
+                items: [
+                    {
+                        type: "desktop",
+                        src: "/images/sudoku/desktop-game.png",
+                        caption: "Desktop – Game screen"
+                    },
+                    {
+                        type: "desktop",
+                        src: "/images/sudoku/desktop-levels.png",
+                        caption: "Desktop – Levels screen"
+                    },
+                    {
+                        type: "desktop",
+                        src: "/images/sudoku/desktop-login.png",
+                        caption: "Desktop – Login screen"
+                    },
+                    {
+                        type: "desktop",
+                        src: "/images/sudoku/desktop-signup.png",
+                        caption: "Desktop – Signup screen"
+                    }
+                ]
+            },
+            {
+                title: "Tablet version",
+                items: [
+                    {
+                        type: "tablet",
+                        src: "/images/sudoku/tablet-game.png",
+                        caption: "Tablet – Game screen"
+                    },
+                    {
+                        type: "tablet",
+                        src: "/images/sudoku/tablet-levels.png",
+                        caption: "Tablet – Levels screen"
+                    },
+                    {
+                        type: "tablet",
+                        src: "/images/sudoku/tablet-login.png",
+                        caption: "Tablet – Login screen"
+                    },
+                    {
+                        type: "tablet",
+                        src: "/images/sudoku/tablet-signup.png",
+                        caption: "Tablet – Signup screen"
+                    }
+                ]
+            },
+            {
+                title: "Mobile version",
+                items: [
+                    {
+                        type: "mobile",
+                        src: "/images/sudoku/mobile-game.png",
+                        caption: "Mobile – Game screen"
+                    },
+                    {
+                        type: "mobile",
+                        src: "/images/sudoku/mobile-levels.png",
+                        caption: "Mobile – Levels screen"
+                    },
+                    {
+                        type: "mobile",
+                        src: "/images/sudoku/mobile-login.png",
+                        caption: "Mobile – Login screen"
+                    },
+                    {
+                        type: "mobile",
+                        src: "/images/sudoku/mobile-signup.png",
+                        caption: "Mobile – Signup screen"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         id: "rock-paper-scissors-lizard-spock",
         title: "Rock, Paper, Scissors, Lizard, Spock",
         featuredText:
@@ -804,157 +897,6 @@ const works = [
         ]
     },
     {
-        id: "sudoku",
-        title: "Sudoku Game",
-        mainImg: "/images/sudoku/desktop-game.png",
-        description:
-            `
-                A sudoku game with three levels. The app requires the user to create an account or
-                login in order to start playing the game. Once the user is logged in, their
-                total score is saved into their account, as points are awarded based on the
-                number of wins and the levels played.
-            `,
-        url: "http://sudoku-topaz.vercel.app/",
-        githubUrl: "https://github.com/yinonhever/sudoku",
-        gallery: [
-            {
-                title: "Desktop version",
-                items: [
-                    {
-                        type: "desktop",
-                        src: "/images/sudoku/desktop-game.png",
-                        caption: "Desktop – Game screen"
-                    },
-                    {
-                        type: "desktop",
-                        src: "/images/sudoku/desktop-levels.png",
-                        caption: "Desktop – Levels screen"
-                    },
-                    {
-                        type: "desktop",
-                        src: "/images/sudoku/desktop-login.png",
-                        caption: "Desktop – Login screen"
-                    },
-                    {
-                        type: "desktop",
-                        src: "/images/sudoku/desktop-signup.png",
-                        caption: "Desktop – Signup screen"
-                    }
-                ]
-            },
-            {
-                title: "Tablet version",
-                items: [
-                    {
-                        type: "tablet",
-                        src: "/images/sudoku/tablet-game.png",
-                        caption: "Tablet – Game screen"
-                    },
-                    {
-                        type: "tablet",
-                        src: "/images/sudoku/tablet-levels.png",
-                        caption: "Tablet – Levels screen"
-                    },
-                    {
-                        type: "tablet",
-                        src: "/images/sudoku/tablet-login.png",
-                        caption: "Tablet – Login screen"
-                    },
-                    {
-                        type: "tablet",
-                        src: "/images/sudoku/tablet-signup.png",
-                        caption: "Tablet – Signup screen"
-                    }
-                ]
-            },
-            {
-                title: "Mobile version",
-                items: [
-                    {
-                        type: "mobile",
-                        src: "/images/sudoku/mobile-game.png",
-                        caption: "Mobile – Game screen"
-                    },
-                    {
-                        type: "mobile",
-                        src: "/images/sudoku/mobile-levels.png",
-                        caption: "Mobile – Levels screen"
-                    },
-                    {
-                        type: "mobile",
-                        src: "/images/sudoku/mobile-login.png",
-                        caption: "Mobile – Login screen"
-                    },
-                    {
-                        type: "mobile",
-                        src: "/images/sudoku/mobile-signup.png",
-                        caption: "Mobile – Signup screen"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        id: "url-shortening",
-        title: "URL Shortening Landing Page",
-        mainImg: "/images/shortly/desktop-initial.png",
-        description:
-            `
-                A landing page for a mock company called Shortly, which manages shortened links for business clients.
-                This page also serves as a functional web app, allowing users to generate shortened URLs, copy them
-                to their clipboard, and keep the list of their shortened URLs even after refreshing the browser.
-            `,
-        url: "https://shortly-bay.vercel.app/",
-        githubUrl: "https://github.com/yinonhever/shortly",
-        gallery: [
-            {
-                title: "Desktop version",
-                items: [
-                    {
-                        type: "desktop",
-                        src: "/images/shortly/desktop-initial.png",
-                        caption: "Desktop – initial"
-                    },
-                    {
-                        type: "desktop",
-                        src: "/images/shortly/desktop-active.png",
-                        caption: "Desktop – active"
-                    }
-                ]
-            },
-            {
-                title: "Tablet version",
-                items: [
-                    {
-                        type: "tablet",
-                        src: "/images/shortly/tablet-initial.png",
-                        caption: "Tablet – initial"
-                    },
-                    {
-                        type: "tablet",
-                        src: "/images/shortly/tablet-active.png",
-                        caption: "Tablet – active"
-                    }
-                ]
-            },
-            {
-                title: "Mobile version",
-                items: [
-                    {
-                        type: "mobile",
-                        src: "/images/shortly/mobile-initial.png",
-                        caption: "Mobile – initial"
-                    },
-                    {
-                        type: "mobile",
-                        src: "/images/shortly/mobile-active.png",
-                        caption: "Mobile – active"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         id: "clock-app",
         title: "Clock App",
         mainImg: "/images/clock-app/desktop-night-initial.png",
@@ -1048,66 +990,6 @@ const works = [
         ]
     },
     {
-        id: "job-listings",
-        title: "Job Listings with Filtering",
-        mainImg: "/images/job-listings/desktop.png",
-        description:
-            `
-                This page includes a beautifully-designed, fully-responsive set of demo job listings, with 
-                each listing including a list of its categories (the role, the level, and the required
-                languages and tools). Users can dynamically filter the job listings by category.
-            `,
-        url: "https://job-listings-alpha.vercel.app/",
-        githubUrl: "https://github.com/yinonhever/job-listings",
-        gallery: [
-            {
-                title: "Desktop version",
-                items: [
-                    {
-                        type: "desktop",
-                        src: "/images/job-listings/desktop.png",
-                        caption: "Desktop – initial"
-                    },
-                    {
-                        type: "desktop",
-                        src: "/images/job-listings/desktop-filtered.png",
-                        caption: "Desktop – filtered"
-                    }
-                ]
-            },
-            {
-                title: "Tablet version",
-                items: [
-                    {
-                        type: "tablet",
-                        src: "/images/job-listings/tablet.png",
-                        caption: "Tablet – initial"
-                    },
-                    {
-                        type: "tablet",
-                        src: "/images/job-listings/tablet-filtered.png",
-                        caption: "Tablet – filtered"
-                    }
-                ]
-            },
-            {
-                title: "Mobile version",
-                items: [
-                    {
-                        type: "mobile",
-                        src: "/images/job-listings/mobile.png",
-                        caption: "Mobile – initial"
-                    },
-                    {
-                        type: "mobile",
-                        src: "/images/job-listings/mobile-filtered.png",
-                        caption: "Mobile – filtered"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         id: "to-do-list",
         title: "To-Do List App",
         mainImg: "/images/todo-app/desktop-night.png",
@@ -1166,6 +1048,126 @@ const works = [
                         src: "/images/todo-app/mobile-day.png",
                         caption: "Mobile – Day"
                     },
+                ]
+            }
+        ]
+    },
+    {
+        id: "url-shortening",
+        title: "URL Shortening Landing Page",
+        mainImg: "/images/shortly/desktop-initial.png",
+        description:
+            `
+                A landing page for a mock company called Shortly, which manages shortened links for business clients.
+                This page also serves as a functional web app, allowing users to generate shortened URLs, copy them
+                to their clipboard, and keep the list of their shortened URLs even after refreshing the browser.
+            `,
+        url: "https://shortly-bay.vercel.app/",
+        githubUrl: "https://github.com/yinonhever/shortly",
+        gallery: [
+            {
+                title: "Desktop version",
+                items: [
+                    {
+                        type: "desktop",
+                        src: "/images/shortly/desktop-initial.png",
+                        caption: "Desktop – initial"
+                    },
+                    {
+                        type: "desktop",
+                        src: "/images/shortly/desktop-active.png",
+                        caption: "Desktop – active"
+                    }
+                ]
+            },
+            {
+                title: "Tablet version",
+                items: [
+                    {
+                        type: "tablet",
+                        src: "/images/shortly/tablet-initial.png",
+                        caption: "Tablet – initial"
+                    },
+                    {
+                        type: "tablet",
+                        src: "/images/shortly/tablet-active.png",
+                        caption: "Tablet – active"
+                    }
+                ]
+            },
+            {
+                title: "Mobile version",
+                items: [
+                    {
+                        type: "mobile",
+                        src: "/images/shortly/mobile-initial.png",
+                        caption: "Mobile – initial"
+                    },
+                    {
+                        type: "mobile",
+                        src: "/images/shortly/mobile-active.png",
+                        caption: "Mobile – active"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: "job-listings",
+        title: "Job Listings with Filtering",
+        mainImg: "/images/job-listings/desktop.png",
+        description:
+            `
+                This page includes a beautifully-designed, fully-responsive set of demo job listings, with 
+                each listing including a list of its categories (the role, the level, and the required
+                languages and tools). Users can dynamically filter the job listings by category.
+            `,
+        url: "https://job-listings-alpha.vercel.app/",
+        githubUrl: "https://github.com/yinonhever/job-listings",
+        gallery: [
+            {
+                title: "Desktop version",
+                items: [
+                    {
+                        type: "desktop",
+                        src: "/images/job-listings/desktop.png",
+                        caption: "Desktop – initial"
+                    },
+                    {
+                        type: "desktop",
+                        src: "/images/job-listings/desktop-filtered.png",
+                        caption: "Desktop – filtered"
+                    }
+                ]
+            },
+            {
+                title: "Tablet version",
+                items: [
+                    {
+                        type: "tablet",
+                        src: "/images/job-listings/tablet.png",
+                        caption: "Tablet – initial"
+                    },
+                    {
+                        type: "tablet",
+                        src: "/images/job-listings/tablet-filtered.png",
+                        caption: "Tablet – filtered"
+                    }
+                ]
+            },
+            {
+                title: "Mobile version",
+                items: [
+                    {
+                        type: "mobile",
+                        src: "/images/job-listings/mobile.png",
+                        caption: "Mobile – initial"
+                    },
+                    {
+                        type: "mobile",
+                        src: "/images/job-listings/mobile-filtered.png",
+                        caption: "Mobile – filtered"
+                    }
                 ]
             }
         ]
