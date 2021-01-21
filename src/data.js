@@ -680,7 +680,7 @@ const works = [
     {
         id: "sudoku",
         title: "Sudoku Game",
-        mainImg: "/images/sudoku/desktop-game.png",
+        mainImg: "/images/sudoku/‏‏desktop-game-2.png",
         description:
             `
                 A sudoku game with three levels. The app requires the user to create an account or
@@ -696,7 +696,7 @@ const works = [
                 items: [
                     {
                         type: "desktop",
-                        src: "/images/sudoku/desktop-game.png",
+                        src: "/images/sudoku/‏‏desktop-game-2.png",
                         caption: "Desktop – Game screen"
                     },
                     {
