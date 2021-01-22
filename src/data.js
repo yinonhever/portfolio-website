@@ -688,8 +688,8 @@ const works = [
                 total score is saved into their account, as points are awarded based on the
                 number of wins and the levels played.
             `,
-        url: "http://sudoku-topaz.vercel.app/",
-        githubUrl: "https://github.com/yinonhever/sudoku",
+        url: "https://sudoku-vue-gilt.vercel.app/",
+        githubUrl: "https://github.com/yinonhever/sudoku-vue",
         gallery: [
             {
                 title: "Desktop version",
