@@ -109,7 +109,7 @@ const works = [
                 ]
             },
             {
-                title: "mobile version",
+                title: "Mobile version",
                 items: [
                     {
                         type: "mobile",
@@ -198,23 +198,13 @@ const works = [
                     },
                     {
                         type: "desktop",
-                        src: "/images/github-timeline/desktop-error-1.png",
-                        caption: "Desktop – error"
+                        src: "/images/github-timeline/desktop-empty.png",
+                        caption: "Desktop – no repos"
                     },
                     {
                         type: "desktop",
-                        src: "/images/github-timeline/desktop-error-2.png",
-                        caption: "Desktop – error"
-                    },
-                    {
-                        type: "desktop",
-                        src: "/images/github-timeline/desktop-error-3.png",
-                        caption: "Desktop – error"
-                    },
-                    {
-                        type: "desktop",
-                        src: "/images/github-timeline/desktop-history.png",
-                        caption: "Desktop – search history"
+                        src: "/images/github-timeline/desktop-invalid.png",
+                        caption: "Desktop – invalid username"
                     }
                 ]
             },
