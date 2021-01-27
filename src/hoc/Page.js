@@ -15,7 +15,9 @@ const Page = props => {
     return (
         <Aux>
             {title && <PageHeading title={title} />}
-            {children}
+            <main className="page-container">
+                {children}
+            </main>
         </Aux>
     )
 }

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import works from "../../data";
+import { useSelector } from "react-redux";
 import Aux from "../../hoc/Auxilliary";
 import BackButton from "../UI/BackButton";
 import GalleryIntro from "./GalleryIntro";
@@ -7,6 +7,7 @@ import GallerySection from "../UI/GallerySection";
 import SelectedImage from "../UI/SelectedImage";
 
 const Gallery = props => {
+    const { works } = useSelector(state => state.works);
     const [work, setWork] = useState({});
     const [selectedImage, setSelectedImage] = useState();
 
@@ -21,7 +22,7 @@ const Gallery = props => {
         else {
             props.history.push("/works");
         }
-    }, [props])
+    }, [props, works])
 
     const itemClickHandler = image => {
         setSelectedImage(null);

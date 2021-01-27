@@ -14,7 +14,16 @@ body {
   box-sizing: border-box;
 }
 
-section, main {
+#root {
+  min-height: 150vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section,
+main {
   overflow: hidden;
 }
 
@@ -24,6 +33,29 @@ section, main {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
+}
+
+.page-container {
+  flex: 1;
+  min-height: 25rem;
+  position: relative;
+
+  .spinner:first-child {
+    position: absolute;
+  }
+}
+
+.error-message {
+  position: absolute;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: $color-error;
+  text-align: center;
+  line-height: 1.4;
+
+  @include respond(mobile) {
+    font-size: 1.6rem;
+  }
 }
 
 ::selection {

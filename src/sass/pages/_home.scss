@@ -85,6 +85,8 @@
   padding: 8rem $padding-side-desktop 10rem;
   background-color: rgba($color-azure-light-2, 0.5);
   text-align: center;
+  position: relative;
+  min-height: 85rem;
 
   @include respond(tablet) {
     padding: 6rem $padding-side-mobile 7rem;
@@ -121,6 +123,10 @@
     @include respond(mobile) {
       grid-gap: 4.5rem;
     }
+  }
+
+  .spinner {
+    position: absolute;
   }
 }
 
