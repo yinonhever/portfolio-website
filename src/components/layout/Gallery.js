@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useSelector } from "react-redux";
-import Aux from "../../hoc/Auxilliary";
 import BackButton from "../UI/BackButton";
 import GalleryIntro from "./GalleryIntro";
 import GallerySection from "../UI/GallerySection";
@@ -10,14 +9,16 @@ const Gallery = props => {
     const { works } = useSelector(state => state.works);
     const [work, setWork] = useState({});
     const [selectedImage, setSelectedImage] = useState();
+    const container = useRef();
 
     useEffect(() => {
-        const matchingWork = works.find(work => work.id === props.match.params.id);
+        const matchingWork = works.find(item => item.id === props.match.params.id);
         if (matchingWork) {
             setWork(matchingWork);
             setSelectedImage(matchingWork.gallery[0].items[0]);
             document.title = matchingWork.title + " – Yinon Hever";
-            window.scrollTo(0, 300);
+            const { top } = container.current.getBoundingClientRect();
+            window.scrollTo(0, top);
         }
         else {
             props.history.push("/works");
@@ -31,7 +32,7 @@ const Gallery = props => {
     }
 
     return (
-        <Aux>
+        <div ref={container}>
             <BackButton />
             <main className="gallery">
                 <GalleryIntro work={work} />
@@ -50,7 +51,7 @@ const Gallery = props => {
                     </div>
                 </section>
             </main>
-        </Aux>
+        </div>
     )
 }
 
