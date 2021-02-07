@@ -8,13 +8,11 @@ const WorkImg = props => {
         const adjustHeight = () => {
             if (imageRef.current) {
                 const { width, height } = imageRef.current.getBoundingClientRect();
-                setImageBoxHeight(() => {
-                    const boxHeight = window.innerWidth > 450 ? width * 60 / 100 : width * 65 / 100;
-                    return boxHeight <= height || height === 0 ? boxHeight : height;
-                });
+                const boxHeight = window.innerWidth > 450 ? width * 60 / 100 : width * 65 / 100;
+                setImageBoxHeight(boxHeight <= height || height === 0 ? boxHeight : height);
             }
         }
-        adjustHeight();
+        setTimeout(adjustHeight, 100);
         window.addEventListener("resize", adjustHeight);
     }, [])
 

@@ -1,3 +1,5 @@
+import { LOAD_WORKS_SUCCESS, LOAD_WORKS_ERROR } from "./types";
+
 const initialState = {
     works: [],
     loading: true,
@@ -6,13 +8,13 @@ const initialState = {
 
 export const worksReducer = (state = initialState, { type, payload }) => {
     switch (type) {
-        case "LOAD_WORKS_SUCCESS":
+        case LOAD_WORKS_SUCCESS:
             return {
                 works: payload,
                 loading: false,
                 error: false
             };
-        case "LOAD_WORKS_FAIL":
+        case LOAD_WORKS_ERROR:
             return {
                 ...state,
                 loading: false,
