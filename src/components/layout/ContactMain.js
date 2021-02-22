@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
-import emailTemplate from "../../utility/emailTemplate";
+import emailjs from "emailjs-com";
 import Fade from "react-reveal/Fade";
 import Aux from "../../hoc/Auxilliary";
 import Form from "../UI/Form";
@@ -13,19 +12,20 @@ const ContactMain = () => {
     const [error, setError] = useState(false);
     const [showModal, setShowModal] = useState(false);
 
-    const submitHandler = async (data, event) => {
+    const submitHandler = async (_, event) => {
         setLoading(true);
-
         try {
-            await axios.post("https://nagc.tech/mail", emailTemplate(data),
-                { headers: { token: "GT73K1w_gnsj-qSNdE_pcOP86sCJLsNgGu_ZyAEStdU" } });
-            event.target.reset();
+            await emailjs.sendForm(
+                "gmail",
+                "template_y2lou84",
+                event.target,
+                "user_bWwrQk9Sb6FW9cPYtGs0t"
+            );
             setError(false);
-        }
-        catch {
+            event.target.reset();
+        } catch {
             setError(true);
         }
-
         setLoading(false);
         setShowModal(true);
     }
@@ -35,7 +35,7 @@ const ContactMain = () => {
             <main className="contact">
                 <section className="contact__intro">
                     <Fade right duration={600}>
-                        <img className="contact__img" src={illustration} alt="contact" />
+                        <img className="contact__img" src={illustration} alt="Contact" />
                     </Fade>
                 </section>
                 <Form submit={submitHandler} />
