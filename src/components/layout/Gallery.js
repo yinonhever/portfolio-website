@@ -1,12 +1,12 @@
-import React, { useState, useEffect, useRef } from "react";
-import { useSelector } from "react-redux";
+import React, { useState, useEffect, useContext, useRef } from "react";
 import BackButton from "../UI/BackButton";
 import GalleryIntro from "./GalleryIntro";
 import GallerySection from "../UI/GallerySection";
 import SelectedImage from "../UI/SelectedImage";
+import WorksContext from "../../store/works-context";
 
 const Gallery = props => {
-    const { works } = useSelector(state => state.works);
+    const { works } = useContext(WorksContext);
     const [work, setWork] = useState({});
     const [selectedImage, setSelectedImage] = useState();
     const container = useRef();

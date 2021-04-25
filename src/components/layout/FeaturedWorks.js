@@ -1,13 +1,13 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Button from "../UI/Button";
 import FeaturedWork from "../UI/FeaturedWork";
 import Spinner from "../UI/Spinner";
 import Error from "../UI/Error";
+import WorksContext from "../../store/works-context";
 
 const FeaturedWorks = () => {
-    const { works, loading, error } = useSelector(state => state.works);
+    const { works, loading, error } = useContext(WorksContext);
     const featuredWorks = works.filter(work => work.featured);
 
     return (

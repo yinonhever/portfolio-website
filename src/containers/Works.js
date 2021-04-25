@@ -1,14 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Switch, Route } from "react-router-dom";
-import { useSelector } from "react-redux";
 import Page from "../hoc/Page";
 import WorksMain from "../components/layout/WorksMain";
 import Gallery from "../components/layout/Gallery";
 import Spinner from "../components/UI/Spinner";
 import Error from "../components/UI/Error";
+import WorksContext from "../store/works-context";
 
 const Works = () => {
-    const { loading, error } = useSelector(state => state.works);
+    const { loading, error } = useContext(WorksContext);
 
     return (
         <Page title="Works">

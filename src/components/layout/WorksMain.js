@@ -1,9 +1,9 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React, { useContext } from "react";
 import Work from "../UI/Work";
+import WorksContext from "../../store/works-context";
 
 const WorksMain = () => {
-    const { works } = useSelector(state => state.works);
+    const { works } = useContext(WorksContext);
 
     return (
         <main className="works">
