@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Switch, Route } from "react-router-dom";
-import Page from "../hoc/Page";
+import Page from "./Page";
 import WorksMain from "../components/layout/WorksMain";
 import Gallery from "../components/layout/Gallery";
 import Spinner from "../components/UI/Spinner";

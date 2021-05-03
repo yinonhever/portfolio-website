@@ -1,14 +1,13 @@
-import React from "react";
-import Aux from "../hoc/Auxilliary";
+import React, { Fragment } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 
 const Layout = props => (
-    <Aux>
+    <Fragment>
         <Header />
         {props.children}
         <Footer />
-    </Aux>
+    </Fragment>
 )
 
 export default Layout;

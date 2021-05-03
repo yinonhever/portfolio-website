@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import emailjs from "emailjs-com";
 import Fade from "react-reveal/Fade";
-import Aux from "../../hoc/Auxilliary";
 import Form from "../UI/Form";
 import Spinner from "../UI/Spinner";
 import Modal from "../UI/Modal";
@@ -31,7 +30,7 @@ const ContactMain = () => {
     }
 
     return (
-        <Aux>
+        <Fragment>
             <main className="contact">
                 <section className="contact__intro">
                     <Fade right duration={600}>
@@ -42,7 +41,7 @@ const ContactMain = () => {
             </main>
             {loading && <Spinner />}
             <Modal active={showModal} error={error} closed={() => setShowModal(false)} />
-        </Aux>
+        </Fragment>
     )
 }
 

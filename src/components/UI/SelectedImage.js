@@ -1,10 +1,9 @@
-import React from "react";
+import React, { Fragment } from "react";
 import InnerImageZoom from "react-inner-image-zoom";
 import Fade from "react-reveal/Fade";
-import Aux from "../../hoc/Auxilliary";
 
 const SelectedImage = ({ image }) => (
-    <Aux>
+    <Fragment>
         <Fade right duration={600} delay={100}>
             <div className="gallery__selected-text">
                 <h4 className="gallery__selected-title">{image.caption}</h4>
@@ -23,7 +22,7 @@ const SelectedImage = ({ image }) => (
                 />
             </div>
         </Fade>
-    </Aux>
+    </Fragment>
 )
 
 export default SelectedImage;
