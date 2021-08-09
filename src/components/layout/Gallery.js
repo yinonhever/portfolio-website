@@ -10,6 +10,7 @@ const Gallery = props => {
     const [work, setWork] = useState({});
     const [selectedImage, setSelectedImage] = useState();
     const container = useRef();
+    const gallerySection = useRef();
 
     useEffect(() => {
         const matchingWork = works.find(item => item.id === props.match.params.id);
@@ -28,7 +29,8 @@ const Gallery = props => {
     const itemClickHandler = image => {
         setSelectedImage(null);
         setTimeout(() => setSelectedImage(image), 10);
-        window.scrollTo(0, 800);
+        const { top } = gallerySection.current.getBoundingClientRect();
+        window.scrollTo(0, window.scrollY + top);
     }
 
     return (
@@ -36,7 +38,7 @@ const Gallery = props => {
             <BackButton />
             <main className="gallery">
                 <GalleryIntro work={work} />
-                <section className="gallery__container">
+                <section className="gallery__container" ref={gallerySection}>
                     <div className="gallery__items">
                         {work.gallery && work.gallery.map(section =>
                             <GallerySection
