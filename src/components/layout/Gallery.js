@@ -30,7 +30,7 @@ const Gallery = props => {
         setSelectedImage(null);
         setTimeout(() => setSelectedImage(image), 10);
         const { top } = gallerySection.current.getBoundingClientRect();
-        window.scrollTo(0, window.scrollY + top);
+        setTimeout(() => window.scrollTo(0, window.scrollY + top), 10);
     }
 
     return (
