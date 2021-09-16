@@ -15,8 +15,10 @@ export const WorksContextProvider = props => {
     useEffect(() => {
         const loadWorks = async () => {
             try {
-                const response = await axios.get("https://portfolio-a5021-default-rtdb.firebaseio.com/works.json");
-                setWorks(response.data);
+                const { data } = await axios.get(
+                    "https://portfolio-a5021-default-rtdb.firebaseio.com/works.json"
+                );
+                setWorks(data);
             } catch {
                 setError(true);
             }
