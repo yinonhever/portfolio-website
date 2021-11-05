@@ -13,7 +13,7 @@ const GallerySection = props => (
                         style={{ maxHeight: item.type === "desktop" ? "15rem" : "25rem" }}
                         onClick={() => props.itemClicked(item)}
                     >
-                        <img src={item.src} alt={item.caption} />
+                        <img src={item.thumbnail || item.src} alt={item.caption} />
                     </div>
                 )}
             </div>

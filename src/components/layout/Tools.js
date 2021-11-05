@@ -20,7 +20,7 @@ const items = [
     { text: "Flask", icon: "icon-flask" },
     { text: "MongoDB", icon: "icon-mongodb" },
     { text: "Firebase", icon: "icon-firebase" }
-]
+];
 
 const useRows = () => {
     const [columns, setColumns] = useState(window.innerWidth > 900 ? 3 : 2);
@@ -29,7 +29,7 @@ const useRows = () => {
     }, [])
     const rows = Math.ceil(items.length / columns);
     return rows;
-}
+};
 
 const Tools = () => {
     const rows = useRows();
@@ -52,6 +52,6 @@ const Tools = () => {
             </div>
         </section>
     )
-}
+};
 
 export default Tools;
