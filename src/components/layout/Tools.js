@@ -11,6 +11,7 @@ const items = [
   { text: "ReactJS", icon: "icon-react" },
   { text: "Redux", icon: "icon-redux" },
   { text: "Next.js", icon: "icon-next-dot-js" },
+  { text: "jQuery", icon: "icon-jquery" },
   { text: "Node.js", icon: "icon-node-dot-js" },
   { text: "Express.js", altIcon: "/images/express.svg" },
   { text: "Pugjs", altIcon: "/images/pugjs-icon.svg" },
@@ -19,20 +20,22 @@ const items = [
   { text: "Python", icon: "icon-python" },
   { text: "Flask", icon: "icon-flask" },
   { text: "PHP", icon: "icon-php" },
+  { text: "AWS", icon: "icon-amazonaws" },
   { text: "MongoDB", icon: "icon-mongodb" },
   { text: "Firebase", icon: "icon-firebase" },
   { text: "MySQL", icon: "icon-mysql" },
   { text: "PostgreSQL", icon: "icon-postgresql" },
+  { text: "Docker", icon: "icon-docker" },
 ];
 
 const useRows = () => {
   const [columns, setColumns] = useState(window.innerWidth > 900 ? 3 : 2);
+  const rows = Math.ceil(items.length / columns);
   useEffect(() => {
     window.addEventListener("resize", () =>
       setColumns(window.innerWidth > 900 ? 3 : 2)
     );
   }, []);
-  const rows = Math.ceil(items.length / columns);
   return rows;
 };
 
@@ -41,7 +44,7 @@ const Tools = () => {
 
   return (
     <section className="tools">
-      <h2 className="section-heading tools__heading">{"Tools & Languages"}</h2>
+      <h2 className="section-heading tools__heading">Tools & Languages</h2>
       <div
         className="tools__grid"
         style={{
