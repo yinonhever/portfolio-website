@@ -30,7 +30,7 @@ const items = [
 ];
 
 const Tools = () => {
-  const rows = useRows(900, 3, 2, items);
+  const rows = useRows(1150, 900, 4, 3, 2, items);
 
   return (
     <section className="tools">
