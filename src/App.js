@@ -10,18 +10,18 @@ import Contact from "./containers/Contact";
 import { WorksContextProvider } from "./store/works-context";
 
 const App = () => (
-    <BrowserRouter>
-        <WorksContextProvider>
-            <Layout>
-                <Switch>
-                    <Route path="/" exact component={Home} />
-                    <Route path="/works" component={Works} />
-                    <Route path="/contact" component={Contact} />
-                    <Redirect from="/" to="/" />
-                </Switch>
-            </Layout>
-        </WorksContextProvider>
-    </BrowserRouter>
-)
+  <BrowserRouter>
+    <WorksContextProvider>
+      <Layout>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/works" component={Works} />
+          <Route path="/contact" component={Contact} />
+          <Redirect from="/" to="/" />
+        </Switch>
+      </Layout>
+    </WorksContextProvider>
+  </BrowserRouter>
+);
 
 export default App;
