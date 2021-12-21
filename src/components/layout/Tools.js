@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import useRows from "../../util/useRows";
 import ToolsItem from "./ToolsItem";
 
 const items = [
@@ -28,19 +29,8 @@ const items = [
   { text: "Docker", icon: "icon-docker" },
 ];
 
-const useRows = () => {
-  const [columns, setColumns] = useState(window.innerWidth > 900 ? 3 : 2);
-  const rows = Math.ceil(items.length / columns);
-  useEffect(() => {
-    window.addEventListener("resize", () =>
-      setColumns(window.innerWidth > 900 ? 3 : 2)
-    );
-  }, []);
-  return rows;
-};
-
 const Tools = () => {
-  const rows = useRows();
+  const rows = useRows(900, 3, 2, items);
 
   return (
     <section className="tools">
