@@ -17,10 +17,10 @@ export default [
   { text: "Python", icon: "icon-python" },
   { text: "Flask", icon: "icon-flask" },
   { text: "PHP", icon: "icon-php" },
-  { text: "AWS", icon: "icon-amazonaws" },
   { text: "MongoDB", icon: "icon-mongodb" },
   { text: "Firebase", icon: "icon-firebase" },
   { text: "MySQL", icon: "icon-mysql" },
   { text: "PostgreSQL", icon: "icon-postgresql" },
+  { text: "AWS", icon: "icon-amazonaws" },
   { text: "Docker", icon: "icon-docker" },
 ];
