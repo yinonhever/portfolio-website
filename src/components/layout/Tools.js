@@ -11,9 +11,7 @@ const Tools = () => {
       <h2 className="section-heading tools__heading">Tools & Languages</h2>
       <div
         className="tools__grid"
-        style={{
-          gridTemplateRows: `repeat(${rows}, min-content)`,
-        }}
+        style={{ gridTemplateRows: `repeat(${rows}, min-content)` }}
       >
         {items.map((item, index) => (
           <ToolsItem
