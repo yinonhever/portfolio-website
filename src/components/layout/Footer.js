@@ -10,7 +10,7 @@ const Footer = () => (
         <Logo white />
         <div className="footer__navigation">
           <Link to="/" className="footer__link">
-            About
+            Home
           </Link>
           <Link to="/works" className="footer__link">
             Works
