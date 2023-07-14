@@ -13,7 +13,6 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    animation: backgroundZoomOut 1s;
 
     @include respond(mobile-land) {
       background-attachment: initial;

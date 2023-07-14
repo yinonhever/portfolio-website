@@ -1,26 +1,36 @@
 import React, { useContext } from "react";
-import { Switch, Route } from "react-router-dom";
+import Work from "../components/UI/Work";
+import WorksContext from "../store/works-context";
 import Page from "./Page";
-import WorksMain from "../components/layout/WorksMain";
-import Gallery from "../components/layout/Gallery";
 import Spinner from "../components/UI/Spinner";
 import Error from "../components/UI/Error";
-import WorksContext from "../store/works-context";
 
-const Works = () => {
-    const { loading, error } = useContext(WorksContext);
+const WorksMain = () => {
+  const { works, loading, error } = useContext(WorksContext);
 
-    return (
-        <Page title="Works">
-            {loading ? <Spinner /> :
-                error ? <Error /> :
-                    <Switch>
-                        <Route path="/works" exact component={WorksMain} />
-                        <Route path="/works/:id" component={Gallery} />
-                    </Switch>
-            }
-        </Page>
-    )
-}
+  return (
+    <Page title="Works">
+      {loading ? (
+        <Spinner />
+      ) : error ? (
+        <Error />
+      ) : (
+        <main className="works">
+          {works.map((work, index) => (
+            <Work
+              key={work.id}
+              id={work.id}
+              img={work.mainImg}
+              title={work.title}
+              description={work.description}
+              url={work.url}
+              mirror={index % 2 !== 0}
+            />
+          ))}
+        </main>
+      )}
+    </Page>
+  );
+};
 
-export default Works;
+export default WorksMain;

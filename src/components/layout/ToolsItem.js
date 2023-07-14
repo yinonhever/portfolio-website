@@ -1,8 +1,8 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 
-const ToolsItem = (props) => (
-  <Fade left mirror={props.mirror} duration={700}>
+const ToolsItem = props => (
+  <Fade direction={props.mirror ? "right" : "left"} duration={700}>
     <div className="tools__item">
       {props.altIcon ? (
         <img

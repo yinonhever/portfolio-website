@@ -71,7 +71,7 @@
     & > * {
       @include respond(mobile) {
         width: 100%;
-        max-width: 25rem;  
+        max-width: 25rem;
       }
 
       &:not(:last-child) {
@@ -113,13 +113,13 @@
       flex: initial;
       margin-right: 0;
     }
-  }
 
-  &__section:not(:last-child) {
-    margin-bottom: 5rem;
+    & > *:not(:last-child) {
+      margin-bottom: 5rem;
 
-    @include respond(mobile) {
-      margin-bottom: 6rem;
+      @include respond(mobile) {
+        margin-bottom: 6rem;
+      }
     }
   }
 
