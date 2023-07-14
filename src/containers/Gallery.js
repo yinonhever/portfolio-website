@@ -30,7 +30,7 @@ const Gallery = () => {
     } else {
       navigate("/works");
     }
-  }, [workId, works, loading]);
+  }, [workId, works, loading, navigate]);
 
   const itemClickHandler = image => {
     setSelectedImage(null);
