@@ -13,6 +13,8 @@
   { "text": "jQuery", "icon": "icon-jquery" },
   { "text": "Node.js", "icon": "icon-node-dot-js" },
   { "text": "Express.js", "altIcon": "/images/express.svg" },
+  { "text": "Vitest", "altIcon": "/images/vitest.svg" },
+  { "text": "Jest", "icon": "icon-jest" },
   { "text": "Flask", "icon": "icon-flask" },
   { "text": "Socket.io", "altIcon": "/images/socketio-icon.svg" },
   { "text": "MySQL", "icon": "icon-mysql" },
