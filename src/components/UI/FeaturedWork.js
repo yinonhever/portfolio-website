@@ -7,7 +7,7 @@ import Button from "./Button";
 import ExternalLink from "./ExternalLink";
 
 const FeaturedWork = props => (
-  <Fade direction={props.mirror ? "right" : "left"} duration={600}>
+  <Fade direction={props.mirror ? "right" : "left"} duration={600} triggerOnce>
     <div className="featured-work">
       <Link to={"/works/" + props.id}>
         <WorkImg

@@ -27,7 +27,7 @@ const slides = [
 ];
 
 const Features = () => (
-  <Fade direction="left" duration={700}>
+  <Fade direction="left" duration={700} triggerOnce>
     <section className="features">
       <Swiper
         modules={[Pagination, Navigation, Autoplay, EffectCube]}

@@ -33,7 +33,7 @@ const ContactMain = () => {
     <Fragment>
       <main className="contact">
         <section className="contact__intro">
-          <Fade direction="right" duration={600}>
+          <Fade direction="right" duration={600} triggerOnce>
             <img className="contact__img" src={illustration} alt="Contact" />
           </Fade>
         </section>

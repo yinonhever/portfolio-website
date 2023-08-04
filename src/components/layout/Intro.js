@@ -3,11 +3,11 @@ import { Fade } from "react-awesome-reveal";
 
 const Intro = () => (
   <section className="intro">
-    <Fade duration={600} style={{ height: "100%" }}>
+    <Fade duration={600} style={{ height: "100%" }} triggerOnce>
       <div className="intro__bg" />
     </Fade>
     <div className="intro__container">
-      <Fade direction="left" cascade duration={500}>
+      <Fade direction="left" cascade duration={500} triggerOnce>
         <h1 className="intro__heading">Powerful Web Development</h1>
         <p className="paragraph intro__text">
           I'm Yinon, a full-stack web developer. I'm dedicated to building and

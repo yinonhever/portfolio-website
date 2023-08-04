@@ -4,7 +4,7 @@ import Button from "../UI/Button";
 import ExternalLink from "../UI/ExternalLink";
 
 const GalleryIntro = ({ work }) => (
-  <Fade direction="left" duration={600}>
+  <Fade direction="left" duration={600} triggerOnce>
     <section className="gallery__intro">
       <div className="gallery__intro-content">
         <h2 className="gallery__heading">{work.title}</h2>

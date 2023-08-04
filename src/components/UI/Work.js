@@ -8,12 +8,21 @@ import ExternalLink from "./ExternalLink";
 const Work = props => (
   <div className={!props.mirror ? "work" : "work work--reversed"}>
     <div className="work__container">
-      <Fade direction={props.mirror ? "right" : "left"} duration={600}>
+      <Fade
+        direction={props.mirror ? "right" : "left"}
+        duration={600}
+        triggerOnce
+      >
         <Link to={"/works/" + props.id}>
           <WorkImg classes="work__img" src={props.img} alt={props.title} />
         </Link>
       </Fade>
-      <Fade direction={props.mirror ? "left" : "right"} cascade duration={500}>
+      <Fade
+        direction={props.mirror ? "left" : "right"}
+        cascade
+        duration={500}
+        triggerOnce
+      >
         <div className="work__content">
           <h2 className="work__title">{props.title}</h2>
           <p className="paragraph work__description">{props.description}</p>

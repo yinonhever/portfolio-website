@@ -18,7 +18,6 @@ const Tools = () => {
             key={item.text}
             text={item.text}
             icon={item.icon}
-            altIcon={item.altIcon}
             mirror={index + 1 > Math.round(items.length / 2)}
           />
         ))}

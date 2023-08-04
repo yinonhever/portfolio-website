@@ -27,7 +27,7 @@ const useRows = (
     desktopCols,
     tabletCols,
     mobileCols,
-    numOfColumns,
+    numOfColumns
   ]);
   return rows;
 };

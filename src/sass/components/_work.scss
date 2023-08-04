@@ -34,6 +34,7 @@
     overflow: hidden;
     width: 38vw;
     box-shadow: $bshadow-1;
+    position: relative;
 
     @include respond(tablet-land) {
       width: 100%;
@@ -46,6 +47,7 @@
     }
 
     img {
+      display: block;
       width: 100%;
       transition: transform 0.5s;
 

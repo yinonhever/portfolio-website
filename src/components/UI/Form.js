@@ -11,7 +11,7 @@ const Form = props => {
   } = useForm({ mode: "onChange" });
 
   return (
-    <Fade direction="left" duration={600}>
+    <Fade direction="left" duration={600} triggerOnce>
       <form className="form" onSubmit={handleSubmit(props.submit)}>
         <div className={errors.name ? "form__field error" : "form__field"}>
           <input

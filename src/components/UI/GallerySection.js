@@ -2,7 +2,7 @@ import React from "react";
 import { Fade } from "react-awesome-reveal";
 
 const GallerySection = props => (
-  <Fade direction="left" cascade duration={400}>
+  <Fade direction="left" cascade duration={400} triggerOnce>
     <div className="gallery__section">
       <h3 className="gallery__section-title">{props.title}</h3>
       <div className="gallery__grid">
