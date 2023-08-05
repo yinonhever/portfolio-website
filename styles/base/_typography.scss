@@ -1,0 +1,35 @@
+body {
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 900;
+  color: $color-blue-dark;
+}
+
+.paragraph {
+  line-height: 1.65;
+  font-size: 1.65rem;
+
+  @include respond(mobile) {
+    font-size: 1.5rem;
+  }
+}
+
+.section-heading {
+  font-size: 4.2rem;
+  text-align: center;
+  position: relative;
+
+  @include respond(mobile) {
+    font-size: 3.5rem;
+  }
+}
+
+a {
+  text-decoration: none;
+}

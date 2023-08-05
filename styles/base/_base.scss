@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+  box-sizing: border-box;
+}
+
+#root,
+.page-layout {
+  min-height: 150vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+section,
+main {
+  overflow: hidden;
+}
+
+.abs-center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.page-container {
+  flex: 1;
+  min-height: 25rem;
+  position: relative;
+
+  .spinner:first-child {
+    position: absolute;
+  }
+}
+
+.error-message {
+  position: absolute;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: $color-error;
+  text-align: center;
+  line-height: 1.4;
+
+  @include respond(mobile) {
+    font-size: 1.6rem;
+  }
+}
+
+::selection {
+  background-color: $color-azure;
+  color: #fff;
+}

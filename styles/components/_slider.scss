@@ -1,0 +1,59 @@
+// GENERAL
+.swiper-button-prev.swiper-button-prev {
+  left: 2rem;
+
+  @include respond(mobile) {
+    left: 1rem;
+  }
+}
+
+.swiper-button-next.swiper-button-next {
+  right: 2rem;
+
+  @include respond(mobile) {
+    right: 1rem;
+  }
+}
+
+.swiper-button-prev.swiper-button-prev,
+.swiper-button-next.swiper-button-next {
+  transition: color 0.5s;
+
+  &:hover {
+    @media (hover: hover) {
+      color: $color-azure;
+    }
+  }
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet {
+  opacity: 1;
+  border: 1px solid;
+  border-radius: 0;
+  background-color: transparent;
+  width: 1rem;
+  height: 1rem;
+  transform: rotate(45deg);
+  margin: 0 6px !important;
+}
+
+// FEATURES SLIDER
+.features .swiper-pagination-bullet {
+  border-color: #fff;
+}
+
+.features .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+.features .swiper-pagination-bullets {
+  @include respond(mobile-land) {
+    bottom: initial !important;
+    top: 3rem;
+  }
+}
+
+.features .swiper-button-prev,
+.features .swiper-button-next {
+  color: #fff;
+}

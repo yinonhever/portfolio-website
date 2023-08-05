@@ -1,0 +1,36 @@
+.page-heading {
+  height: 37rem;
+  position: relative;
+
+  @include respond(mobile) {
+    height: 30rem;
+  }
+
+  &__bg {
+    height: 100%;
+    background-color: $color-blue-dark-2;
+    background-image: url(/images/web-dev-1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+    @include respond(mobile-land) {
+      background-attachment: initial;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    text-align: center;
+    left: $padding-side-mobile;
+    right: $padding-side-mobile;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 5.5rem;
+    color: #fff;
+
+    @include respond(mobile) {
+      font-size: 4rem;
+    }
+  }
+}
