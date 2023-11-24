@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Works – Yinon Hever</title>
+        <title>Contact – Yinon Hever</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Page title="Contact">
