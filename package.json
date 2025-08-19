@@ -18,7 +18,7 @@
     "emailjs-com": "^3.2.0",
     "framer-motion": "^10.15.0",
     "lodash": "^4.17.21",
-    "next": "^13.4.12",
+    "next": "^13.5.11",
     "nextjs-progressbar": "^0.0.16",
     "react": "^18.2.0",
     "react-awesome-reveal": "^4.2.5",
